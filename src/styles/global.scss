@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+:root {
+  --customblack: #1e1e1e;
+  --customwhite: #f8f9fa;
+  --navhover: #331e1e1e; /*color when nav items are hovered over*/
+  --secthover: #d6d4d3; /*color when next section icon is hovered over*/
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-size: 18px;
+  color: var(--customwhite);
+  background-color: var(--customblack);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
