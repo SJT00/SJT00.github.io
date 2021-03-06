@@ -15,10 +15,19 @@ html {
 }
 body {
   font-family: "Poppins", sans-serif;
-  position: relative;
   font-size: 18px;
   color: var(--customwhite);
   background-color: var(--customblack);
+  .circle_icon {
+    position: relative;
+    border-radius: 50%;
+    background: var(--customwhite);
+    transition: background-color 250ms ease-in;
+  }
+  .circle_icon:hover {
+    background: var(--secthover);
+  }
+
 }
 img {
   max-width: 100%;
