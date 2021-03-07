@@ -18,16 +18,29 @@ body {
   font-size: 18px;
   color: var(--customwhite);
   background-color: var(--customblack);
-  .circle_icon {
-    position: relative;
-    border-radius: 50%;
-    background: var(--customwhite);
+  .icon {
+    display: block;
+    margin: auto;
+    background-color: var(--customwhite);
+    border: 0px solid var(--customwhite);
     transition: background-color 250ms ease-in;
+    &:hover {
+      background: var(--secthover);
+    }
   }
-  .circle_icon:hover {
-    background: var(--secthover);
+  .circle_icon {
+    border-radius: 50%;
   }
-
+  .round_icon {
+    border-radius: 20%;
+  }
+  .headshot {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    background-color: var(--customwhite);
+    border: 3px solid var(--customwhite);
+  }
 }
 img {
   max-width: 100%;
