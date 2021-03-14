@@ -1,24 +1,20 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Col,Row} from "react-bootstrap";
-export default function Navbar(){
-return(<Row>
-    <Col>
-    <h1>NavbarPlchldr</h1>
-    </Col>
-    <Col/>
-    <Col/>
-    <Col/>
-    <Col/>
-    <Col/>
-    <Col style={{textAlign:"center"}}>
-    <h1>Home</h1>
-    </Col>
-    <Col style={{textAlign:"center"}}>
-    <h1>About</h1>
-    </Col>
-    <Col style={{textAlign:"center"}}>
-    <h1>Projects</h1>
-    </Col>
-      </Row>)
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Navbar,Nav } from "react-bootstrap";
+export default function NavBar() {
+  return (
+    <Navbar id="navbar" expand="md">
+      {/* <Navbar.Brand>
+        <span>SJT</span>
+      </Navbar.Brand> */}
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Link>About</Nav.Link>
+          <Nav.Link>Projects</Nav.Link>
+          <Nav.Link>Hobbies</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
 }

@@ -18,6 +18,19 @@ body {
   font-size: 18px;
   color: var(--customwhite);
   background-color: var(--customblack);
+  .navbar-light .navbar-brand{
+    color: var(--customwhite);
+    &:hover {
+      color: var(--customwhite);
+      cursor: default;
+    }
+  }
+  .navbar-light .navbar-nav .nav-link{
+    color: var(--customwhite);
+    &:hover {
+      color: var(--secthover);
+    }
+  }
   .icon {
     display: block;
     margin: auto;
