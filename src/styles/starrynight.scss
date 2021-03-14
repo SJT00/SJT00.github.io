@@ -3,17 +3,16 @@ $starcol:var(--customwhite);
 $scrnw: 1920;
 $scrnh: 1080/2;
 
-@function multiple-box-shadow ($n){
-  $value: '#{random($scrnw)}px #{random($scrnh*1.5)}px #{$starcol}';// Times 1.5 is important, need more spread vertically to prevent holes
+@function multiple-box-shadow ($n,$scrnw,$scrnh){
+  $value: '#{random($scrnw)}px #{round(random($scrnh*1.5))}px #{$starcol}';// Times 1.5 is important, need more spread vertically to prevent holes
   @for $i from 2 through $n{
-    $value: '#{$value} , #{random(1920)}px #{random($scrnh*1.5)}px #{$starcol}';
+    $value: '#{$value} , #{random($scrnw)}px #{round(random($scrnh*1.5))}px #{$starcol}';
   }
   @return unquote($value);
 } 
-
-$shadows-small:  multiple-box-shadow(700);
-$shadows-medium: multiple-box-shadow(200);
-$shadows-big:    multiple-box-shadow(100);
+  $shadows-small:  multiple-box-shadow(700,$scrnw,$scrnh);
+  $shadows-medium: multiple-box-shadow(200,$scrnw,$scrnh);
+  $shadows-big:    multiple-box-shadow(100,$scrnw,$scrnh);
 
 @keyframes animStar{
   from{	
@@ -24,7 +23,7 @@ $shadows-big:    multiple-box-shadow(100);
   }  
 }
  
-#stars{
+#s_stars{
   width: 1px;
   height: 1px;
   background: transparent;
@@ -41,7 +40,7 @@ $shadows-big:    multiple-box-shadow(100);
     box-shadow: $shadows-small;
   }
 }    
-#stars2{
+#m_stars{
   width: 2px;
   height: 2px;
   background: transparent;
@@ -58,7 +57,7 @@ $shadows-big:    multiple-box-shadow(100);
     box-shadow: $shadows-medium;
   }
 }    
-#stars3{
+#l_stars{
   width: 3px;
   height: 3px;
   background: transparent;

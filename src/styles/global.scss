@@ -34,12 +34,16 @@ body {
   .round_icon {
     border-radius: 20%;
   }
-  .headshot {
+  #headshot {
     display: block;
     margin: auto;
     border-radius: 50%;
     background-color: var(--customwhite);
     border: 3px solid var(--customwhite);
+  }
+  #contact{
+    margin-top:34vh;
+    text-align: center;
   }
 }
 img {
