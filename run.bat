@@ -1,1 +1,1 @@
-gatsby develop -o
+cmd /k gatsby develop -o
