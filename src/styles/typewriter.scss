@@ -1,0 +1,24 @@
+// Adapted from Geoff Graham on CSS-Tricks : https://css-tricks.com/snippets/css/typewriter-effect/
+.typewriter{
+  display:inline-block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .1em solid var(--customwhite); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 0.75s steps(12, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 8% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--customwhite); }
+  }
