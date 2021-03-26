@@ -6,7 +6,7 @@ export default function Intro() {
     <>
       <Row>
         <Col>
-          <TypeWriter style={{ marginLeft:"1%"}} text={["Welcome","سالام","你好"]}/>
+          <TypeWriter style={{ marginLeft:"1%"}} text={["Hi","سالام","你好"]}/>
         </Col>
       </Row>
       <Row style={{ marginTop: "5%" }}>
