@@ -18,34 +18,46 @@ body {
   font-size: 18px;
   color: var(--customwhite);
   background-color: var(--customblack);
-  .navbar-light .navbar-brand {
-    color: var(--customwhite);
-    &:hover {
+  //----- Navbar Start
+  .navbar-light {
+    .navbar-brand {
       color: var(--customwhite);
-      cursor: default;
+      &:hover {
+        color: var(--customwhite);
+        cursor: default;
+      }
+    }
+    .navbar-nav .nav-link {
+      color: var(--customwhite);
+      position: relative;
+      &::after {
+        content: "";
+        left: 0;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: var(--customwhite);
+        position: absolute;
+        transform: scaleX(0);
+        transform-origin: bottom;
+        transition: transform 250ms ease-in;
+      }
+      &:hover {
+        color: var(--secthover);
+      }
+      &:hover::after {
+        transform: scaleX(0.8);
+      }
     }
   }
-  .navbar-light .navbar-nav .nav-link {
-    color: var(--customwhite);
-    position: relative;
-    &::after {
-      content: "";
-      left: 0;
-      bottom: 4px;
-      width: 100%;
-      height: 2px;
-      background: var(--customwhite);
-      position: absolute;
-      transform: scaleX(0);
-      transform-origin: bottom;
-      transition: transform 250ms ease-in;
-    }
-    &:hover {
-      color: var(--secthover);
-    }
-    &:hover::after {
-      transform: scaleX(0.8);
-    }
+  //----- Navbar Finish
+  //----- Icons Start
+  #headshot {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    background-color: var(--customwhite);
+    border: 3px solid var(--customwhite);
   }
   .icon {
     display: block;
@@ -63,15 +75,12 @@ body {
   .round_icon {
     border-radius: 20%;
   }
-  #headshot {
-    display: block;
-    margin: auto;
-    border-radius: 50%;
-    background-color: var(--customwhite);
-    border: 3px solid var(--customwhite);
-  }
+  //----- Icons Finish
   #contact {
-    margin-top: 34vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
     text-align: center;
   }
 }
