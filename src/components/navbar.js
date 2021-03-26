@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/navbar.scss";
 import { Navbar,Nav } from "react-bootstrap";
 export default function NavBar() {
   return (
@@ -7,7 +8,6 @@ export default function NavBar() {
       {/* <Navbar.Brand>
         <span>SJT</span>
       </Navbar.Brand> */}
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Link>About</Nav.Link>
