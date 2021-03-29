@@ -9,18 +9,29 @@
 #l2r1 {
   border-right: 0.1em solid var(--customwhite); /* The typwriter cursor */
   animation: 
-  typingl2r1 0.75s steps(3, end),
+  typingl2r1 0.5s steps(3, end),
   blink-caret 0.75s step-end infinite, 
-  hideme 0s ease-in 1s forwards;
+  hideme 0s ease-in 2s forwards;
 }
 #r2l {
-  margin-left: -0.75em;
+  margin-left: -1.2em;
   border-right: 0.1em solid var(--customwhite); /* The typwriter cursor */
   visibility: hidden;
   animation: 
-  typingr2l 0.75s steps(3, end) 1s,
+  typingr2l 0.8s steps(4, end) 2s,
   blink-caret 0.75s step-end 1s infinite, 
-  unhideme 1s ease-in 1s forwards;
+  unhideme 1s ease-in 2s forwards,
+  hideme 0s ease-in 4s forwards;
+}
+#l2r2 {
+  margin-left: -2.2em;
+  border-right: 0.1em solid var(--customwhite); /* The typwriter cursor */
+  visibility: hidden;
+  animation: 
+  typingl2r1 0.8s steps(4, end) 4s,
+  blink-caret 0.75s step-end infinite,
+  unhideme 0s ease-in 4s forwards,
+  hideme 0s ease-in 6s forwards;
 }
 
 /* The typing effect for "Welcome" */
