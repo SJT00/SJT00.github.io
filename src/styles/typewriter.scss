@@ -28,10 +28,10 @@
   border-right: 0.1em solid var(--customwhite); /* The typwriter cursor */
   visibility: hidden;
   animation: 
-  typingl2r1 0.8s steps(4, end) 4s,
+  typingl2r1 0.8s steps(6, end) 4s,
   blink-caret 0.75s step-end infinite,
   unhideme 0s ease-in 4s forwards,
-  hideme 0s ease-in 6s forwards;
+  fadeout 2s ease-in 6s forwards;
 }
 
 /* The typing effect for "Welcome" */
@@ -74,5 +74,14 @@
 @keyframes unhideme {
   to {
     visibility:visible;
+  }
+}
+
+@keyframes fadeout {
+  from{
+    opacity: 1;
+  }
+  to {
+    opacity:0;
   }
 }
