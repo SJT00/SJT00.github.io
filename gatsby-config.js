@@ -5,6 +5,11 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Saad Taj`,
+    description: `Portfolio Website for Saad Jahanzeb Taj`,
+    author: `SJT00`,
+  },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",

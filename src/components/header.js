@@ -1,9 +1,14 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./navbar.scss";
+import * as React from "react";
 import { Navbar,Nav } from "react-bootstrap";
-export default function NavBar() {
-  return (
+import { Helmet } from "react-helmet";
+import "./header.scss";
+
+const Header = () => (
+  <header
+  >
+    <Helmet>
+          <title>{"Saad Taj"}</title>
+        </Helmet>
     <Navbar id="navbar" expand="md">
       {/* <Navbar.Brand>
         <span>SJT</span>
@@ -16,5 +21,7 @@ export default function NavBar() {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  );
-}
+  </header>
+)
+
+export default Header

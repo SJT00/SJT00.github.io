@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import TypeWriter from "./TypeWriter.js";
+import TypeWriter from "./typeWriter.js";
 export default function Intro() {
   return (
     <>

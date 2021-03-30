@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/starrynight.scss";
+import "./bkgd.scss";
 export default function Background(){
 return(<>
     <div id="s_stars"></div>
