@@ -1,16 +1,16 @@
------------
 In The Works:
-
-Add Pgs (Projects, About, and Hobbies)
------------
-Current Pool:
-
+-------------
 Proper Centering
+Add Pgs (Projects, About, and Hobbies)
+#############
+Current Pool:
+-------------
 starrynight resolution scaling
-MLK blog Post
-Hosting
 SEO integration
------------
+Hosting
+MLK blog Post
+#############
 BackBurner:
-
+-------------
 welcometxt abstraction and better sync
+performance contrast
