@@ -10,6 +10,10 @@
   --navhover: #331e1e1e; /*color when nav items are hovered over*/
   --secthover: #d6d4d3; /*color when next section icon is hovered over*/
 }
+code {
+  color: #a0d0e9;
+  font-size: 100%;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -18,14 +22,6 @@ body {
   font-size: 18px;
   color: var(--customwhite);
   background-color: var(--customblack);
-  //----- Icons Start
-  #headshot {
-    display: block;
-    margin: auto;
-    border-radius: 50%;
-    background-color: var(--customwhite);
-    border: 3px solid var(--customwhite);
-  }
   .icon {
     display: block;
     margin: auto;
@@ -42,7 +38,6 @@ body {
   .round_icon {
     border-radius: 20%;
   }
-  //----- Icons Finish
   #contact {
     bottom: 0;
     right: 0;

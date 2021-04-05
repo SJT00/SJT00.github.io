@@ -1,12 +1,16 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import TypeWriter from "./typeWriter.js";
+import "./intro.scss";
 export default function Intro() {
+  var iWH = 40;// Icon width and Height
   return (
-    <>
+    <Row xs={1} id="intro">
       <Row>
         <Col>
-          <TypeWriter style={{ marginLeft:"1%"}} text={["Hi","سالام","你好"]}/>
+          <TypeWriter
+            text={["Hi", "سالام", "你好"]}
+          />
         </Col>
       </Row>
       <Row style={{ marginTop: "5%" }}>
@@ -17,6 +21,10 @@ export default function Intro() {
               <h1 style={{ textAlign: "center", marginBottom: "40px" }}>
                 Saad Jahanzeb Taj
               </h1>
+            </Col>
+          </Row>
+          <Row xs={1} sm={2}>
+            <Col>
               <img
                 style={{ marginBottom: "40px" }}
                 id="headshot"
@@ -26,10 +34,23 @@ export default function Intro() {
                 alt="Great Picture of Me"
               />
             </Col>
+            <Col>
+              <p>
+                Honours Mathematics
+                <br />@ The University of Waterloo
+                <br />
+                <br />
+                Interested in:
+                <br />
+                <code>
+                  ["Web", "App", "Game", "Mobile"]
+                  <br />
+                  .Development();
+                </code>
+              </p>
+            </Col>
           </Row>
-          <Row>
-            <Col />
-            <Col />
+          <Row id="links">
             <Col>
               <a href="https://github.com/SJT00" target="_blank">
                 <img
@@ -37,8 +58,8 @@ export default function Intro() {
                   data-toggle="tooltip"
                   data-placement="top"
                   title="My GitHub"
-                  height="50"
-                  width="50"
+                  height={iWH}
+                  width={iWH}
                   className="icon circle_icon"
                   alt="My Github"
                 />
@@ -54,8 +75,8 @@ export default function Intro() {
                   data-toggle="tooltip"
                   data-placement="top"
                   title="My Linkedin"
-                  height="50"
-                  width="50"
+                  height={iWH}
+                  width={iWH}
                   className="icon round_icon"
                   alt="My Linkedin"
                 />
@@ -68,8 +89,8 @@ export default function Intro() {
                   data-toggle="tooltip"
                   data-placement="top"
                   title="My Email"
-                  height="50"
-                  width="50"
+                  height={iWH}
+                  width={iWH}
                   className="icon round_icon"
                   alt="My Email"
                 />
@@ -82,19 +103,24 @@ export default function Intro() {
                   data-toggle="tooltip"
                   data-placement="top"
                   title="My Resume"
-                  height="50"
-                  width="50"
+                  height={iWH}
+                  width={iWH}
                   className="icon circle_icon"
                   alt="My Resume"
                 />
               </a>
             </Col>
-            <Col />
-            <Col />
+            <Col/>
+            <Col/>
+            <Col/>
+            <Col/>
           </Row>
         </Col>
         <Col />
       </Row>
-    </>
+      <Row>
+        <Col/>
+      </Row>
+    </Row>
   );
 }
