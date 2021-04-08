@@ -5,7 +5,6 @@ Add Pgs (Projects, About, and Hobbies)
 #############
 Current Pool:
 -------------
-starrynight resolution scaling
 SEO integration
 Hosting
 MLK blog Post
@@ -14,3 +13,4 @@ BackBurner:
 -------------
 welcometxt abstraction and better sync
 performance contrast
+starrynight resolution scaling alternatives/performance
