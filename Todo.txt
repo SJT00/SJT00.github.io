@@ -1,14 +1,15 @@
 In The Works:
 -------------
-Proper Centering
 Add Pgs (Projects, About, and Hobbies)
-#############
+-------------
 Current Pool:
 -------------
-SEO integration
 Hosting
 MLK blog Post
-#############
+Fadein Anim
+Typing Anim opto
+SEO integration
+-------------
 BackBurner:
 -------------
 welcometxt abstraction and better sync
