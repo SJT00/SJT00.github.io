@@ -31,7 +31,7 @@ export default function Intro() {
               </h1>
             </Col>
           </Row>
-          <Row sm={2}>
+          <Row xs={1} sm={2}>
             <Col>
               <img
                 style={{ marginBottom: "1ex" }}
