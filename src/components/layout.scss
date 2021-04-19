@@ -20,6 +20,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  @media screen and (max-width: 600px){
+    font-size: 1rem;
+  }
   color: var(--customwhite);
   background-color: var(--customblack);
   .icon {
@@ -39,6 +42,9 @@ body {
     border-radius: 20%;
   }
   #contact {
+    @media screen and (max-width: 600px){
+      font-size: 0.75rem;
+    }
     bottom: 0;
     right: 0;
     left: 0;

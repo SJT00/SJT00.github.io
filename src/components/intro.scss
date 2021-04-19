@@ -1,4 +1,23 @@
-#intro{
+#intro {
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+    #desc{
+      text-align: center;
+    }
+    #links{
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    #headshot {
+      width:180px;
+      height:180px;
+    }
+  }
   #headshot {
     display: block;
     margin: auto;

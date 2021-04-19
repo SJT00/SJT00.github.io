@@ -1,20 +1,23 @@
 // Adapted from Geoff Graham on CSS-Tricks : https://css-tricks.com/snippets/css/typewriter-effect/
+// *Note: Look into abstraction, fadein timing variables etc (Maybe python scripts)
 .typewriter {
   display: inline-block;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
+  &:not(#code){//code ids have different styling
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   margin-left: 1%;
-  letter-spacing: 0.1em; /* Adjust as needed */
-}
-#l2r1 {
+  letter-spacing: 0.1em;
+  }
+
+&#l2r1 {
   border-right: 0.1em solid var(--customwhite); /* The typwriter cursor */
   animation: 
   typingl2r1 0.5s steps(3, end),
   blink-caret 0.75s step-end infinite, 
   hideme 0s ease-in 2s forwards;
 }
-#r2l {
+&#r2l {
   margin-left: -1.2em;
   border-right: 0.1em solid var(--customwhite); /* The typwriter cursor */
   visibility: hidden;
@@ -24,33 +27,56 @@
   unhideme 1s ease-in 2s forwards,
   hideme 0s ease-in 4s forwards;
 }
-#l2r2 {
+&#l2r2 {
   margin-left: -2.2em;
   border-right: 0.1em solid var(--customwhite); /* The typwriter cursor */
   visibility: hidden;
   animation: 
-  typingl2r1 0.8s steps(6, end) 4s,
+  typingl2r2 0.8s steps(6, end) 4s,
   blink-caret 0.75s step-end infinite,
   unhideme 0s ease-in 4s forwards,
   fadeout 2s ease-in 6s forwards;
 }
-
+&#code{
+  animation: 
+  typingl2r3 4s steps(30, end),
+  blink-caret 0.75s step-end infinite, 
+}
+}
 /* The typing effect for "Welcome" */
 @keyframes typingl2r1 {
   from {
     width: 0;
   }
   to {
-    width: 1em;
+    width: 1rem;
+  }
+}
+
+@keyframes typingl2r2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1.45rem;
+  }
+}
+
+@keyframes typingl2r3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20rem;
   }
 }
 
 @keyframes typingr2l {
   from {
-    width: 0em;
+    width: 0;
   }
   to {
-    width: 2.05em;
+    width: 2.05rem;
   }
   
 }
