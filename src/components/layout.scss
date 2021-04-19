@@ -45,6 +45,9 @@ body {
     @media screen and (max-width: 600px){
       font-size: 0.75rem;
     }
+    @media screen and (max-width: 339px){
+      visibility: hidden;
+    }
     bottom: 0;
     right: 0;
     left: 0;
