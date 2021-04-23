@@ -20,7 +20,7 @@ export default function Intro() {
         </Col>
       </Row>
       <Row>
-        <Col style={{marginRight:"auto",marginLeft:"auto",maxWidth:"700px"}}>
+        <Col style={{marginRight:"auto",marginLeft:"auto",maxWidth:"600px"}}>
           <Row>
             <Col>
               <h1
