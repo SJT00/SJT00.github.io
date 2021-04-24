@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { propTypes } from "react-bootstrap/esm/Image";
 import { Helmet } from "react-helmet";
 import "./header.scss";
 
