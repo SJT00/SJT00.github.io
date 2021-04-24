@@ -1,0 +1,16 @@
+#personal {
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+    .nav-item.nav-link{
+        color: var(--customwhite);
+        &.active{
+            color: var(--customblack);
+        }
+    }
+    p{
+        a{
+            color:#8B8C8C;
+        }
+    }
+}
