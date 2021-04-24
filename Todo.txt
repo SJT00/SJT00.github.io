@@ -12,6 +12,7 @@ SEO integration
 -------------
 BackBurner:
 -------------
+Timeline Idea
 welcometxt abstraction and better sync
 performance contrast
 starrynight resolution scaling alternatives/performance
