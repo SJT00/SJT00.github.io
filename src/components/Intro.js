@@ -1,9 +1,14 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, OverlayTrigger, Row,Tooltip} from "react-bootstrap";
 import "./typewriter.scss";
 import "./intro.scss";
 export default function Intro() {
   var iWH = 40; // Icon width and Height
+  const popover = txt => (
+    <Tooltip>
+      {txt}
+    </Tooltip >
+  );
   return (
     <Row xs={1} id="intro">
       <Row id="welcometxt">
@@ -20,7 +25,9 @@ export default function Intro() {
         </Col>
       </Row>
       <Row>
-        <Col style={{marginRight:"auto",marginLeft:"auto",maxWidth:"600px"}}>
+        <Col
+          style={{ marginRight: "auto", marginLeft: "auto", maxWidth: "600px" }}
+        >
           <Row>
             <Col>
               <h1
@@ -43,63 +50,82 @@ export default function Intro() {
               />
               <Row id="links" style={{ marginBottom: "1ex" }}>
                 <Col>
-                  <a href="https://github.com/SJT00" target="_blank">
-                    <img
-                      src="../../Icons/github.svg"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="My GitHub"
-                      height={iWH}
-                      width={iWH}
-                      className="icon circle_icon"
-                      alt="My Github"
-                    />
-                  </a>
-                </Col>
-                <Col>
-                  <a
-                    href="https://www.linkedin.com/in/saad-taj-b79024185"
-                    target="_blank"
+                  <OverlayTrigger
+                    trigger={["hover","focus"]}
+                    placement="left"
+                    overlay={popover("My GitHub")}
                   >
-                    <img
-                      src="../../Icons/linkedin.svg"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="My Linkedin"
-                      height={iWH}
-                      width={iWH}
-                      className="icon round_icon"
-                      alt="My Linkedin"
-                    />
-                  </a>
+                    <a href="https://github.com/SJT00" target="_blank">
+                      <img
+                        src="../../Icons/github.svg"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        height={iWH}
+                        width={iWH}
+                        className="icon circle_icon"
+                        alt="My Github"
+                      />
+                    </a>
+                  </OverlayTrigger>
                 </Col>
                 <Col>
-                  <a href="mailto:sjahanze@uwaterloo.ca">
-                    <img
-                      src="../../Icons/mail.svg"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="My Email"
-                      height={iWH}
-                      width={iWH}
-                      className="icon round_icon"
-                      alt="My Email"
-                    />
-                  </a>
+                  <OverlayTrigger
+                    trigger={["hover","focus"]}
+                    placement="bottom"
+                    overlay={popover("My Linkedin")}
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/saad-taj-b79024185"
+                      target="_blank"
+                    >
+                      <img
+                        src="../../Icons/linkedin.svg"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        height={iWH}
+                        width={iWH}
+                        className="icon round_icon"
+                        alt="My Linkedin"
+                      />
+                    </a>
+                  </OverlayTrigger>
                 </Col>
                 <Col>
+                  <OverlayTrigger
+                    trigger={["hover","focus"]}
+                    placement="bottom"
+                    overlay={popover("My Email")}
+                  >
+                    <a href="mailto:sjahanze@uwaterloo.ca">
+                      <img
+                        src="../../Icons/mail.svg"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        height={iWH}
+                        width={iWH}
+                        className="icon round_icon"
+                        alt="My Email"
+                      />
+                    </a>
+                  </OverlayTrigger>
+                </Col>
+                <Col>
+                <OverlayTrigger
+                    trigger={["hover","focus"]}
+                    placement="right"
+                    overlay={popover("My Resume")}
+                  >
                   <a href=".\assets\Resume.pdf" target="_blank">
                     <img
                       src="../../Icons/resume.svg"
                       data-toggle="tooltip"
                       data-placement="top"
-                      title="My Resume"
                       height={iWH}
                       width={iWH}
                       className="icon circle_icon"
                       alt="My Resume"
                     />
-                  </a>
+                  </a></OverlayTrigger>
                 </Col>
               </Row>
             </Col>
