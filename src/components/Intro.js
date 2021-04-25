@@ -1,14 +1,10 @@
 import React from "react";
-import { Col, OverlayTrigger, Row,Tooltip} from "react-bootstrap";
+import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 import "./typewriter.scss";
 import "./intro.scss";
 export default function Intro() {
   var iWH = 40; // Icon width and Height
-  const popover = txt => (
-    <Tooltip>
-      {txt}
-    </Tooltip >
-  );
+  const popover = txt => <Tooltip>{txt}</Tooltip>;
   return (
     <Row xs={1} id="intro">
       <Row id="welcometxt">
@@ -51,7 +47,7 @@ export default function Intro() {
               <Row id="links" style={{ marginBottom: "1ex" }}>
                 <Col>
                   <OverlayTrigger
-                    trigger={["hover","focus"]}
+                    trigger={["hover", "focus"]}
                     placement="left"
                     overlay={popover("My GitHub")}
                   >
@@ -70,7 +66,7 @@ export default function Intro() {
                 </Col>
                 <Col>
                   <OverlayTrigger
-                    trigger={["hover","focus"]}
+                    trigger={["hover", "focus"]}
                     placement="bottom"
                     overlay={popover("My Linkedin")}
                   >
@@ -92,7 +88,7 @@ export default function Intro() {
                 </Col>
                 <Col>
                   <OverlayTrigger
-                    trigger={["hover","focus"]}
+                    trigger={["hover", "focus"]}
                     placement="bottom"
                     overlay={popover("My Email")}
                   >
@@ -110,22 +106,23 @@ export default function Intro() {
                   </OverlayTrigger>
                 </Col>
                 <Col>
-                <OverlayTrigger
-                    trigger={["hover","focus"]}
+                  <OverlayTrigger
+                    trigger={["hover", "focus"]}
                     placement="right"
                     overlay={popover("My Resume")}
                   >
-                  <a href=".\assets\Resume.pdf" target="_blank">
-                    <img
-                      src="../../Icons/resume.svg"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      height={iWH}
-                      width={iWH}
-                      className="icon circle_icon"
-                      alt="My Resume"
-                    />
-                  </a></OverlayTrigger>
+                    <a href=".\assets\Resume.pdf" target="_blank">
+                      <img
+                        src="../../Icons/resume.svg"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        height={iWH}
+                        width={iWH}
+                        className="icon circle_icon"
+                        alt="My Resume"
+                      />
+                    </a>
+                  </OverlayTrigger>
                 </Col>
               </Row>
             </Col>
