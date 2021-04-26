@@ -1,12 +1,15 @@
 In The Works:
 -------------
-Add Pgs (Projects, About, and Hobbies)
+Navbar highlight on appropriate url
+Floading bug on Home Pg
+Projects Pg Img loading
+About Pg and Hobbies Sec
 -------------
 Current Pool:
 -------------
 Hosting
-MLK blog Post
-Fadein Anim
+MLK Post
+Anim Throughout(Quick Fade-Ins)
 Typing Anim opto
 SEO integration
 -------------
