@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 import "./typewriter.scss";
 import "./intro.scss";
 export default function Intro() {
   var iWH = 40; // Icon width and Height
-  const popover = txt => <Tooltip>{txt}</Tooltip>;
+  const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip
+  const firstLoad = () => {
+    //Returns true if first visit to pg()
+    if (localStorage.getItem("fload") == null) {
+      localStorage.setItem("fload", false);
+      return true;
+    } else {
+      return false;
+    }
+  };
+  const [fload, setfload] = useState(true);
+  useEffect(() => {
+    setfload(firstLoad());
+    console.log("updating");
+  });
   return (
     <Row xs={1} id="intro">
-      <Row id="welcometxt">
+      {console.log(fload)}
+      <Row id="welcometxt" style={{ opacity: fload ? "" : "0" }}>
         <Col>
           <h1 className="typewriter" id="l2r1">
             {"Hi"}
