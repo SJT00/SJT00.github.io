@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
+import { StaticImage } from "gatsby-plugin-image";
 import "./work.scss";
 export default function Work() {
   const [index, setIndex] = useState(0);
@@ -32,9 +33,9 @@ export default function Work() {
         {index === 0 && (
           <>
             <h3 style={{ textAlign: "center" }}>Budgie</h3>
-            <img
+            <StaticImage
               className="d-block w-80 mx-auto"
-              src="../../Caraousel/Budgie.png"
+              src="../../static/Caraousel/Budgie.png"
               alt="First slide"
             />
             <p className="imgpar">
@@ -46,9 +47,9 @@ export default function Work() {
         {index === 1 && (
           <>
             <h3 style={{ textAlign: "center" }}>Token</h3>
-            <img
+            <StaticImage
               className="d-block w-80 mx-auto"
-              src="../../Caraousel/Token.png"
+              src="../../static/Caraousel/Token.png"
               alt="Second slide"
             />
             <p className="imgpar">
@@ -60,9 +61,9 @@ export default function Work() {
         {index === 2 && (
           <>
             <h3 style={{ textAlign: "center" }}>Space Invaders</h3>
-            <img
+            <StaticImage
               className="d-block w-80 mx-auto"
-              src="../../Caraousel/S_invaders.png"
+              src="../../static/Caraousel/S_invaders.png"
               alt="Third slide"
             />
             <p className="imgpar">
