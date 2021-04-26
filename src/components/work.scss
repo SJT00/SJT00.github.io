@@ -1,0 +1,46 @@
+#work {
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  .Carousel-Img {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+  //From https://codepen.io/stepher/pen/yLOaEOP
+  .chevron::before {
+    border-style: solid;
+    border-width: 2.5vh 2.5vh 0 0;
+    content: "";
+    display: inline-block;
+    height: 4.5vh;
+    left: 1.5vh;
+    position: relative;
+    top: 1.5vh;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 4.5vh;
+  }
+
+  .chevron.right:before {
+    left: 0;
+    transform: rotate(45deg);
+  }
+
+  .chevron.left:before {
+    left: 2.5vh;
+    transform: rotate(-135deg);
+  }
+
+  .chevron.right {
+    position: absolute;
+    top: 50%;
+    right: -3vh; //5.5 -width due to shape
+  }
+
+  .chevron.left {
+    top: 50%;
+    left: -5.5vh;
+    position: absolute;
+  }
+}
