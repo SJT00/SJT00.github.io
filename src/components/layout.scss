@@ -38,8 +38,14 @@ body {
   .circle_icon {
     border-radius: 50%;
   }
+  .circle_icon:hover {
+    background: var(--secthover);
+  }
   .round_icon {
     border-radius: 20%;
+  }
+  .round_icon:hover {
+    background: var(--secthover);
   }
   #contact {
     @media screen and (max-width: 600px){
