@@ -12,7 +12,7 @@ export default function Work() {
           className="d-block"
           style={{ textAlign: "center", marginBottom: "0.5%" }}
         >
-          {"(Slide: " + (index + 1) + "/" + total+")"}
+          {"(Slide: " + (index + 1) + "/" + total + ")"}
         </span>
         <span
           className="chevron left"
@@ -34,8 +34,9 @@ export default function Work() {
           <>
             <h3 style={{ textAlign: "center" }}>Budgie</h3>
             <StaticImage
-              className="d-block w-80 mx-auto"
+              className="d-block mx-auto"
               src="../../static/Caraousel/Budgie.png"
+              layout="constrained"
               alt="First slide"
             />
             <p className="imgpar">
@@ -48,8 +49,9 @@ export default function Work() {
           <>
             <h3 style={{ textAlign: "center" }}>Token</h3>
             <StaticImage
-              className="d-block w-80 mx-auto"
+              className="d-block mx-auto"
               src="../../static/Caraousel/Token.png"
+              layout="constrained"
               alt="Second slide"
             />
             <p className="imgpar">
@@ -62,13 +64,15 @@ export default function Work() {
           <>
             <h3 style={{ textAlign: "center" }}>Space Invaders</h3>
             <StaticImage
-              className="d-block w-80 mx-auto"
+              className="d-block w-75 mx-auto"
               src="../../static/Caraousel/S_invaders.png"
+              layout="constrained"
               alt="Third slide"
             />
             <p className="imgpar">
               A Space Invader clone I made using python and its library pygame.
               Can be played with a keyboard, as well as a custom controller.
+              <br />
               <br />
               Sprites and font courtesy of the internet.
             </p>
