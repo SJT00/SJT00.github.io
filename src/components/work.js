@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import { OverlayTrigger, Tooltip, Col, Row } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 import "./work.scss";
 export default function Work() {
   const [index, setIndex] = useState(0);
   const total = 3;
+  const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip
   return (
     <Row xs={1} id="work">
       <Col style={{ maxWidth: "800px" }}>
@@ -40,6 +41,129 @@ export default function Work() {
               alt="First slide"
             />
             <p className="imgpar">
+              Tech Stack:
+              <Row className="logos">
+                <Col>
+                  <OverlayTrigger
+                    trigger={["hover", "focus"]}
+                    placement="left"
+                    overlay={popover("MongoDB")}
+                  >
+                    <img
+                      src="../../Icons/Languages/mongodb.svg"
+                      height="50"
+                      width="50"
+                      className="round_icon"
+                      alt="MongoDB"
+                    />
+                  </OverlayTrigger>
+                </Col>
+                <Col>
+                  <OverlayTrigger
+                    trigger={["hover", "focus"]}
+                    placement="bottom"
+                    overlay={popover("ExpressJS")}
+                  >
+                    <img
+                      src="../../Icons/Languages/expressjs.png"
+                      height="50px"
+                      width="80px"
+                      className="round_icon"
+                      alt="ExpressJS"
+                    />
+                  </OverlayTrigger>
+                </Col>
+                <Col>
+                  <OverlayTrigger
+                    trigger={["hover", "focus"]}
+                    placement="top"
+                    overlay={popover("React")}
+                  >
+                    <img
+                      src="../../Icons/Languages/react.svg"
+                      height="50"
+                      width="70"
+                      className="round_icon"
+                      alt="React"
+                    />
+                  </OverlayTrigger>
+                </Col>
+                <Col>
+                  <OverlayTrigger
+                    trigger={["hover", "focus"]}
+                    placement="top"
+                    overlay={popover("NodeJS")}
+                  >
+                    <img
+                      src="../../Icons/Languages/nodejs.svg"
+                      height="85"
+                      width="85"
+                      className="round_icon"
+                      alt="NodeJS"
+                    />
+                  </OverlayTrigger>
+                </Col>
+                <Col>
+                  <OverlayTrigger
+                    trigger={["hover", "focus"]}
+                    placement="top"
+                    overlay={popover("HTML5")}
+                  >
+                    <img
+                      src="../../Icons/Languages/html5.svg"
+                      height="50"
+                      width="50"
+                      className="round_icon"
+                      alt="HTML5"
+                    />
+                  </OverlayTrigger>
+                </Col>
+                <Col>
+                  <OverlayTrigger
+                    trigger={["hover", "focus"]}
+                    placement="top"
+                    overlay={popover("CSS3")}
+                  >
+                    <img
+                      src="../../Icons/Languages/css3.svg"
+                      height="50"
+                      width="50"
+                      className="round_icon"
+                      alt="CSS3"
+                    />
+                  </OverlayTrigger>
+                </Col>
+                <Col>
+                  <OverlayTrigger
+                    trigger={["hover", "focus"]}
+                    placement="top"
+                    overlay={popover("Javascript")}
+                  >
+                    <img
+                      src="../../Icons/Languages/Jscript.svg"
+                      height="50"
+                      width="50"
+                      className="round_icon"
+                      alt="Javascript"
+                    />
+                  </OverlayTrigger>
+                </Col>
+                <Col>
+                  <OverlayTrigger
+                    trigger={["hover", "focus"]}
+                    placement="right"
+                    overlay={popover("Git")}
+                  >
+                    <img
+                      src="../../Icons/Languages/git.svg"
+                      height={50}
+                      width="50"
+                      className="round_icon"
+                      alt="Git"
+                    />
+                  </OverlayTrigger>
+                </Col>
+              </Row>
               A Visual Budgeting Application, made using the MERN stack. My
               first full stack Web-App, made in a Typescript environment.
             </p>
