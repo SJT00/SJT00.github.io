@@ -17,6 +17,7 @@ export default function Work() {
         </span>
         <span
           className="chevron left"
+          style={{opacity:index===0? "50%":"100%"}}
           onClick={() => {
             if (index > 0) {
               setIndex(index - 1);
@@ -25,6 +26,7 @@ export default function Work() {
         />
         <span
           className="chevron right"
+          style={{opacity:index===total-1? "50%":"100%"}}
           onClick={() => {
             if (index < total - 1) {
               setIndex(index + 1);
@@ -35,14 +37,14 @@ export default function Work() {
           <>
             <h3 style={{ textAlign: "center" }}>Budgie</h3>
             <StaticImage
-              className="d-block mx-auto"
+              className="d-block mx-auto Carousel-Img"
               src="../../static/Caraousel/Budgie.png"
               layout="constrained"
               alt="First slide"
             />
             <p className="imgpar">
               Tech Stack:
-              <Row className="logos">
+              <Row xs={6} sm={8} className="logos">
                 <Col>
                   <OverlayTrigger
                     trigger={["hover", "focus"]}
@@ -173,7 +175,7 @@ export default function Work() {
           <>
             <h3 style={{ textAlign: "center" }}>Token</h3>
             <StaticImage
-              className="d-block mx-auto"
+              className="d-block mx-auto Carousel-Img"
               src="../../static/Caraousel/Token.png"
               layout="constrained"
               alt="Second slide"
@@ -188,7 +190,7 @@ export default function Work() {
           <>
             <h3 style={{ textAlign: "center" }}>Space Invaders</h3>
             <StaticImage
-              className="d-block w-75 mx-auto"
+              className="d-block w-75 mx-auto Carousel-Img"
               src="../../static/Caraousel/S_invaders.png"
               layout="constrained"
               alt="Third slide"
