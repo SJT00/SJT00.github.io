@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import "./work.scss";
 export default function Work() {
   const [index, setIndex] = useState(0);
-  const total = 3;
+  const total = 4;
   const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip
   return (
     <Row xs={1} id="work">
@@ -167,8 +167,8 @@ export default function Work() {
                 </Col>
               </Row>
               <p>
-              A Visual Budgeting Application, made using the MERN stack. My
-              first full stack Web-App, made in a Typescript environment.
+                A Visual Budgeting Application, made using the MERN stack. My
+                first full stack Web-App, made in a Typescript environment.
               </p>
             </div>
           </>
@@ -292,8 +292,8 @@ export default function Work() {
                 </Col>
               </Row>
               <p>
-              A Sobriety Tracking Application I made during Hack the Valley.
-              Made using React, Node and Express.
+                A Sobriety Tracking Application I made during Hack the Valley.
+                Made using React, Node and Express.
               </p>
             </div>
           </>
@@ -357,11 +357,52 @@ export default function Work() {
                 </Col>
               </Row>
               <p>
-              A Space Invader clone I made using python and its library pygame.
-              Can be played with a keyboard, as well as a custom controller.
-              <br />
-              <br />
-              Sprites and font courtesy of the internet.
+                A Space Invader clone I made using python and its library
+                pygame. Can be played with a keyboard, as well as a custom
+                controller.
+                <br />
+                <br />
+                Sprites and font courtesy of the internet.
+              </p>
+            </div>
+          </>
+        )}
+        {index === 3 && (
+          <>
+            <h3 style={{ textAlign: "center" }}>Flash Fighting Game</h3>
+            <StaticImage
+              className="d-block w-75 mx-auto Carousel-Img"
+              src="../../static/Caraousel/N_Battle.png"
+              layout="constrained"
+              alt="Third slide"
+            />
+            <div className="imgpar">
+              Tech Stack:
+              <Row xs={3} className="logos">
+                <Col>
+                  <OverlayTrigger
+                    trigger={["hover", "focus"]}
+                    placement="left"
+                    overlay={popover("ActionScript")}
+                  >
+                    <img
+                      src="../../Icons/Languages/ascript.png"
+                      height="50"
+                      width="50"
+                      className="round_icon"
+                      alt="ActionScript"
+                    />
+                  </OverlayTrigger>
+                </Col>
+                <Col/>
+                <Col/>
+              </Row>
+              <p>
+                A Fighting Game Demo I made using Adobe Flash, and it's
+                scripting language Actionscript.
+                <br />
+                <br />
+                Sprites courtesy of the internet.
               </p>
             </div>
           </>
