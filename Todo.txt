@@ -1,9 +1,7 @@
 In The Works:
 -------------
 Navbar highlight on appropriate url
-Floading bug on Home Pg
-Projects Pg Img loading
-About Pg and Hobbies Sec
+Add links to project Imgs
 -------------
 Current Pool:
 -------------
@@ -12,6 +10,7 @@ MLK Post
 Anim Throughout(Quick Fade-Ins)
 Typing Anim opto
 SEO integration
+404pg bug
 -------------
 BackBurner:
 -------------
@@ -19,3 +18,5 @@ Timeline Idea
 welcometxt abstraction and better sync
 performance contrast
 starrynight resolution scaling alternatives/performance
+Type Script??
+Console Warnings
