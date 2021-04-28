@@ -51,7 +51,10 @@ export default function Personal() {
             </p>
           </Tab>
           <Tab eventKey="hobbies" title="Hobbies">
-            N/A , please see previous tab 
+            N/A , please see previous tab 😊
+            <br/>
+            <br/>
+            In all seriousness I will be updating this very soon
           </Tab>
         </Tabs>
       </Col>
