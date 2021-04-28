@@ -378,7 +378,7 @@ export default function Work() {
             />
             <div className="imgpar">
               Tech Stack:
-              <Row xs={3} className="logos">
+              <Row xs={3} className="logos" style={{maxWidth:"250px"}}>
                 <Col>
                   <OverlayTrigger
                     trigger={["hover", "focus"]}
@@ -394,8 +394,6 @@ export default function Work() {
                     />
                   </OverlayTrigger>
                 </Col>
-                <Col/>
-                <Col/>
               </Row>
               <p>
                 A Fighting Game Demo I made using Adobe Flash, and it's

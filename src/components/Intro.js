@@ -14,7 +14,7 @@ export default function Intro() {
     }
   };
   const [animPlayed, setanimPlayed] = useState(true);//Bad naming should be not Anim Played
-  const testing = true;
+  const testing = false;//Always set this to false before hosting
   useEffect(() => {//Check if first visit
     setanimPlayed(firstLoad());
   });//Hides welcometxt if return visitor
