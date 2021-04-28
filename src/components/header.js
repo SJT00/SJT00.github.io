@@ -5,7 +5,7 @@ import "./header.scss";
 
 export default function Header() {
   const myTurn = txt => {//Used to highlight current pg on navbar
-    const url = window.location.href.split("/");
+    const url = document.URL.split("/");
     return txt===url[url.length-1];
   };
   return (
