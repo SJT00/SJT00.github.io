@@ -6,23 +6,25 @@ export default function Intro() {
   var iWH = 40; // Icon width and Height
   const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip
   const firstLoad = () => {
-    //Returns true if first visit to pg()
-    if (localStorage.getItem("fload") == null) {
-      localStorage.setItem("fload", false);
+    //Returns true if first ever visit to pg()
+    if (sessionStorage.getItem("animPlayed") == null) {//Might change to localStorage
       return true;
     } else {
       return false;
     }
   };
-  const [fload, setfload] = useState(true);
-  useEffect(() => {
-    setfload(firstLoad());
-    console.log("updating");
-  });
+  const [animPlayed, setanimPlayed] = useState(true);//Bad naming should be not Anim Played
+  const testing = true;
+  useEffect(() => {//Check if first visit
+    setanimPlayed(firstLoad());
+  });//Hides welcometxt if return visitor
+  setTimeout(
+    ()=>{
+      sessionStorage.setItem("animPlayed", false)
+    },12000);//Store animation being played after its over
   return (
     <Row xs={1} id="intro">
-      {console.log(fload)}
-      <Row id="welcometxt" style={{ opacity: fload ? "" : "0" }}>
+      <Row id="welcometxt" style={{ opacity: animPlayed||testing ? "" : "0" }}>
         <Col>
           <h1 className="typewriter" id="l2r1">
             {"Hi"}
