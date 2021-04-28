@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
       <Container fluid style={{ height: "100vh" }}>
         <Header />
         <Background />
-        <main style={{ height: "90vh" }}>{children}</main>
+        <main>{children}</main>
         <footer>
           <p id="contact">Contact me via: sjahanze@uwaterloo.ca</p>
         </footer>
