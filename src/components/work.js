@@ -52,7 +52,7 @@ export default function Work() {
                     overlay={popover("MongoDB")}
                   >
                     <img
-                      src="../../Icons/Languages/mongodb.svg"
+                      src="/Icons/Languages/mongodb.svg"
                       height="50"
                       width="50"
                       className="round_icon"
@@ -67,7 +67,7 @@ export default function Work() {
                     overlay={popover("ExpressJS")}
                   >
                     <img
-                      src="../../Icons/Languages/expressjs.png"
+                      src="/Icons/Languages/expressjs.png"
                       height="50px"
                       width="80px"
                       className="round_icon"
@@ -82,7 +82,7 @@ export default function Work() {
                     overlay={popover("React")}
                   >
                     <img
-                      src="../../Icons/Languages/react.svg"
+                      src="/Icons/Languages/react.svg"
                       height="50"
                       width="70"
                       className="round_icon"
@@ -97,7 +97,7 @@ export default function Work() {
                     overlay={popover("NodeJS")}
                   >
                     <img
-                      src="../../Icons/Languages/nodejs.svg"
+                      src="/Icons/Languages/nodejs.svg"
                       height="85"
                       width="85"
                       className="round_icon"
@@ -112,7 +112,7 @@ export default function Work() {
                     overlay={popover("HTML5")}
                   >
                     <img
-                      src="../../Icons/Languages/html5.svg"
+                      src="/Icons/Languages/html5.svg"
                       height="50"
                       width="50"
                       className="round_icon"
@@ -127,7 +127,7 @@ export default function Work() {
                     overlay={popover("CSS3")}
                   >
                     <img
-                      src="../../Icons/Languages/css3.svg"
+                      src="/Icons/Languages/css3.svg"
                       height="50"
                       width="50"
                       className="round_icon"
@@ -142,7 +142,7 @@ export default function Work() {
                     overlay={popover("Javascript")}
                   >
                     <img
-                      src="../../Icons/Languages/Jscript.svg"
+                      src="/Icons/Languages/Jscript.svg"
                       height="50"
                       width="50"
                       className="round_icon"
@@ -157,7 +157,7 @@ export default function Work() {
                     overlay={popover("Git")}
                   >
                     <img
-                      src="../../Icons/Languages/git.svg"
+                      src="/Icons/Languages/git.svg"
                       height={50}
                       width="50"
                       className="round_icon"
@@ -192,7 +192,7 @@ export default function Work() {
                     overlay={popover("ExpressJS")}
                   >
                     <img
-                      src="../../Icons/Languages/expressjs.png"
+                      src="/Icons/Languages/expressjs.png"
                       height="50px"
                       width="80px"
                       className="round_icon"
@@ -207,7 +207,7 @@ export default function Work() {
                     overlay={popover("React")}
                   >
                     <img
-                      src="../../Icons/Languages/react.svg"
+                      src="/Icons/Languages/react.svg"
                       height="50"
                       width="70"
                       className="round_icon"
@@ -222,7 +222,7 @@ export default function Work() {
                     overlay={popover("NodeJS")}
                   >
                     <img
-                      src="../../Icons/Languages/nodejs.svg"
+                      src="/Icons/Languages/nodejs.svg"
                       height="85"
                       width="85"
                       className="round_icon"
@@ -237,7 +237,7 @@ export default function Work() {
                     overlay={popover("HTML5")}
                   >
                     <img
-                      src="../../Icons/Languages/html5.svg"
+                      src="/Icons/Languages/html5.svg"
                       height="50"
                       width="50"
                       className="round_icon"
@@ -252,7 +252,7 @@ export default function Work() {
                     overlay={popover("CSS3")}
                   >
                     <img
-                      src="../../Icons/Languages/css3.svg"
+                      src="/Icons/Languages/css3.svg"
                       height="50"
                       width="50"
                       className="round_icon"
@@ -267,7 +267,7 @@ export default function Work() {
                     overlay={popover("Javascript")}
                   >
                     <img
-                      src="../../Icons/Languages/Jscript.svg"
+                      src="/Icons/Languages/Jscript.svg"
                       height="50"
                       width="50"
                       className="round_icon"
@@ -282,7 +282,7 @@ export default function Work() {
                     overlay={popover("Git")}
                   >
                     <img
-                      src="../../Icons/Languages/git.svg"
+                      src="/Icons/Languages/git.svg"
                       height={50}
                       width="50"
                       className="round_icon"
@@ -317,7 +317,7 @@ export default function Work() {
                     overlay={popover("Python")}
                   >
                     <img
-                      src="../../Icons/Languages/python.svg"
+                      src="/Icons/Languages/python.svg"
                       height="50"
                       width="50"
                       className="round_icon"
@@ -332,7 +332,7 @@ export default function Work() {
                     overlay={popover("Pygame")}
                   >
                     <img
-                      src="../../Icons/Languages/pygame.gif"
+                      src="/Icons/Languages/pygame.gif"
                       height="100px"
                       width="100px"
                       className="round_icon"
@@ -347,7 +347,7 @@ export default function Work() {
                     overlay={popover("Git")}
                   >
                     <img
-                      src="../../Icons/Languages/git.svg"
+                      src="/Icons/Languages/git.svg"
                       height={50}
                       width="50"
                       className="round_icon"
@@ -386,7 +386,7 @@ export default function Work() {
                     overlay={popover("ActionScript")}
                   >
                     <img
-                      src="../../Icons/Languages/ascript.png"
+                      src="/Icons/Languages/ascript.png"
                       height="50"
                       width="50"
                       className="round_icon"
