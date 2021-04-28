@@ -25,5 +25,8 @@
     &:hover::after {
       transform: scaleX(0.8);
     }
+    &.bordered{
+      border: solid 1px var(--customwhite);
+    }
   }
 }
