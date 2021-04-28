@@ -58,7 +58,7 @@ export default function Intro() {
                 id="headshot"
                 height="200px"
                 width="200px"
-                src="../../Headshot.jpg"
+                src="/Headshot.jpg"
                 alt="Great Picture of Me"
               />
               <Row id="links" style={{ marginBottom: "1ex" }}>
@@ -70,9 +70,7 @@ export default function Intro() {
                   >
                     <a href="https://github.com/SJT00" target="_blank">
                       <img
-                        src="../../Icons/github.svg"
-                        data-toggle="tooltip"
-                        data-placement="top"
+                        src="/Icons/github.svg"
                         height={iWH}
                         width={iWH}
                         className="icon circle_icon"
@@ -92,9 +90,7 @@ export default function Intro() {
                       target="_blank"
                     >
                       <img
-                        src="../../Icons/linkedin.svg"
-                        data-toggle="tooltip"
-                        data-placement="top"
+                        src="/Icons/linkedin.svg"
                         height={iWH}
                         width={iWH}
                         className="icon round_icon"
@@ -111,9 +107,7 @@ export default function Intro() {
                   >
                     <a href="mailto:sjahanze@uwaterloo.ca">
                       <img
-                        src="../../Icons/mail.svg"
-                        data-toggle="tooltip"
-                        data-placement="top"
+                        src="/Icons/mail.svg"
                         height={iWH}
                         width={iWH}
                         className="icon round_icon"
@@ -130,9 +124,7 @@ export default function Intro() {
                   >
                     <a href=".\assets\Resume.pdf" target="_blank">
                       <img
-                        src="../../Icons/resume.svg"
-                        data-toggle="tooltip"
-                        data-placement="top"
+                        src="/Icons/resume.svg"
                         height={iWH}
                         width={iWH}
                         className="icon circle_icon"
