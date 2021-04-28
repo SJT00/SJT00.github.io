@@ -4,9 +4,13 @@ import { Helmet } from "react-helmet";
 import "./header.scss";
 
 export default function Header() {
-  const myTurn = txt => {//Used to highlight current pg on navbar
-    const url = document.URL.split("/");
-    return txt===url[url.length-1];
+  const myTurn = txt => {
+    //Used to highlight current pg on navbar
+    if (typeof window !== "undefined") {//Needed for online hosting
+      const url = window.location.href.split("/");
+      return txt === url[url.length - 1];
+    }
+    return false;
   };
   return (
     <header>
@@ -17,17 +21,17 @@ export default function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className={myTurn('') ? "bordered" : ""} href="/">
+            <Nav.Link className={myTurn("") ? "bordered" : ""} href="/">
               Home
             </Nav.Link>
             <Nav.Link
-              className={myTurn('about') ? "bordered" : ""}
+              className={myTurn("about") ? "bordered" : ""}
               href="/about"
             >
               About
             </Nav.Link>
             <Nav.Link
-              className={myTurn('projects') ? "bordered" : ""}
+              className={myTurn("projects") ? "bordered" : ""}
               href="/projects"
             >
               Projects
