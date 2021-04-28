@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 import "./typewriter.scss";
 import "./intro.scss";
+//Imported Imgs
+import gitImg from "../../static/Icons/github.svg";
+import linkedinImg from "../../static/Icons/linkedin.svg";
+import emailImg from "../../static/Icons/mail.svg";
+import resumeImg from "../../static/Icons/resume.svg";
 export default function Intro() {
   var iWH = 40; // Icon width and Height
   const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip
@@ -70,7 +75,7 @@ export default function Intro() {
                   >
                     <a href="https://github.com/SJT00" target="_blank">
                       <img
-                        src="/Icons/github.svg"
+                        src={gitImg}
                         height={iWH}
                         width={iWH}
                         className="icon circle_icon"
@@ -90,7 +95,7 @@ export default function Intro() {
                       target="_blank"
                     >
                       <img
-                        src="/Icons/linkedin.svg"
+                        src={linkedinImg}
                         height={iWH}
                         width={iWH}
                         className="icon round_icon"
@@ -107,7 +112,7 @@ export default function Intro() {
                   >
                     <a href="mailto:sjahanze@uwaterloo.ca">
                       <img
-                        src="/Icons/mail.svg"
+                        src={emailImg}
                         height={iWH}
                         width={iWH}
                         className="icon round_icon"
@@ -124,7 +129,7 @@ export default function Intro() {
                   >
                     <a href=".\assets\Resume.pdf" target="_blank">
                       <img
-                        src="/Icons/resume.svg"
+                        src={resumeImg}
                         height={iWH}
                         width={iWH}
                         className="icon circle_icon"

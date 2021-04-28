@@ -3,17 +3,17 @@ import { OverlayTrigger, Tooltip, Col, Row } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 import "./work.scss";
 //Imported Imgs
-import mongoImg from "/Icons/Languages/mongodb.svg";
-import expressImg from "/Icons/Languages/expressjs.png";
-import reactImg from "/Icons/Languages/react.svg";
-import nodeImg from "/Icons/Languages/nodejs.svg";
-import htmlImg from "/Icons/Languages/html5.svg";
-import cssImg from "/Icons/Languages/css3.svg";
-import jscriptImg from "/Icons/Languages/Jscript.svg";
-import gitImg from "/Icons/Languages/git.svg";
-import pythonImg from "/Icons/Languages/python.svg";
-import pygameImg from "/Icons/Languages/pygame.gif";
-import ascriptImg from "/Icons/Languages/ascript.png";
+import mongoImg from "../../static/Icons/Languages/mongodb.svg";
+import expressImg from "../../static/Icons/Languages/expressjs.png";
+import reactImg from "../../static/Icons/Languages/react.svg";
+import nodeImg from "../../static/Icons/Languages/nodejs.svg";
+import htmlImg from "../../static/Icons/Languages/html5.svg";
+import cssImg from "../../static/Icons/Languages/css3.svg";
+import jscriptImg from "../../static/Icons/Languages/Jscript.svg";
+import gitImg from "../../static/Icons/Languages/git.svg";
+import pythonImg from "../../static/Icons/Languages/python.svg";
+import pygameImg from "../../static/Icons/Languages/pygame.gif";
+import ascriptImg from "../../static/Icons/Languages/ascript.png";
 
 export default function Work() {
   const [index, setIndex] = useState(0);
