@@ -15,7 +15,7 @@ export default function Header(currPath) {
       }
     }
   `);
-  const currTab = () => {
+  const myTurn = (txt) => {
     //Used to highlight current pg on navbar
     if (typeof window !== "undefined") {
       //Needed for online hosting
