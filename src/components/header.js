@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import "./header.scss";
 //Local testing
 import testing from "./testing.js";
-export default function Header() {
+export default function Header(currPath) {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       site {
@@ -17,28 +17,29 @@ export default function Header() {
   `);
   const myTurn = txt => {
     //Used to highlight current pg on navbar
-    //Needed for online hosting
-    const url =
-      typeof window !== "undefined" ? window.location.href.split("/") : "";
-    const l = url.length;
-    console.log("url: " + url + " txt: " + txt);
-    if (
-      //Null Assertions
-      data &&
-      data.site &&
-      data.site.siteMetadata &&
-      data.site.siteMetadata.siteUrl
-    ) {
+    if (typeof window !== "undefined") {
+      //Needed for online hosting
+      const url = window.location.href.split("/");
+      const l = url.length;
+      console.log("url: " + url + " txt: " + txt);
       if (
-        txt === "" &&
-        (url.join("/") === data.site.siteMetadata.siteUrl ||
-          (testing && url.join("/") === "http://localhost:8000/"))
+        //Null Assertions
+        data &&
+        data.site &&
+        data.site.siteMetadata &&
+        data.site.siteMetadata.siteUrl
       ) {
-        //Hard coding for Home and other pgs, local testing exception
+        if (
+          txt === "" &&
+          (url.join("/") === data.site.siteMetadata.siteUrl ||
+            (testing && url.join("/") === "http://localhost:8000/"))
+        ) {
+          //Hard coding for Home and other pgs, local testing exception
+          return true;
+        }
+      } else if (url[l - 2] === txt) {
         return true;
       }
-    } else if (url[l - 2] === txt) {
-      return true;
     }
     return false;
   };
