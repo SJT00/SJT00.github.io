@@ -15,7 +15,7 @@ export default function Header(currPath) {
       }
     }
   `);
-  const myTurn = txt => {
+  const currTab = () => {
     //Used to highlight current pg on navbar
     if (typeof window !== "undefined") {
       //Needed for online hosting
@@ -37,12 +37,14 @@ export default function Header(currPath) {
           //Hard coding for Home and other pgs, local testing exception
           return true;
         }
-      } else if (url[l - 2] === txt) {
-        return true;
+      } else{
+        return url[l - 2] === txt;
       }
     }
+    console.log("This should not be reachable");
     return false;
   };
+
   return (
     <header>
       <Helmet>
