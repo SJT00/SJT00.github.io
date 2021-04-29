@@ -7,6 +7,8 @@ import gitImg from "../../static/Icons/github.svg";
 import linkedinImg from "../../static/Icons/linkedin.svg";
 import emailImg from "../../static/Icons/mail.svg";
 import resumeImg from "../../static/Icons/resume.svg";
+//Local testing
+import testing from "./testing.js";
 export default function Intro() {
   var iWH = 40; // Icon width and Height
   const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip
@@ -19,7 +21,6 @@ export default function Intro() {
     }
   };
   const [animPlayed, setanimPlayed] = useState(true);//Bad naming should be not Anim Played
-  const testing = false;//Always set this to false before hosting
   useEffect(() => {//Check if first visit
     setanimPlayed(firstLoad());
   });//Hides welcometxt if return visitor

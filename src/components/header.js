@@ -1,14 +1,40 @@
 import * as React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 import "./header.scss";
-
+//Local testing
+import testing from "./testing.js";
 export default function Header() {
+  const data = useStaticQuery(graphql`
+    query HeaderQuery {
+      site {
+        siteMetadata {
+          siteUrl
+        }
+      }
+    }
+  `);
   const myTurn = txt => {
     //Used to highlight current pg on navbar
-    if (typeof window !== "undefined") {//Needed for online hosting
+    if (typeof window !== "undefined") {
+      //Needed for online hosting
       const url = window.location.href.split("/");
-      return txt === url[url.length - 1];
+      const l = url.length;
+      if (
+        //Null Assertions
+        data &&
+        data.site &&
+        data.site.siteMetadata &&
+        data.site.siteMetadata.siteUrl
+      ) {
+        if (txt === "" && (url.join("/") === data.site.siteMetadata.siteUrl||(testing && url.join("/") === "http://localhost:8000/"))) {
+          //Hard coding for Home and other pgs, local testing exception
+          return true;
+        }
+      } else if (url[l - 2] === txt) {
+        return true;
+      }
     }
     return false;
   };

@@ -1,21 +1,20 @@
 In The Works:
 -------------
-Navbar highlight on appropriate url
 Add links to project Imgs
+Typing Anim opto
 -------------
 Current Pool:
 -------------
-MLK Post
 Anim Throughout(Quick Fade-Ins)
-Typing Anim opto
-SEO integration
+MLK Post
 404pg bug
+SEO integration
 -------------
 BackBurner:
 -------------
-Timeline Idea
-welcometxt abstraction and better sync
 performance contrast
 starrynight resolution scaling alternatives/performance
-Type Script??
 Console Warnings
+Timeline Idea
+welcometxt abstraction and better sync
+Type Script??
