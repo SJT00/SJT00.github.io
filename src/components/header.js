@@ -17,24 +17,28 @@ export default function Header() {
   `);
   const myTurn = txt => {
     //Used to highlight current pg on navbar
-    if (typeof window !== "undefined") {
-      //Needed for online hosting
-      const url = window.location.href.split("/");
-      const l = url.length;
+    //Needed for online hosting
+    const url =
+      typeof window !== "undefined" ? window.location.href.split("/") : "";
+    const l = url.length;
+    console.log("url: " + url + " txt: " + txt);
+    if (
+      //Null Assertions
+      data &&
+      data.site &&
+      data.site.siteMetadata &&
+      data.site.siteMetadata.siteUrl
+    ) {
       if (
-        //Null Assertions
-        data &&
-        data.site &&
-        data.site.siteMetadata &&
-        data.site.siteMetadata.siteUrl
+        txt === "" &&
+        (url.join("/") === data.site.siteMetadata.siteUrl ||
+          (testing && url.join("/") === "http://localhost:8000/"))
       ) {
-        if (txt === "" && (url.join("/") === data.site.siteMetadata.siteUrl||(testing && url.join("/") === "http://localhost:8000/"))) {
-          //Hard coding for Home and other pgs, local testing exception
-          return true;
-        }
-      } else if (url[l - 2] === txt) {
+        //Hard coding for Home and other pgs, local testing exception
         return true;
       }
+    } else if (url[l - 2] === txt) {
+      return true;
     }
     return false;
   };
