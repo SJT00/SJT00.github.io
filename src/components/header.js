@@ -22,6 +22,7 @@ export default function Header(currPath) {
       const url = window.location.href.split("/");
       const l = url.length;
       console.log("url: " + url + " txt: " + txt);
+      console.log(" l-2 "+url[l-2]+ " true: " + url[l - 2] === txt);
       if (
         //Null Assertions
         data &&
