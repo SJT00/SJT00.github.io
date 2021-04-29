@@ -15,13 +15,12 @@ export default function Header(currPath) {
       }
     }
   `);
-  const myTurn = (txt) => {
+  const myTurn = txt => {
     //Used to highlight current pg on navbar
     if (typeof window !== "undefined") {
       //Needed for online hosting
       const url = window.location.href.split("/");
       const l = url.length;
-      console.log(url,txt,url[l-2],url[l - 2] === txt);
       if (
         //Null Assertions
         data &&
@@ -29,19 +28,17 @@ export default function Header(currPath) {
         data.site.siteMetadata &&
         data.site.siteMetadata.siteUrl
       ) {
-        if (
-          txt === "" &&
-          (url.join("/") === data.site.siteMetadata.siteUrl ||
-            (testing && url.join("/") === "http://localhost:8000/"))
-        ) {
+        if (txt === "") {
           //Hard coding for Home and other pgs, local testing exception
-          return true;
+          return (
+            url.join("/") === data.site.siteMetadata.siteUrl ||
+            (testing && url.join("/") === "http://localhost:8000/")
+          );
+        } else {
+          return url[l - 2] === txt;
         }
-      } else{
-        return url[l - 2] === txt;
       }
     }
-    console.log("This should not be reachable");
     return false;
   };
 
