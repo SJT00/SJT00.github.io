@@ -1,10 +1,14 @@
 In The Works:
 -------------
+*Navbug
+*Token Arrows Bug
 Add links to project Imgs
 Typing Anim opto
+Segment work section
 -------------
 Current Pool:
 -------------
+Custom scrollbar
 Anim Throughout(Quick Fade-Ins)
 MLK Post
 404pg bug
