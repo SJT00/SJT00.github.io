@@ -1,14 +1,13 @@
 #work {
-  height: 60vh;
   align-items: center;
   justify-content: center;
   .Carousel-Img {
-    width: 80vw;
     max-width: 770px;
     align-items: center;
     justify-content: center;
   }
   .imgpar {
+    min-height:40vh;
     margin-top: 5px;
     .logos {
       text-align: center;

@@ -14,6 +14,10 @@ code {
   color: #a0d0e9;
   font-size: 100%;
 }
+.layoutContainer{
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -57,7 +61,8 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
+    mix-blend-mode: difference;
     text-align: center;
   }
 }
