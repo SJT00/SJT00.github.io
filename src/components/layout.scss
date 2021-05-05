@@ -7,7 +7,7 @@
 :root {
   --customblack: #1e1e1e;
   --customwhite: #f8f9fa;
-  --customgrey:#8B8C8C;
+  --customgrey: #8b8c8c;
   --navhover: #331e1e1e; /*color when nav items are hovered over*/
   --secthover: #d6d4d3; /*color when next section icon is hovered over*/
 }
@@ -15,7 +15,7 @@ code {
   color: #a0d0e9;
   font-size: 100%;
 }
-.layoutContainer{
+.layoutContainer {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 }
@@ -25,7 +25,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 600px) {
     font-size: 1rem;
   }
   color: var(--customwhite);
@@ -53,10 +53,10 @@ body {
     background: var(--secthover);
   }
   #contact {
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 600px) {
       font-size: 0.75rem;
     }
-    @media screen and (max-width: 339px){
+    @media screen and (max-width: 339px) {
       visibility: hidden;
     }
     bottom: 0;
@@ -76,12 +76,12 @@ img {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background:  var(--customblack); 
+  background: var(--customblack);
 }
 ::-webkit-scrollbar-thumb {
-  background:  var(--customgrey); 
-  border-radius:5px;
+  background: var(--customgrey);
+  border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background:  var(--secthover); 
+  background: var(--secthover);
 }

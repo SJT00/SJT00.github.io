@@ -2,15 +2,15 @@
   height: 60vh;
   align-items: center;
   justify-content: center;
-    .nav-item.nav-link{
-        color: var(--customwhite);
-        &.active{
-            color: var(--customblack);
-        }
+  .nav-item.nav-link {
+    color: var(--customwhite);
+    &.active {
+      color: var(--customblack);
     }
-    p{
-        a{
-            color:var(--customgrey);
-        }
+  }
+  p {
+    a {
+      color: var(--customgrey);
     }
+  }
 }

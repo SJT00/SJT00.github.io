@@ -391,7 +391,7 @@ export default function Work() {
             />
             <div className="imgpar">
               Tech Stack:
-              <Row xs={3} className="logos" style={{maxWidth:"250px"}}>
+              <Row xs={3} className="logos" style={{ maxWidth: "250px" }}>
                 <Col>
                   <OverlayTrigger
                     trigger={["hover", "focus"]}

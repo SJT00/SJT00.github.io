@@ -4,25 +4,21 @@ import "./personal.scss";
 export default function Personal() {
   return (
     <Row xs={1} id="personal">
-      <Col style={{ maxWidth: "800px"}}>
+      <Col style={{ maxWidth: "800px" }}>
         <Tabs>
           <Tab eventKey="home" title="Me">
             <p>
               I am an Honours Mathematics student at the University of Waterloo,
-              with experience in Computer Science.<br/>
-              
-              In terms of my niche within Computer Science, I prefer creating interactive applications,
-              whether they be websites, games, organizational tools, or just fun
-              projects to learn new technologies. In terms of hobbies, I
-              thoroughly enjoy all things history, particularly concerning the
-              eastern world.<br/>
-              
-              I am also a big fan of music, especially a mix of
-              western and eastern instruments and vocals, examples including&nbsp;
-              <a
-                href="https://en.wikipedia.org/wiki/Coldplay"
-                target="_blank"
-              >
+              with experience in Computer Science.
+              <br />
+              In terms of my niche within Computer Science, I prefer creating
+              interactive applications, whether they be websites, games,
+              organizational tools, or just fun projects to learn new
+              technologies. In terms of hobbies, I thoroughly enjoy all things
+              history, particularly concerning the eastern world.
+              <br />I am also a big fan of music, especially a mix of western
+              and eastern instruments and vocals, examples including&nbsp;
+              <a href="https://en.wikipedia.org/wiki/Coldplay" target="_blank">
                 Coldplay
               </a>
               ,&nbsp;
@@ -33,15 +29,9 @@ export default function Personal() {
                 Shafqat Amanat Ali
               </a>
               ,&nbsp;
-              <a
-                
-                href="https://en.wikipedia.org/wiki/Strings_(band)"
-              >
-                Strings
-              </a>
+              <a href="https://en.wikipedia.org/wiki/Strings_(band)">Strings</a>
               , and&nbsp;
               <a
-                
                 href="https://en.wikipedia.org/wiki/A._R._Rahman"
                 target="_blank"
               >
@@ -52,8 +42,8 @@ export default function Personal() {
           </Tab>
           <Tab eventKey="hobbies" title="Hobbies">
             N/A , please see previous tab 😊
-            <br/>
-            <br/>
+            <br />
+            <br />
             In all seriousness I will be updating this very soon
           </Tab>
         </Tabs>

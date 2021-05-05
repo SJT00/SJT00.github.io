@@ -9,7 +9,7 @@ $starcol: var(--customwhite);
   @return unquote($value);
 }
 
-@media (max-width:720px){
+@media (max-width: 720px) {
   $scrnw: 720;
   $scrnh: 480;
   $shadows-small: multiple-box-shadow(300, $scrnw, $scrnh);
@@ -78,7 +78,7 @@ $starcol: var(--customwhite);
   }
 }
 
-@media (min-width:720px) and (max-width:1280px){
+@media (min-width: 720px) and (max-width: 1280px) {
   $scrnw: 1280;
   $scrnh: 720;
   $shadows-small: multiple-box-shadow(500, $scrnw, $scrnh);
@@ -147,7 +147,7 @@ $starcol: var(--customwhite);
   }
 }
 
-@media (min-width:1280px) and (max-width: 1920px) {
+@media (min-width: 1280px) and (max-width: 1920px) {
   $scrnw: 1920;
   $scrnh: 1080;
   $shadows-small: multiple-box-shadow(700, $scrnw, $scrnh);

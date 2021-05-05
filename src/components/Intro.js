@@ -12,20 +12,21 @@ export default function Intro() {
   const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip
   const firstLoad = () => {
     //Returns true if first ever visit to pg()
-    if (sessionStorage.getItem("animPlayed") == null) {//Might change to localStorage
+    if (sessionStorage.getItem("animPlayed") == null) {
+      //Might change to localStorage
       return true;
     } else {
       return false;
     }
   };
-  const [animPlayed, setanimPlayed] = useState(true);//Bad naming should be not Anim Played
-  useEffect(() => {//Check if first visit
+  const [animPlayed, setanimPlayed] = useState(true); //Bad naming should be not Anim Played
+  useEffect(() => {
+    //Check if first visit
     setanimPlayed(firstLoad());
-  });//Hides welcometxt if return visitor
-  setTimeout(
-    ()=>{
-      sessionStorage.setItem("animPlayed", false)
-    },12000);//Store animation being played after its over
+  }); //Hides welcometxt if return visitor
+  setTimeout(() => {
+    sessionStorage.setItem("animPlayed", false);
+  }, 12000); //Store animation being played after its over
   return (
     <Row xs={1} id="intro">
       <Row id="welcometxt">
