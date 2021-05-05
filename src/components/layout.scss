@@ -7,6 +7,7 @@
 :root {
   --customblack: #1e1e1e;
   --customwhite: #f8f9fa;
+  --customgrey:#8B8C8C;
   --navhover: #331e1e1e; /*color when nav items are hovered over*/
   --secthover: #d6d4d3; /*color when next section icon is hovered over*/
 }
@@ -70,4 +71,17 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background:  var(--customblack); 
+}
+::-webkit-scrollbar-thumb {
+  background:  var(--customgrey); 
+  border-radius:5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:  var(--secthover); 
 }
