@@ -7,8 +7,6 @@ import gitImg from "../../static/Icons/github.svg";
 import linkedinImg from "../../static/Icons/linkedin.svg";
 import emailImg from "../../static/Icons/mail.svg";
 import resumeImg from "../../static/Icons/resume.svg";
-//Local testing
-import testing from "./testing.js";
 export default function Intro() {
   var iWH = 40; // Icon width and Height
   const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip
@@ -30,7 +28,7 @@ export default function Intro() {
     },12000);//Store animation being played after its over
   return (
     <Row xs={1} id="intro">
-      <Row id="welcometxt" style={{ opacity: animPlayed||testing ? "" : "0" }}>
+      <Row id="welcometxt">
         <Col>
           <h1 className="typewriter" id="l2r1">
             {"Hi"}

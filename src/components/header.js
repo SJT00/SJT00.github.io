@@ -3,9 +3,8 @@ import { Navbar, Nav } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import "./header.scss";
-//Local testing
-import testing from "./testing.js";
 export default function Header(currPath) {
+  const testing =true;
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       site {
