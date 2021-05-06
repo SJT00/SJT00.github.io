@@ -29,21 +29,19 @@ export default function Header(currPath) {
       ) {
         if (txt === "") {
           //Hard coding for Home and other pgs, local testing exception
-          console.log(url.join("/") === data.site.siteMetadata.siteUrl.concat("/") ,url.join("/"),data.site.siteMetadata.siteUrl.concat("/") );
           return (
             url.join("/") === data.site.siteMetadata.siteUrl.concat("/") ||
             (testing && url.join("/") === "http://localhost:8000/")
           );
         } else {
-          console.log(url[l - 2] === txt,url[l - 2],txt);
           return url[l - 2] === txt;
         }
       }
     }
   };
-
+  console.log(myTurn(""),myTurn("about"),myTurn("projects"))
   return (
-    <>
+    <header>
       <Helmet>
         <title>{"Saad Taj"}</title>
       </Helmet>
@@ -69,6 +67,6 @@ export default function Header(currPath) {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </>
+    </header>
   );
 }
