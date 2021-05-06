@@ -29,7 +29,7 @@ export default function Header(currPath) {
       ) {
         if (txt === "") {
           //Hard coding for Home and other pgs, local testing exception
-          console.log(url.join("/") === data.site.siteMetadata.siteUrl,url.join("/"),data.site.siteMetadata.siteUrl);
+          console.log(url.join("/") === data.site.siteMetadata.siteUrl.concat("/") ,url.join("/"),data.site.siteMetadata.siteUrl.concat("/") );
           return (
             url.join("/") === data.site.siteMetadata.siteUrl.concat("/") ||
             (testing && url.join("/") === "http://localhost:8000/")
@@ -43,7 +43,7 @@ export default function Header(currPath) {
   };
 
   return (
-    <header>
+    <>
       <Helmet>
         <title>{"Saad Taj"}</title>
       </Helmet>
@@ -69,6 +69,6 @@ export default function Header(currPath) {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </header>
+    </>
   );
 }
