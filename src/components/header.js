@@ -38,8 +38,8 @@ export default function Header(currPath) {
         }
       }
     }
+    return false;
   };
-  console.log(myTurn(""),myTurn("about"),myTurn("projects"))
   return (
     <header>
       <Helmet>
@@ -49,17 +49,17 @@ export default function Header(currPath) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className={true ? "bordered" : ""} href="/">
+            <Nav.Link className={myTurn("") ? "bordered" : ""} href="/">
               Home
             </Nav.Link>
             <Nav.Link
-              className={true ? "bordered" : ""}
+              className={myTurn("about") ? "bordered" : ""}
               href="/about"
             >
               About
             </Nav.Link>
             <Nav.Link
-              className={true ? "bordered" : ""}
+              className={myTurn("projects") ? "bordered" : ""}
               href="/projects"
             >
               Projects
