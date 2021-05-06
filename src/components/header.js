@@ -29,6 +29,7 @@ export default function Header(currPath) {
       ) {
         if (txt === "") {
           //Hard coding for Home and other pgs, local testing exception
+          console.log(url.join("/") === data.site.siteMetadata.siteUrl,url.join("/"),data.site.siteMetadata.siteUrl);
           return (
             url.join("/") === data.site.siteMetadata.siteUrl ||
             (testing && url.join("/") === "http://localhost:8000/")
@@ -38,7 +39,6 @@ export default function Header(currPath) {
         }
       }
     }
-    return false;
   };
 
   return (
