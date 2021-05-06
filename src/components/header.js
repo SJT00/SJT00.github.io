@@ -49,17 +49,17 @@ export default function Header(currPath) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link className={myTurn("") ? "bordered" : ""} href="/">
+            <Nav.Link className={true ? "bordered" : ""} href="/">
               Home
             </Nav.Link>
             <Nav.Link
-              className={myTurn("about") ? "bordered" : ""}
+              className={true ? "bordered" : ""}
               href="/about"
             >
               About
             </Nav.Link>
             <Nav.Link
-              className={myTurn("projects") ? "bordered" : ""}
+              className={true ? "bordered" : ""}
               href="/projects"
             >
               Projects
