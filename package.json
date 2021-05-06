@@ -3,7 +3,7 @@
   "private": true,
   "description": "My portfolio website",
   "version": "0.1.0",
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -13,6 +13,11 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format && git add -A"
+    }
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
@@ -35,11 +40,6 @@
     "gh-pages": "^3.1.0",
     "husky": "^6.0.0",
     "prettier": "2.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run format && git add -A"
-    }
   },
   "repository": {
     "type": "git",
