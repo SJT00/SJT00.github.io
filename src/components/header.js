@@ -35,6 +35,7 @@ export default function Header(currPath) {
             (testing && url.join("/") === "http://localhost:8000/")
           );
         } else {
+          console.log(url[l - 2] === txt,url[l - 2],txt);
           return url[l - 2] === txt;
         }
       }
