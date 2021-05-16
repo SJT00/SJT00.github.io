@@ -1,24 +1,20 @@
 In The Works:
 -------------
-*Navbug
-*Token Arrows Bug
-Add links to project Imgs
-Typing Anim opto
-Segment work section
+404pg bug
 -------------
 Current Pool:
 -------------
-Custom scrollbar
-Anim Throughout(Quick Fade-Ins)
-MLK Post
-404pg bug
 SEO integration
+MLK Post
+*Navbug
+Typing Anim opto
+Anim Throughout(Quick Fade-Ins)
 -------------
 BackBurner:
 -------------
+Segment work section
 performance contrast
 starrynight resolution scaling alternatives/performance
 Console Warnings
 Timeline Idea
 welcometxt abstraction and better sync
-Type Script??
