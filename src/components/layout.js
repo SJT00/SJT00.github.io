@@ -4,7 +4,8 @@ import PropTypes from "prop-types";
 import { Container } from "react-bootstrap";
 import Background from "../components/bkgd.js";
 
-import Header from "./header";
+import { Helmet } from "react-helmet";
+import Navigation from "./navigation";
 import "./layout.scss";
 
 // Code Excerpt from https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
@@ -23,7 +24,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <Container className="layoutContainer" fluid>
-        <Header />
+        <header>
+          <Helmet>
+            <title>{"Saad Taj"}</title>
+          </Helmet>
+        </header>
+        <Navigation />
         <Background />
         <main>{children}</main>
         <footer>

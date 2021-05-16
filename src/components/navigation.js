@@ -1,8 +1,7 @@
 import * as React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import "./header.scss";
+import "./navigation.scss";
 export default function Header(currPath) {
   const testing = true;
   const data = useStaticQuery(graphql`
@@ -41,10 +40,6 @@ export default function Header(currPath) {
     return false;
   };
   return (
-    <header>
-      <Helmet>
-        <title>{"Saad Taj"}</title>
-      </Helmet>
       <Navbar id="navbar">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -67,6 +62,5 @@ export default function Header(currPath) {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </header>
   );
 }
