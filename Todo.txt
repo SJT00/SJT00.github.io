@@ -17,4 +17,5 @@ performance contrast
 starrynight resolution scaling alternatives/performance
 Console Warnings
 Timeline Idea
+Skills Star Idea
 welcometxt abstraction and better sync
