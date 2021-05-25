@@ -5,7 +5,7 @@
     }
   }
   .navbar-nav .nav-link {
-    color: var(--customwhite);
+    color: var(--customwhite)!important;
     position: relative;
     &::after {
       content: "";
@@ -13,20 +13,20 @@
       bottom: 4px;
       width: 100%;
       height: 2px;
-      background: var(--customwhite);
+      background: var(--customwhite)!important;
       position: absolute;
       transform: scaleX(0);
       transform-origin: bottom;
       transition: transform 250ms ease-in;
     }
     &:hover {
-      color: var(--secthover);
+      color: var(--secthover)!important;
     }
     &:hover::after {
       transform: scaleX(0.8);
     }
     &.bordered {
-      border: solid 1px var(--customwhite);
+      border: solid 1px var(--customwhite)!important;
     }
   }
 }

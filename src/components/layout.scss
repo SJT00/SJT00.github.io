@@ -23,13 +23,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-family: "Poppins", sans-serif!important;
+  font-size: 18px!important;
   @media screen and (max-width: 600px) {
-    font-size: 1rem;
+    font-size: 1rem!important;
   }
-  color: var(--customwhite);
-  background-color: var(--customblack);
+  color: var(--customwhite)!important;
+  background-color: var(--customblack)!important;
   .icon {
     display: block;
     margin: auto;
