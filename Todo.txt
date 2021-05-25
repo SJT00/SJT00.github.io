@@ -1,21 +1,20 @@
 In The Works:
 -------------
-404pg bug
+SEO integration
 -------------
 Current Pool:
 -------------
-SEO integration
-MLK Post
-*Navbug
+Hobbies Post
 Typing Anim opto
 Anim Throughout(Quick Fade-Ins)
+*Navbug
 -------------
 BackBurner:
 -------------
 Segment work section
-performance contrast
-starrynight resolution scaling alternatives/performance
-Console Warnings
-Timeline Idea
+Performance contrast
+Starrynight resolution scaling alternatives/performance
 Skills Star Idea
-welcometxt abstraction and better sync
+Timeline Idea
+Welcometxt abstraction and better sync
+Console Warnings
