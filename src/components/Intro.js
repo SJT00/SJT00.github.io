@@ -49,7 +49,10 @@ export default function Intro() {
                 src="/Headshot.jpg"
                 alt="Great Picture of Me"
               />
-              <Row id="links" style={{ marginBottom: "1ex" }}>
+              <Row
+                id="links"
+                style={{ paddingTop: "1ex", marginBottom: "1ex" }}
+              >
                 <Col>
                   <OverlayTrigger
                     trigger={["hover", "focus"]}
