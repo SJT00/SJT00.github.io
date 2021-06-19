@@ -4,6 +4,7 @@ SEO integration
 -------------
 Current Pool:
 -------------
+Skills Star Idea
 Hobbies Post
 Typing Anim opto
 Anim Throughout(Quick Fade-Ins)
@@ -13,7 +14,6 @@ BackBurner:
 Segment work section
 Performance contrast
 Starrynight resolution scaling alternatives/performance
-Skills Star Idea
 Timeline Idea
 Welcometxt abstraction and better sync
 Console Warnings
