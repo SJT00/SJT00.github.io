@@ -1,9 +1,11 @@
-import * as React from "react";
+import React, { useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { useStaticQuery, graphql } from "gatsby";
 import "./navigation.scss";
 export default function Header(currPath) {
   const testing = true;
+  const Tabs = ["home", "about", "projects"];//lowercase because of reading lowercase url
+  const [curTab, setTab] = useState(-1);
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       site {
@@ -13,7 +15,7 @@ export default function Header(currPath) {
       }
     }
   `);
-  const myTurn = txt => {
+  React.useEffect(() => {
     //Used to highlight current pg on navbar
     if (typeof window !== "undefined") {
       //Needed for online hosting
@@ -26,41 +28,40 @@ export default function Header(currPath) {
         data.site.siteMetadata &&
         data.site.siteMetadata.siteUrl
       ) {
-        if (txt === "") {
+        if (
+          url.join("/") === data.site.siteMetadata.siteUrl.concat("/") ||
+          (testing && url.join("/") === "http://localhost:8000/")
+        ) {
           //Hard coding for Home and other pgs, local testing exception
-          return (
-            url.join("/") === data.site.siteMetadata.siteUrl.concat("/") ||
-            (testing && url.join("/") === "http://localhost:8000/")
-          );
+          setTab(0);
         } else {
-          return url[l - 2] === txt;
+          setTab(Tabs.indexOf(url[l - 2]));
         }
       }
     }
-    return false;
-  };
+  }, []);
   return (
-      <Navbar id="navbar">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link className={myTurn("") ? "bordered" : ""} href="/">
-              Home
-            </Nav.Link>
-            <Nav.Link
-              className={myTurn("about") ? "bordered" : ""}
-              href="/about"
-            >
-              About
-            </Nav.Link>
-            <Nav.Link
-              className={myTurn("projects") ? "bordered" : ""}
-              href="/projects"
-            >
-              Projects
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+    <Navbar id="navbar">
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Link className={curTab === 0 ? "bordered" : ""} href="/">
+            Home
+          </Nav.Link>
+          <Nav.Link
+            className={curTab === 1 ? "bordered" : ""}
+            href="/about"
+          >
+            About
+          </Nav.Link>
+          <Nav.Link
+            className={curTab === 2 ? "bordered" : ""}
+            href="/projects"
+          >
+            Projects
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
