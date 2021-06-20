@@ -49,7 +49,7 @@ export default function Work() {
         {index === 0 && (
           <>
             <h3 style={{ textAlign: "center" }}>Budgie</h3>
-            <a href="https://github.com/SJT00/budgie" target="_blank">
+            <a href="https://github.com/SJT00/budgie" target="_blank" rel="noreferrer">
             <StaticImage
               className="d-block mx-auto Carousel-Img"
               src="../../static/Caraousel/Budgie.png"
@@ -190,7 +190,7 @@ export default function Work() {
         {index === 1 && (
           <>
             <h3 style={{ textAlign: "center" }}>Token</h3>
-            <a href="https://github.com/SJT00/Token" target="_blank">
+            <a href="https://github.com/SJT00/Token" target="_blank" rel="noreferrer">
             <StaticImage
               className="d-block mx-auto Carousel-Img"
               src="../../static/Caraousel/Token.png"
@@ -316,13 +316,13 @@ export default function Work() {
         {index === 2 && (
           <>
             <h3 style={{ textAlign: "center" }}>Space Invaders</h3>
-            <a href="https://github.com/SJT00/SpaceInvaders" target="_blank"></a>
+            <a href="https://github.com/SJT00/SpaceInvaders" target="_blank" rel="noreferrer">
             <StaticImage
               className="d-block w-75 mx-auto Carousel-Img"
               src="../../static/Caraousel/S_invaders.png"
               layout="constrained"
               alt="Third slide"
-            />
+            /></a>
             <div className="imgpar">
               Tech Stack:
               <Row xs={3} className="logos">
