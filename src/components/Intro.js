@@ -47,7 +47,7 @@ export default function Intro() {
                 height="200px"
                 width="200px"
                 src="/Headshot.jpg"
-                alt="Great Picture of Me"
+                alt="Great Pic of Me"
               />
               <Row
                 id="links"
