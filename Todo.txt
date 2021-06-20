@@ -4,6 +4,7 @@ SEO integration
 -------------
 Current Pool:
 -------------
+Setup Github Actions, Fix Commit Hooks
 Typing Anim opto
 Hobbies Post
 Anim Throughout(Quick Fade-Ins)
