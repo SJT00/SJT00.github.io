@@ -58,7 +58,7 @@ export default function RadChart() {
     });
   }
   return (
-    <RadarChart outerRadius={90} width={width} height={250} data={data}>
+    <RadarChart outerRadius={90} width={width? width:750} height={250} data={data}>
       <PolarGrid />
       <PolarAngleAxis dataKey="subject" tick={{ dy: 4 }} />
       {/* Ticks adjusted vertically by 4px down */}
