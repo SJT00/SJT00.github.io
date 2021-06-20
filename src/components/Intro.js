@@ -59,7 +59,11 @@ export default function Intro() {
                     placement="left"
                     overlay={popover("My GitHub")}
                   >
-                    <a href="https://github.com/SJT00" target="_blank">
+                    <a
+                      href="https://github.com/SJT00"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src={gitImg}
                         height={iWH}
@@ -79,6 +83,7 @@ export default function Intro() {
                     <a
                       href="https://www.linkedin.com/in/saad-taj-b79024185"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img
                         src={linkedinImg}
@@ -113,7 +118,11 @@ export default function Intro() {
                     placement="right"
                     overlay={popover("My Resume")}
                   >
-                    <a href=".\assets\Resume.pdf" target="_blank">
+                    <a
+                      href=".\assets\Resume.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src={resumeImg}
                         height={iWH}
