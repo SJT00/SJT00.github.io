@@ -48,13 +48,15 @@ const data = [
 ];
 
 export default function RadChart() {
-  let wv = window.innerWidth;
-  const [width, setWidth] = useState(wv < 830 ? wv - 30 : 750); //Subtract margins, natural width of 750 to 250 ratio
-  window.addEventListener("resize", () => {
-    // React to resizing
-    wv = window.innerWidth;
-    setWidth(wv < 830 ? wv - 30 : 750);
-  });
+  if (typeof window !== "undefined") {
+    let wv = window.innerWidth;
+    const [width, setWidth] = useState(wv < 830 ? wv - 30 : 750); //Subtract margins, natural width of 750 to 250 ratio
+    window.addEventListener("resize", () => {
+      // React to resizing
+      wv = window.innerWidth;
+      setWidth(wv < 830 ? wv - 30 : 750);
+    });
+  }
   return (
     <RadarChart outerRadius={90} width={width} height={250} data={data}>
       <PolarGrid />
