@@ -49,13 +49,18 @@ export default function Work() {
         {index === 0 && (
           <>
             <h3 style={{ textAlign: "center" }}>Budgie</h3>
-            <a href="https://github.com/SJT00/budgie" target="_blank" rel="noreferrer">
-            <StaticImage
-              className="d-block mx-auto Carousel-Img"
-              src="../../static/Caraousel/Budgie.png"
-              layout="constrained"
-              alt="First slide"
-            /></a>
+            <a
+              href="https://github.com/SJT00/budgie"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <StaticImage
+                className="d-block mx-auto Carousel-Img"
+                src="../../static/Caraousel/Budgie.png"
+                layout="constrained"
+                alt="First slide"
+              />
+            </a>
             <div className="imgpar">
               Tech Stack:
               <Row xs={6} sm={8} className="logos">
@@ -190,13 +195,18 @@ export default function Work() {
         {index === 1 && (
           <>
             <h3 style={{ textAlign: "center" }}>Token</h3>
-            <a href="https://github.com/SJT00/Token" target="_blank" rel="noreferrer">
-            <StaticImage
-              className="d-block mx-auto Carousel-Img"
-              src="../../static/Caraousel/Token.png"
-              layout="constrained"
-              alt="Second slide"
-            /></a>
+            <a
+              href="https://github.com/SJT00/Token"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <StaticImage
+                className="d-block mx-auto Carousel-Img"
+                src="../../static/Caraousel/Token.png"
+                layout="constrained"
+                alt="Second slide"
+              />
+            </a>
             <div className="imgpar">
               Tech Stack:
               <Row xs={5} className="logos">
@@ -316,13 +326,18 @@ export default function Work() {
         {index === 2 && (
           <>
             <h3 style={{ textAlign: "center" }}>Space Invaders</h3>
-            <a href="https://github.com/SJT00/SpaceInvaders" target="_blank" rel="noreferrer">
-            <StaticImage
-              className="d-block w-75 mx-auto Carousel-Img"
-              src="../../static/Caraousel/S_invaders.png"
-              layout="constrained"
-              alt="Third slide"
-            /></a>
+            <a
+              href="https://github.com/SJT00/SpaceInvaders"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <StaticImage
+                className="d-block w-75 mx-auto Carousel-Img"
+                src="../../static/Caraousel/S_invaders.png"
+                layout="constrained"
+                alt="Third slide"
+              />
+            </a>
             <div className="imgpar">
               Tech Stack:
               <Row xs={3} className="logos">
@@ -386,13 +401,18 @@ export default function Work() {
         {index === 3 && (
           <>
             <h3 style={{ textAlign: "center" }}>Flash Fighting Game</h3>
-            <a href="https://www.newgrounds.com/portal/view/651835" target="_blank">
-            <StaticImage
-              className="d-block w-75 mx-auto Carousel-Img"
-              src="../../static/Caraousel/N_Battle.png"
-              layout="constrained"
-              alt="Third slide"
-            /></a>
+            <a
+              href="https://www.newgrounds.com/portal/view/651835"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <StaticImage
+                className="d-block w-75 mx-auto Carousel-Img"
+                src="../../static/Caraousel/N_Battle.png"
+                layout="constrained"
+                alt="Third slide"
+              />
+            </a>
             <div className="imgpar">
               Tech Stack:
               <Row xs={3} className="logos" style={{ maxWidth: "250px" }}>
