@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row, Tabs, Tab } from "react-bootstrap";
+import Chart from "./chart";
 import "./personal.scss";
 export default function Personal() {
   return (
@@ -7,6 +8,7 @@ export default function Personal() {
       <Col style={{ maxWidth: "800px" }}>
         <Tabs>
           <Tab eventKey="home" title="Me">
+            <Chart />
             <p>
               I am an Honours Mathematics student at the University of Waterloo,
               with experience in Computer Science.
@@ -18,22 +20,33 @@ export default function Personal() {
               history, particularly concerning the eastern world.
               <br />I am also a big fan of music, especially a mix of western
               and eastern instruments and vocals, examples including&nbsp;
-              <a href="https://en.wikipedia.org/wiki/Coldplay" target="_blank">
+              <a
+                href="https://en.wikipedia.org/wiki/Coldplay"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Coldplay
               </a>
               ,&nbsp;
               <a
                 href="https://en.wikipedia.org/wiki/Shafqat_Amanat_Ali"
                 target="_blank"
+                rel="noreferrer"
               >
                 Shafqat Amanat Ali
               </a>
               ,&nbsp;
-              <a href="https://en.wikipedia.org/wiki/Strings_(band)">Strings</a>
+              <a
+                href="https://en.wikipedia.org/wiki/Strings_(band)"
+                rel="noreferrer"
+              >
+                Strings
+              </a>
               , and&nbsp;
               <a
                 href="https://en.wikipedia.org/wiki/A._R._Rahman"
                 target="_blank"
+                rel="noreferrer"
               >
                 A.R.Rahman
               </a>
