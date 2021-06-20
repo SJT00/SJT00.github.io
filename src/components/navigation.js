@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { useStaticQuery, graphql } from "gatsby";
 import "./navigation.scss";
-export default function Header(currPath) {
+export default function Header() {
   const testing = true;
   const Tabs = ["home", "about", "projects"];//lowercase because of reading lowercase url
   const [curTab, setTab] = useState(-1);
