@@ -31,6 +31,11 @@ const data = [
     fullMark: 100,
   },
   {
+    subject: "Games",
+    A: 90,
+    fullMark: 100,
+  },
+  {
     subject: "Movies",
     A: 85,
     fullMark: 100,
