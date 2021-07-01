@@ -36,7 +36,7 @@ const data = [
     fullMark: 100,
   },
   {
-    subject: "Movies",
+    subject: "Film",
     A: 85,
     fullMark: 100,
   },

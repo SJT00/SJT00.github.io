@@ -5,13 +5,13 @@ SEO integration
 Current Pool:
 -------------
 Setup Github Actions, Fix Commit Hooks
+Figure out pip view
 Typing Anim opto
-Hobbies Post
 Anim Throughout(Quick Fade-Ins)
 -------------
 BackBurner:
 -------------
-Segment work & about section
+Better structure for work & personal section
 Performance contrast
 Starrynight resolution scaling alternatives/performance
 Timeline Idea

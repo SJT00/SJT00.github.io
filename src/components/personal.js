@@ -1,6 +1,10 @@
 import React from "react";
 import { Col, Row, Tabs, Tab } from "react-bootstrap";
 import Chart from "./chart";
+import HistoryContent from "./tabs/history";
+import ReadingContent from "./tabs/reading";
+import MediaContent from "./tabs/media";
+import TechnfitnessContent from "./tabs/technfitness";
 import "./personal.scss";
 export default function Personal() {
   return (
@@ -9,55 +13,34 @@ export default function Personal() {
         <Tabs>
           <Tab eventKey="home" title="Me">
             <Chart />
+            <br />
             <p>
               I am an Honours Mathematics student at the University of Waterloo,
               with experience in Computer Science.
               <br />
-              In terms of my niche within Computer Science, I prefer creating
-              interactive applications, whether they be websites, games,
-              organizational tools, or just fun projects to learn new
-              technologies. In terms of hobbies, I thoroughly enjoy all things
-              history, particularly concerning the eastern world.
-              <br />I am also a big fan of music, especially a mix of western
-              and eastern instruments and vocals, examples including&nbsp;
-              <a
-                href="https://en.wikipedia.org/wiki/Coldplay"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Coldplay
-              </a>
-              ,&nbsp;
-              <a
-                href="https://en.wikipedia.org/wiki/Shafqat_Amanat_Ali"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Shafqat Amanat Ali
-              </a>
-              ,&nbsp;
-              <a
-                href="https://en.wikipedia.org/wiki/Strings_(band)"
-                rel="noreferrer"
-              >
-                Strings
-              </a>
-              , and&nbsp;
-              <a
-                href="https://en.wikipedia.org/wiki/A._R._Rahman"
-                target="_blank"
-                rel="noreferrer"
-              >
-                A.R.Rahman
-              </a>
-              .
+              <br />
+              I love creating interactive applications, whether they be
+              websites, games, organizational tools, or just fun projects to
+              learn new technologies.
+              <br />
+              See more about my hobbies in the above tabs, but as a primer...
+              <br />
+              <br />
+              I'm a history buff, tech tinkerer, fitness devotee, music addict,
+              struggling reader, story telling enthusiast, and horrible cook.
             </p>
           </Tab>
-          <Tab eventKey="hobbies" title="Hobbies">
-            N/A , please see previous tab 😊
-            <br />
-            <br />
-            In all seriousness I will be updating this very soon
+          <Tab eventKey="reading" title="Reading">
+            <ReadingContent />
+          </Tab>
+          <Tab eventKey="history" title="History">
+            <HistoryContent />
+          </Tab>
+          <Tab eventKey="media" title="Media">
+            <MediaContent />
+          </Tab>
+          <Tab eventKey="technfitness" title="Tech & Fitness">
+            <TechnfitnessContent />
           </Tab>
         </Tabs>
       </Col>
