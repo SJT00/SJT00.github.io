@@ -1,17 +1,18 @@
 In The Works:
 -------------
+Setup Google Analytics
+Setup Github Actions, Fix Commit Hooks
 SEO integration
 -------------
 Current Pool:
 -------------
-Setup Github Actions, Fix Commit Hooks
-Figure out pip view
 Typing Anim opto
 Anim Throughout(Quick Fade-Ins)
+Figure out pip view
+Better structure for work & personal section
 -------------
 BackBurner:
 -------------
-Better structure for work & personal section
 Performance contrast
 Starrynight resolution scaling alternatives/performance
 Timeline Idea
