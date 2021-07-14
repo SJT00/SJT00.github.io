@@ -18,7 +18,7 @@ jobs:
           node-version: 14.x
 
       - name: Install NPM packages
-        run: npm ci
+        run: npm i
 
       - name: Gatsby-pgs
         uses: enriikke/gatsby-gh-pages-action@v2
