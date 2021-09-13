@@ -27,7 +27,11 @@ export default function media() {
         Nas
       </a>
       ,&nbsp;
-      <a href="https://en.wikipedia.org/wiki/Strings_(band)" rel="noreferrer">
+      <a
+        href="https://en.wikipedia.org/wiki/Strings_(band)"
+        target="_blank"
+        rel="noreferrer"
+      >
         Strings
       </a>
       , and&nbsp;
