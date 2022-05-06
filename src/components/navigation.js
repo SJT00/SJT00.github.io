@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import "./navigation.scss";
 export default function Header() {
   const testing = true;
-  const Tabs = ["home", "about", "projects"];//lowercase because of reading lowercase url
+  const Tabs = ["home", "about", "projects"]; //lowercase because of reading lowercase url
   const [curTab, setTab] = useState(-1);
   const data = useStaticQuery(graphql`
     query HeaderQuery {
@@ -48,16 +48,10 @@ export default function Header() {
           <Nav.Link className={curTab === 0 ? "bordered" : ""} href="/">
             Home
           </Nav.Link>
-          <Nav.Link
-            className={curTab === 1 ? "bordered" : ""}
-            href="/about"
-          >
+          <Nav.Link className={curTab === 1 ? "bordered" : ""} href="/about">
             About
           </Nav.Link>
-          <Nav.Link
-            className={curTab === 2 ? "bordered" : ""}
-            href="/projects"
-          >
+          <Nav.Link className={curTab === 2 ? "bordered" : ""} href="/projects">
             Projects
           </Nav.Link>
         </Nav>

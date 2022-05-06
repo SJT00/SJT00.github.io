@@ -12,8 +12,8 @@
   --secthover: #d6d4d3; /*color when next section icon is hovered over*/
 }
 code {
-  color: #a0d0e9!important;
-  font-size: 100%!important;
+  color: #a0d0e9 !important;
+  font-size: 100% !important;
 }
 .layoutContainer {
   height: 100vh;
@@ -23,16 +23,16 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", sans-serif!important;
-  font-size: 18px!important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 18px !important;
   @media screen and (max-width: 600px) {
-    font-size: 1rem!important;
+    font-size: 1rem !important;
     #contact {
       display: none;
     }
   }
-  color: var(--customwhite)!important;
-  background-color: var(--customblack)!important;
+  color: var(--customwhite) !important;
+  background-color: var(--customblack) !important;
   .icon {
     display: block;
     margin: auto;

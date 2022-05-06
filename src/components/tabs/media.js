@@ -5,7 +5,8 @@ export default function media() {
     <p>
       <h4>Music:</h4>
       Having a low attention span but an appreciation for poetry, I gravitate
-      towards Rap, and modern renditions of Indian poetry, mostly Sufi, Punjabi and folk.
+      towards Rap, and modern renditions of Indian poetry, mostly Sufi, Punjabi
+      and folk.
       <br />
       Generally listening to the former during workouts and the latter at all
       other times <span>😊</span> .

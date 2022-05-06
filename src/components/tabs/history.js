@@ -19,15 +19,15 @@ export default function history() {
       Age of Imperialism, and Decolonization.
       <br />
       <br />
-      Currently, I'm preoccupied with the early modern period, the beginnings
-      of true globalization in this period, the fundamental foundations of the
+      Currently, I'm preoccupied with the early modern period, the beginnings of
+      true globalization in this period, the fundamental foundations of the
       modern world laid out (particularly regarding World-systems theory), and
       the infancy of current archetypes.
       <br />
       <br />
-      In the next few years, I hope to tackle the Victorian age, a much
-      more recognizable world, which's consequences are much more easily
-      translatable to current events.
+      In the next few years, I hope to tackle the Victorian age, a much more
+      recognizable world, which's consequences are much more easily translatable
+      to current events.
     </p>
   );
 }
