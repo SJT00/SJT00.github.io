@@ -39,9 +39,9 @@ export default function Personal() {
           <Tab eventKey="media" title="Media">
             <MediaContent />
           </Tab>
-          <Tab eventKey="technfitness" title="Tech & Fitness">
+          {/* <Tab eventKey="technfitness" title="Tech & Fitness">
             <TechnfitnessContent />
-          </Tab>
+          </Tab> */}
         </Tabs>
       </Col>
       {/* Timeline Here */}
