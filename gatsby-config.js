@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/gh-pages",
   siteMetadata: {
     title: `Saad Taj`,
     siteUrl: "https://sjt00.github.io/",
