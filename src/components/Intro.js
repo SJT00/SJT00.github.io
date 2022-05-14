@@ -119,7 +119,7 @@ export default function Intro() {
                     overlay={popover("My Resume")}
                   >
                     <a
-                      href=".\assets\Resume.pdf"
+                      href=".\Resume.pdf"
                       target="_blank"
                       rel="noreferrer"
                     >
