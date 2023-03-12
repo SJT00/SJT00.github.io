@@ -25,7 +25,6 @@ jobs:
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
-          gatsby-args: --prefix-paths
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
