@@ -118,11 +118,7 @@ export default function Intro() {
                     placement="right"
                     overlay={popover("My Resume")}
                   >
-                    <a
-                      href=".\Resume.pdf"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <a href=".\Resume.pdf" target="_blank" rel="noreferrer">
                       <img
                         src={resumeImg}
                         height={iWH}
