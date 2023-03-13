@@ -28,7 +28,6 @@
     "gatsby-plugin-google-gtag": "^5.7.0",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
-    "gatsby-plugin-react-helmet": "^6.7.0",
     "gatsby-plugin-sass": "^6.7.0",
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-react-router-scroll": "^6.7.0",
@@ -38,7 +37,6 @@
     "react": "^18.2.0",
     "react-bootstrap": "^1.6.6",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
     "recharts": "^2.4.3",
     "sass": "^1.59.2"
   },

@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 
 import { Container } from "react-bootstrap";
 import Background from "../components/bkgd.js";
-
-import { Helmet } from "react-helmet";
 import Navigation from "./navigation";
 import "./layout.scss";
 
@@ -20,15 +18,13 @@ if (typeof window !== "undefined") {
   });
 }
 
+export const Head = () => <title>{"Saad Taj"}</title>;
+
 const Layout = ({ children }) => {
   return (
     <>
       <Container className="layoutContainer" fluid>
-        <header>
-          <Helmet>
-            <title>{"Saad Taj"}</title>
-          </Helmet>
-        </header>
+        <Head />
         <Navigation />
         <Background />
         <main>{children}</main>
