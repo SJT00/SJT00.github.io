@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { useStaticQuery, graphql } from "gatsby";
 import "./navigation.scss";
 
 export default function Header() {
   const testing = true;
-  const Tabs = ["home", "about", "projects"]; //lowercase because of reading lowercase url
+  const Tabs = useMemo(() => ["home", "about", "projects"], []); //lowercase because of reading lowercase url
   const [curTab, setTab] = useState(-1);
   const data = useStaticQuery(graphql`
     query HeaderQuery {
@@ -40,7 +40,7 @@ export default function Header() {
         }
       }
     }
-  }, []);
+  }, [data,testing,Tabs]);
   return (
     <Navbar id="navbar">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

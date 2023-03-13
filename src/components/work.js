@@ -19,6 +19,12 @@ export default function Work() {
   const [index, setIndex] = useState(0);
   const total = 4;
   const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip
+  const goLeft = () => {
+    if (index > 0) setIndex(index - 1);
+  };
+  const goRight = () => {
+    if (index < total - 1) setIndex(index + 1);
+  };
   return (
     <Row xs={1} id="work">
       <Col style={{ maxWidth: "800px" }}>
@@ -31,20 +37,14 @@ export default function Work() {
         <span
           className="chevron left"
           style={{ opacity: index === 0 ? "50%" : "100%" }}
-          onClick={() => {
-            if (index > 0) {
-              setIndex(index - 1);
-            }
-          }}
+          onClick={goLeft}
+          onKeyDown={goLeft} // avoids accessibility warning
         />
         <span
           className="chevron right"
           style={{ opacity: index === total - 1 ? "50%" : "100%" }}
-          onClick={() => {
-            if (index < total - 1) {
-              setIndex(index + 1);
-            }
-          }}
+          onClick={goRight}
+          onKeyDown={goRight}
         />
         {index === 0 && (
           <>

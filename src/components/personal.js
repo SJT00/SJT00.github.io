@@ -4,7 +4,6 @@ import Chart from "./chart";
 import HistoryContent from "./tabs/history";
 import ReadingContent from "./tabs/reading";
 import MediaContent from "./tabs/media";
-import TechnfitnessContent from "./tabs/technfitness";
 import "./personal.scss";
 
 export default function Personal() {
