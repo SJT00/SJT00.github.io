@@ -6,6 +6,7 @@ import ReadingContent from "./tabs/reading";
 import MediaContent from "./tabs/media";
 import TechnfitnessContent from "./tabs/technfitness";
 import "./personal.scss";
+
 export default function Personal() {
   return (
     <Row xs={1} id="personal">

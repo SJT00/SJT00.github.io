@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "static/Logo.png",
+        icon: "src/images/Logo.png",
         name: `GatsbyJS`,
         short_name: `GatsbyJS`,
         start_url: `/`,

@@ -3,10 +3,10 @@ import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 import "./typewriter.scss";
 import "./intro.scss";
 //Imported Imgs
-import gitImg from "../../static/Icons/github.svg";
-import linkedinImg from "../../static/Icons/linkedin.svg";
-import emailImg from "../../static/Icons/mail.svg";
-import resumeImg from "../../static/Icons/resume.svg";
+import gitImg from "../images/Icons/github.svg";
+import linkedinImg from "../images/Icons/linkedin.svg";
+import emailImg from "../images/Icons/mail.svg";
+import resumeImg from "../images/Icons/resume.svg";
 export default function Intro() {
   var iWH = 40; // Icon width and Height
   const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip

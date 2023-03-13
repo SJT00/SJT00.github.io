@@ -3,17 +3,17 @@ import { OverlayTrigger, Tooltip, Col, Row } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 import "./work.scss";
 //Imported Imgs
-import mongoImg from "../../static/Icons/Languages/mongodb.svg";
-import expressImg from "../../static/Icons/Languages/expressjs.png";
-import reactImg from "../../static/Icons/Languages/react.svg";
-import nodeImg from "../../static/Icons/Languages/nodejs.svg";
-import htmlImg from "../../static/Icons/Languages/html5.svg";
-import cssImg from "../../static/Icons/Languages/css3.svg";
-import jscriptImg from "../../static/Icons/Languages/Jscript.svg";
-import gitImg from "../../static/Icons/Languages/git.svg";
-import pythonImg from "../../static/Icons/Languages/python.svg";
-import pygameImg from "../../static/Icons/Languages/pygame.gif";
-import ascriptImg from "../../static/Icons/Languages/ascript.png";
+import mongoImg from "../images/Icons/Languages/mongodb.svg";
+import expressImg from "../images/Icons/Languages/expressjs.png";
+import reactImg from "../images/Icons/Languages/react.svg";
+import nodeImg from "../images/Icons/Languages/nodejs.svg";
+import htmlImg from "../images/Icons/Languages/html5.svg";
+import cssImg from "../images/Icons/Languages/css3.svg";
+import jscriptImg from "../images/Icons/Languages/Jscript.svg";
+import gitImg from "../images/Icons/Languages/git.svg";
+import pythonImg from "../images/Icons/Languages/python.svg";
+import pygameImg from "../images/Icons/Languages/pygame.gif";
+import ascriptImg from "../images/Icons/Languages/ascript.png";
 
 export default function Work() {
   const [index, setIndex] = useState(0);
@@ -56,7 +56,7 @@ export default function Work() {
             >
               <StaticImage
                 className="d-block mx-auto Carousel-Img"
-                src="../../static/Caraousel/Budgie.png"
+                src="../images/Caraousel/Budgie.png"
                 layout="constrained"
                 alt="First slide"
               />
@@ -202,7 +202,7 @@ export default function Work() {
             >
               <StaticImage
                 className="d-block mx-auto Carousel-Img"
-                src="../../static/Caraousel/Token.png"
+                src="../images/Caraousel/Token.png"
                 layout="constrained"
                 alt="Second slide"
               />
@@ -333,7 +333,7 @@ export default function Work() {
             >
               <StaticImage
                 className="d-block w-75 mx-auto Carousel-Img"
-                src="../../static/Caraousel/S_invaders.png"
+                src="../images/Caraousel/S_invaders.png"
                 layout="constrained"
                 alt="Third slide"
               />
@@ -408,7 +408,7 @@ export default function Work() {
             >
               <StaticImage
                 className="d-block w-75 mx-auto Carousel-Img"
-                src="../../static/Caraousel/N_Battle.png"
+                src="../images/Caraousel/N_Battle.png"
                 layout="constrained"
                 alt="Third slide"
               />
