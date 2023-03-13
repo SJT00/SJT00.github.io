@@ -67,10 +67,7 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Debug
-        env:
-          GATSBY_LOGGER: "verbose"
-          NODE_OPTIONS: "--inspect-brk"
-          run: echo 'Debugging information' && sleep 999999
+        run: echo 'Debugging information' && sleep 999999
       - name: Build with Gatsby
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
