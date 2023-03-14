@@ -148,7 +148,7 @@ export default function Intro() {
                 <br />
                 Interested in:
                 <br />
-                <code className="typewriter" id="code">
+                <code>
                   ["Web", "App", "Game", "Mobile"]
                   <br />
                   .Development();
