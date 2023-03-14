@@ -110,7 +110,7 @@ export default function Intro() {
                     placement="bottom"
                     overlay={popover("My Email")}
                   >
-                    <a href="mailto:sjahanze@uwaterloo.ca">
+                    <a href="mailto:saadtaj96@gmail.com">
                       <img
                         src={emailImg}
                         height={iWH}

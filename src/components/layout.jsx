@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
         <Background />
         <main>{children}</main>
         <footer>
-          <p id="contact">Contact me via: sjahanze@uwaterloo.ca</p>
+          <p id="contact">Contact me via: saadtaj96@gmail.com</p>
         </footer>
       </Container>
     </>
