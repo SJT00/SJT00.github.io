@@ -1,16 +1,12 @@
 In The Works:
 -------------
-Star Display Bug
+Better structure for work & personal section
 -------------
 Backlog:
 -------------
+Starrynight resolution scaling alternatives/performance
 Figure out pip view
-Better structure for work & personal section
 -------------
 BackBurner:
 -------------
-Performance contrast
-Starrynight resolution scaling alternatives/performance
 Timeline Idea
-Welcometxt abstraction and better sync
-Console Warnings
