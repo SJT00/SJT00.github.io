@@ -1,6 +1,5 @@
 In The Works:
 -------------
-SEO integration
 Star Display Bug
 -------------
 Backlog:

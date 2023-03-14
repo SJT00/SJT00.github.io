@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Saad Taj`,
     siteUrl: "https://sjt00.github.io/",
-    description: `Software Developer, Frontend Designer and Honours Mathematics Student`,
+    image: `/Logo.png`,
+    description: `Software Developer and Honours Mathematics Graduate`,
     author: `SJT00`,
   },
   plugins: [

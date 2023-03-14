@@ -2,7 +2,8 @@ import * as React from "react";
 import PropTypes from "prop-types";
 
 import { Container } from "react-bootstrap";
-import Background from "../components/bkgd.js";
+import Background from "./bkgd.jsx";
+import {Seo} from "../components/seo.jsx";
 import Navigation from "./navigation";
 import "./layout.scss";
 
@@ -18,13 +19,13 @@ if (typeof window !== "undefined") {
   });
 }
 
-export const Head = () => <title>{"Saad Taj"}</title>;
+export const Head = () => <Seo/>;
 
 const Layout = ({ children }) => {
   return (
     <>
+    <Head />
       <Container className="layoutContainer" fluid>
-        <Head />
         <Navigation />
         <Background />
         <main>{children}</main>

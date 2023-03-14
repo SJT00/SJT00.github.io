@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import Layout from "../components/layout.js";
+import Layout from "../components/layout.jsx";
 
 export default function NotFound() {
   //Temp layout seems to bug out other pages
