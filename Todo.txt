@@ -1,15 +1,10 @@
 In The Works:
 -------------
-Setup Google Analytics
-Setup Github Actions, Fix Commit Hooks
 SEO integration
-External Link Bug
 Star Display Bug
 -------------
-Current Pool:
+Backlog:
 -------------
-Typing Anim opto
-Anim Throughout(Quick Fade-Ins)
 Figure out pip view
 Better structure for work & personal section
 -------------
