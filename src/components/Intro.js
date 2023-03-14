@@ -18,7 +18,7 @@ export default function Intro() {
             {"Hi"}
           </h1>
           <h1 className="typewriter" dir="rtl" id="r2l">
-            {"سالام"}
+            {"سلام"}
           </h1>
           <h1 className="typewriter" id="l2r2">
             {"你好"}
