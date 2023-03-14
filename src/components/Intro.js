@@ -1,28 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
-import "./typewriter.scss";
+import Typewriter from "typewriter-effect";
 import "./intro.scss";
 //Imported Imgs
 import gitImg from "../images/Icons/github.svg";
 import linkedinImg from "../images/Icons/linkedin.svg";
 import emailImg from "../images/Icons/mail.svg";
 import resumeImg from "../images/Icons/resume.svg";
+import headShot from "../images/Headshot.jpg";
 export default function Intro() {
   var iWH = 40; // Icon width and Height
+  const [isVisible, setVisible] = useState(true);
   const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip
   return (
     <Row xs={1} id="intro">
-      <Row id="welcometxt">
-        <Col>
-          <h1 className="typewriter" id="l2r1">
-            {"Hi"}
-          </h1>
-          <h1 className="typewriter" dir="rtl" id="r2l">
-            {"سلام"}
-          </h1>
-          <h1 className="typewriter" id="l2r2">
-            {"你好"}
-          </h1>
+      <Row>
+        <Col className="welcometxt">
+            {isVisible && <Typewriter
+              onInit={typewriter => {
+                typewriter
+                  .typeString("<h1>Hi<h1>")
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .typeString("<h1>سلام<h1>")
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .typeString("<h1>你好<h1>")
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .callFunction(() => {setTimeout(2500,setVisible(false))})
+                  .start();
+              }}
+            />}
         </Col>
       </Row>
       <Row>
@@ -46,7 +55,7 @@ export default function Intro() {
                 id="headshot"
                 height="200px"
                 width="200px"
-                src="/Headshot.jpg"
+                src={headShot}
                 alt="Great Pic of Me"
               />
               <Row

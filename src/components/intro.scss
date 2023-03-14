@@ -18,6 +18,18 @@
       height: 180px;
     }
   }
+
+  .welcometxt {
+    min-height: 4rem;
+  }
+
+  .Typewriter__wrapper {
+    display: inline-block;
+  }
+ 
+  .Typewriter__cursor{
+    font-size: xx-large;
+  }
   #headshot {
     display: block;
     margin: auto;
