@@ -3,10 +3,8 @@ import { Row, Col } from "react-bootstrap";
 import Layout from "../components/layout.jsx";
 
 export default function NotFound() {
-  //Temp layout seems to bug out other pages
   return (
     <Layout>
-      {/* <Container fluid style={{ height: "100vh" }}> */}
       <Row
         style={{
           height: "60vh",
@@ -23,7 +21,6 @@ export default function NotFound() {
           </h3>
         </Col>
       </Row>
-      {/* </Container> */}
     </Layout>
   );
 }

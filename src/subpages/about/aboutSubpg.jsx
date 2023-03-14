@@ -1,10 +1,10 @@
 import React from "react";
 import { Col, Row, Tabs, Tab } from "react-bootstrap";
-import Chart from "./chart";
-import HistoryContent from "./tabs/history";
+import MeContent from "./tabs/me";
 import ReadingContent from "./tabs/reading";
+import HistoryContent from "./tabs/history";
 import MediaContent from "./tabs/media";
-import "./personal.scss";
+import "./aboutSubpg.scss";
 
 export default function Personal() {
   return (
@@ -12,23 +12,7 @@ export default function Personal() {
       <Col style={{ maxWidth: "800px" }}>
         <Tabs>
           <Tab eventKey="home" title="Me">
-            <Chart />
-            <br />
-            <p>
-              I am an Honours Mathematics student at the University of Waterloo,
-              with experience in Computer Science.
-              <br />
-              <br />
-              I love creating interactive applications, whether they be
-              websites, games, organizational tools, or just fun projects to
-              learn new technologies.
-              <br />
-              See more about my hobbies in the above tabs, but as a primer...
-              <br />
-              <br />
-              I'm a history buff, tech tinkerer, fitness devotee, music addict,
-              struggling reader, story telling enthusiast, and horrible cook.
-            </p>
+            <MeContent />
           </Tab>
           <Tab eventKey="reading" title="Reading">
             <ReadingContent />

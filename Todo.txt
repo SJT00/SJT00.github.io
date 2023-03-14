@@ -1,10 +1,8 @@
 In The Works:
 -------------
-Better structure for work & personal section
 -------------
 Backlog:
 -------------
-Starrynight resolution scaling alternatives/performance
 Figure out pip view
 -------------
 BackBurner:
