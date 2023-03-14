@@ -1,10 +1,11 @@
 In The Works:
 -------------
--------------
+Projects Pg Modularization, New Layout with Tech stack componenets
+
 Backlog:
 -------------
-Figure out pip view
--------------
+
 BackBurner:
 -------------
+Figure out link-preview
 Timeline Idea
