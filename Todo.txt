@@ -1,11 +1,14 @@
 In The Works:
 -------------
-Projects Pg Modularization, New Layout with Tech stack componenets
+Reading Update
+Projects Pg Modularization (New Layout with Tech stack componenets)
 
 Backlog:
 -------------
+Web Tracker Pg distinctions
+Add Transitions
 
 BackBurner:
 -------------
 Figure out link-preview
-Timeline Idea
+Timeline
