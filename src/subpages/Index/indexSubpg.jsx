@@ -7,6 +7,7 @@ import gitImg from "../../images/Icons/github.svg";
 import linkedinImg from "../../images/Icons/linkedin.svg";
 import emailImg from "../../images/Icons/mail.svg";
 import resumeImg from "../../images/Icons/resume.svg";
+import resumeFile from "../../images/Resume.pdf";
 import headShot from "../../images/Headshot.jpg";
 export default function Intro() {
   var iWH = 40; // Icon width and Height
@@ -127,7 +128,7 @@ export default function Intro() {
                     placement="right"
                     overlay={popover("My Resume")}
                   >
-                    <a href=".\Resume.pdf" target="_blank" rel="noreferrer">
+                    <a href={resumeFile} target="_blank" rel="noreferrer">
                       <img
                         src={resumeImg}
                         height={iWH}
