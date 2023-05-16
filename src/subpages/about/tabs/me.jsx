@@ -8,7 +8,7 @@ export default function me() {
       <br />
       <p>
         I am an Honours Mathematics graduate from the University of Waterloo,
-        with a passion for and experience in Computer Science.
+        with a passion for (and experience in) Computer Science.
         <br />
         <br />
         I love creating interactive applications, whether they be websites,
