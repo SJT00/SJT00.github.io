@@ -1,10 +1,10 @@
 In The Works:
 -------------
+About Section Height Issues
+Projects Pg Modularization (New Layout with Tech stack componenets)
 
 Backlog:
 -------------
-About Section Height Issues
-Projects Pg Modularization (New Layout with Tech stack componenets)
 
 BackBurner:
 -------------
