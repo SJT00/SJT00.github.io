@@ -7,18 +7,6 @@ import {Seo} from "../components/seo.jsx";
 import Navigation from "./navigation";
 import "./layout.scss";
 
-// Code Excerpt from https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
-// Avoids addressbar scrolling on mobile
-if (typeof window !== "undefined") {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`); //Use custom vh setting for styling
-  window.addEventListener("resize", () => {
-    // React to resizing
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  });
-}
-
 export const Head = () => <Seo/>;
 
 const Layout = ({ children }) => {
