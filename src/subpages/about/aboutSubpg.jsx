@@ -25,7 +25,6 @@ export default function Personal() {
           </Tab>
         </Tabs>
       </Col>
-      {/* Timeline Here */}
     </Row>
   );
 }
