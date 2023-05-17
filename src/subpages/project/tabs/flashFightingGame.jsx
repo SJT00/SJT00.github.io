@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import { OverlayTrigger, Col, Row } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 

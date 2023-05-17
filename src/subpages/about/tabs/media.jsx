@@ -12,13 +12,14 @@ export default function media() {
       >
         Grand Theft Auto: Vice City
       </a>
-      &nbsp;and from the moment I first played it, I was engrossed! The
-      prospect of a digital world was forever fascinating to me thereafter. Fast
-      forward a few years, and due to changing circumstances, I no longer had the
+      &nbsp;and from the moment I first played it, I was engrossed! The prospect
+      of a digital world was forever fascinating to me thereafter. Fast forward
+      a few years, and due to changing circumstances, I no longer had the
       hardware to play games. Only one solution came to mind, I had to build my
       own!
       <span className="aside">
-        ... Thus began my first adventures into serious programming, and inevitably MATH
+        ... Thus began my first adventures into serious programming, and
+        inevitably MATH
       </span>
       <br />
       <h4>Music:</h4>

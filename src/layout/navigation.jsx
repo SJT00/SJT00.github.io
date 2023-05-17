@@ -40,7 +40,7 @@ export default function Header() {
         }
       }
     }
-  }, [data,testing,Tabs]);
+  }, [data, testing, Tabs]);
   return (
     <Navbar id="navbar">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

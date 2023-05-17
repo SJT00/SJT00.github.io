@@ -2,18 +2,18 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
-import {Seo} from "./seo.jsx";
+import { Seo } from "./seo.jsx";
 
 import Background from "./bkgd.jsx";
 import Navigation from "./navigation";
 import "./layout.scss";
 
-export const Head = () => <Seo/>;
+export const Head = () => <Seo />;
 
 const Layout = ({ children }) => {
   return (
     <>
-    <Head />
+      <Head />
       <Container className="layoutContainer" fluid>
         <Navigation />
         <Background />

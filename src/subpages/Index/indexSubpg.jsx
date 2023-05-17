@@ -17,7 +17,8 @@ export default function Intro() {
     <Row xs={1} id="intro">
       <Row>
         <Col className="welcometxt">
-            {isVisible && <Typewriter
+          {isVisible && (
+            <Typewriter
               onInit={typewriter => {
                 typewriter
                   .typeString("<h1>Hi<h1>")
@@ -29,10 +30,13 @@ export default function Intro() {
                   .typeString("<h1>你好<h1>")
                   .pauseFor(2500)
                   .deleteAll()
-                  .callFunction(() => {setTimeout(2500,setVisible(false))})
+                  .callFunction(() => {
+                    setTimeout(2500, setVisible(false));
+                  })
                   .start();
               }}
-            />}
+            />
+          )}
         </Col>
       </Row>
       <Row>

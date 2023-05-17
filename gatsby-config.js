@@ -8,16 +8,16 @@ module.exports = {
   },
   plugins: [
     {
-    resolve: `gatsby-plugin-google-gtag`,
-    options: {
-      trackingIds: [
-        "G-KEMH0Y8HS6", // Google Analytics / GA
-      ],
-      pluginConfig: {
-        head: true,
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-KEMH0Y8HS6", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
-  },
     "gatsby-plugin-sass",
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

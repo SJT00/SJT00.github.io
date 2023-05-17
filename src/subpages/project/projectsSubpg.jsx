@@ -40,7 +40,7 @@ export default function Work() {
         />
         {index === 0 && <Budgie popover={tooltip} />}
         {index === 1 && <Token popover={tooltip} />}
-        {index === 2 && <SpaceInvaders popover={tooltip}/>}
+        {index === 2 && <SpaceInvaders popover={tooltip} />}
         {index === 3 && <FlashFightingGame popover={tooltip} />}
       </Col>
     </Row>
