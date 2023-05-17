@@ -1,13 +1,14 @@
 In The Works:
 -------------
-About Section Height Issues
+About Section Chart Horizontal Centering
 Projects Pg Modularization (New Layout with Tech stack componenets)
 
 Backlog:
 -------------
+Add Transitions
+Figure out link-preview
+Google Analytics Event for 404
 
 BackBurner:
 -------------
-Add Transitions
-Figure out link-preview
 Timeline

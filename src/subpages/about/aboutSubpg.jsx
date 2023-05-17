@@ -9,7 +9,7 @@ import "./aboutSubpg.scss";
 export default function Personal() {
   return (
     <Row xs={1} id="personal">
-      <Col style={{ maxWidth: "800px", minHeight: "600px" }}>
+      <Col style={{ maxWidth: "900px", minHeight: "600px" }}>
         <Tabs>
           <Tab eventKey="home" title="Me">
             <MeContent />
