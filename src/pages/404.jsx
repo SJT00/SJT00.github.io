@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import Layout from "../components/layout.jsx";
+import Layout from "../layout/layout.jsx";
 
 export default function NotFound() {
   return (

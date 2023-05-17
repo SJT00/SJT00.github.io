@@ -1,9 +1,10 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
+import {Seo} from "./seo.jsx";
+
 import Background from "./bkgd.jsx";
-import {Seo} from "../components/seo.jsx";
 import Navigation from "./navigation";
 import "./layout.scss";
 
