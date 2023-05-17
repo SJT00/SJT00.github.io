@@ -1,6 +1,5 @@
 In The Works:
 -------------
-About Section Chart Horizontal Centering
 Projects Pg Modularization (New Layout with Tech stack componenets)
 
 Backlog:
