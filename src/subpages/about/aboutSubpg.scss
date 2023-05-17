@@ -14,8 +14,7 @@
   }
   .tab-content {
     padding-top: 5px;
-    padding-left: 7px;
-    padding-right: 7px;
+    overflow-x: hidden;
     overflow-y: scroll;
     max-height: 82vh;
   }
@@ -25,6 +24,7 @@
   }
   .aside {
     font-size: 75%;
+    padding-right: 4px; // Account for 7px scrollbar
     font-style: italic;
     text-align: end;
     display: block;

@@ -1,11 +1,14 @@
 import React from "react";
-import Chart from "./components/chart";
+import { Col, Row } from "react-bootstrap";
+import Chart from "./components/chart.jsx";
 
 export default function me() {
   return (
-    <>
-      <Chart />
-      <br />
+    <Col>
+      <Row>
+        <Chart />
+      </Row>
+      <Row>
       <p>
         I am an Honours Mathematics graduate from the University of Waterloo,
         with a passion for (and experience in) Computer Science.
@@ -21,6 +24,7 @@ export default function me() {
         I'm a history buff, tech tinkerer, fitness devotee, music addict,
         struggling reader, story telling enthusiast, and horrible cook.
       </p>
-    </>
+      </Row>
+    </Col>
   );
 }
