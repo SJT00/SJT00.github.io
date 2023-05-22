@@ -30,6 +30,9 @@ body {
     }
   }
   color: var(--customwhite);
+  .blackFont{
+    color: var(--customblack);
+  }
   background-color: var(--customblack) !important;
   .icon {
     display: block;
