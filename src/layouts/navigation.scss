@@ -1,11 +1,11 @@
 .navbar-light {
   @media screen and (max-width: 600px) {
     .ml-auto {
-      margin-right: auto !important;
+      margin-right: auto;
     }
   }
   .navbar-nav .nav-link {
-    color: var(--customwhite) !important;
+    color: var(--customwhite);
     position: relative;
     &::after {
       content: "";
@@ -13,20 +13,20 @@
       bottom: 4px;
       width: 100%;
       height: 2px;
-      background: var(--customwhite) !important;
+      background: var(--customwhite);
       position: absolute;
       transform: scaleX(0);
       transform-origin: bottom;
       transition: transform 250ms ease-in;
     }
     &:hover {
-      color: var(--secthover) !important;
+      color: var(--secthover);
     }
     &:hover::after {
       transform: scaleX(0.8);
     }
     &.bordered {
-      border: solid 1px var(--customwhite) !important;
+      border: solid 1px var(--customwhite);
     }
   }
 }
