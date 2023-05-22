@@ -4,6 +4,7 @@ Projects Pg Modularization (New Layout with Tech stack componenets)
 
 Backlog:
 -------------
+Max Width/Large displays bug
 Add Transitions
 Figure out link-preview
 
