@@ -9,6 +9,6 @@ Visit here: [https://sjt00.github.io](https://sjt00.github.io)
 <!---
 File Structure:
     Background
-                ====> Layout ====> Pages ====> SubPages ====> Tabs/Components
+                ====> Layouts ====> Pages ====> SubPages ====> Tabs/Components
     Navigation
 -->

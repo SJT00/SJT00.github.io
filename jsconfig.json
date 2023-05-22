@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      // set aliases for vscode hyperlinks (cmd + click)
+      "@images/*": ["./src/images/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@subpages/*": ["./src/subpages/*"]
+    }
+  }
+}

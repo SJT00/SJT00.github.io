@@ -33,5 +33,19 @@ module.exports = {
         display: `standalone`,
       },
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        // gatsby aliases for better imports
+        alias: {
+          "@images": "src/images",
+          "@hooks": "src/hooks",
+          "@layouts": "src/layouts",
+          "@pages": "src/pages",
+          "@subpages": "src/subpages",
+        },
+        extensions: [],
+      },
+    },
   ],
 };

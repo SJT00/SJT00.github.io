@@ -3,12 +3,12 @@ import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import "./indexSubpg.scss";
 //Imported Imgs
-import gitImg from "../../images/Icons/github.svg";
-import linkedinImg from "../../images/Icons/linkedin.svg";
-import emailImg from "../../images/Icons/mail.svg";
-import resumeImg from "../../images/Icons/resume.svg";
-import resumeFile from "../../images/Resume.pdf";
-import headShot from "../../images/Headshot.jpg";
+import gitImg from "@images/Icons/github.svg";
+import linkedinImg from "@images/Icons/linkedin.svg";
+import emailImg from "@images/Icons/mail.svg";
+import resumeImg from "@images/Icons/resume.svg";
+import resumeFile from "@images/Resume.pdf";
+import headShot from "@images/Headshot.jpg";
 export default function Intro() {
   var iWH = 40; // Icon width and Height
   const [isVisible, setVisible] = useState(true);

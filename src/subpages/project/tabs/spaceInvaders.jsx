@@ -3,9 +3,9 @@ import React from "react";
 import { OverlayTrigger, Col, Row } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 
-import gitImg from "../../../images/Icons/Languages/git.svg";
-import pythonImg from "../../../images/Icons/Languages/python.svg";
-import pygameImg from "../../../images/Icons/Languages/pygame.gif";
+import gitImg from "@images/Icons/Languages/git.svg";
+import pythonImg from "@images/Icons/Languages/python.svg";
+import pygameImg from "@images/Icons/Languages/pygame.gif";
 
 export default function spaceInvaders(props) {
   return (

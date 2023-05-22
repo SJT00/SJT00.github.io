@@ -3,7 +3,7 @@ import React from "react";
 import { OverlayTrigger, Col, Row } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 
-import ascriptImg from "../../../images/Icons/Languages/ascript.png";
+import ascriptImg from "@images/Icons/Languages/ascript.png";
 
 export default function flashFightingGame(props) {
   return (

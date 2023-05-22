@@ -1,6 +1,6 @@
 import React from "react";
-import AboutSubpg from "../subpages/about/aboutSubpg.jsx";
-import Layout from "../layout/layout.jsx";
+import AboutSubpg from "@subpages/about/aboutSubpg.jsx";
+import Layout from "@layouts/layout.jsx";
 
 export default function AboutPg() {
   return (

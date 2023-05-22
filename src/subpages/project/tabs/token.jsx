@@ -3,13 +3,13 @@ import React from "react";
 import { OverlayTrigger, Col, Row } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 
-import expressImg from "../../../images/Icons/Languages/expressjs.png";
-import reactImg from "../../../images/Icons/Languages/react.svg";
-import nodeImg from "../../../images/Icons/Languages/nodejs.svg";
-import htmlImg from "../../../images/Icons/Languages/html5.svg";
-import cssImg from "../../../images/Icons/Languages/css3.svg";
-import jscriptImg from "../../../images/Icons/Languages/Jscript.svg";
-import gitImg from "../../../images/Icons/Languages/git.svg";
+import expressImg from "@images/Icons/Languages/expressjs.png";
+import reactImg from "@images/Icons/Languages/react.svg";
+import nodeImg from "@images/Icons/Languages/nodejs.svg";
+import htmlImg from "@images/Icons/Languages/html5.svg";
+import cssImg from "@images/Icons/Languages/css3.svg";
+import jscriptImg from "@images/Icons/Languages/Jscript.svg";
+import gitImg from "@images/Icons/Languages/git.svg";
 
 export default function token(props) {
   return (
