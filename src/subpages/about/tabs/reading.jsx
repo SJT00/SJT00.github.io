@@ -17,16 +17,22 @@ export default function reading() {
       <br />
       <h4>My Reading List: </h4>
       <div className="book">
-        <span className="bookTitle">{"Siddharta"}</span>
+        <span className="bookTitle current">
+          {"The Autobiography of Benjamin Franklin"}
+        </span>
         &nbsp;
-        <span className="author">{"by Herman Hesse"}</span>
+        <span className="author">{"by Benjamin Franklin"}</span>
       </div>
-      <div className="book current">
-        <span className="bookTitle">{"Pride and Prejudice"}</span>
+      <div className="book">
+        <span className="bookTitle finished">{"Pride and Prejudice"}</span>
         &nbsp;
         <span className="author">{"by Jane Austen"}</span>
       </div>
-      <div className="book">{"TBD"}</div>
+      <div className="book">
+        <span className="bookTitle finished">{"Siddharta"}</span>
+        &nbsp;
+        <span className="author">{"by Herman Hesse"}</span>
+      </div>
     </p>
   );
 }

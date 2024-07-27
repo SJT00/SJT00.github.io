@@ -18,6 +18,12 @@
     overflow-y: scroll;
     max-height: 82vh;
   }
+  .current {
+    text-decoration: underline;
+  }
+  .finished {
+    text-decoration: line-through;
+  }
   .author {
     font-size: 75%;
     font-style: italic;
