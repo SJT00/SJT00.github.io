@@ -7,10 +7,26 @@ import MediaContent from "./tabs/media";
 import "./aboutSubpg.scss";
 
 export default function Personal() {
+  let lastTab = "home";
+  try {
+    if (localStorage.getItem("lastTab"))
+      lastTab = localStorage.getItem("lastTab");
+  } catch (e) {
+    console.log(e);
+  }
   return (
     <Row xs={1} id="personal">
       <Col style={{ maxWidth: "900px", minHeight: "600px" }}>
-        <Tabs>
+        <Tabs
+          defaultActiveKey={lastTab}
+          onSelect={key => {
+            try {
+              localStorage.setItem("lastTab", key);
+            } catch (e) {
+              console.log(e);
+            }
+          }}
+        >
           <Tab eventKey="home" title="Me">
             <MeContent />
           </Tab>
