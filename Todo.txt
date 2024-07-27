@@ -1,14 +1,14 @@
 In The Works:
 -------------
-Projects Pg Modularization (New Layout with Tech stack componenets)
+Add Currenly Working On Pg
 
 Backlog:
 -------------
+Add Containerization
 Max Width/Large displays bug
 Add Transitions
-Figure out link-preview
-
 BackBurner:
 -------------
 Timeline
+Figure out link-preview
 Google Analytics Event for 404

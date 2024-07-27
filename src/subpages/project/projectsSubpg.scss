@@ -1,15 +1,25 @@
 #work {
   padding-left: 15px;
   padding-right: 15px;
+  max-height: 90vh;
+  overflow: hidden;
+  .card-group {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .card {
     width: 18rem;
     margin: 10px;
+    opacity: 0.5;
     border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     overflow: hidden;
   }
   .card:hover {
     box-shadow: 0 10px 10px -10px rgba(255, 255, 255, 0.5);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+    transform: translate(0%, -100%);
+    opacity: 1;
   }
 }
