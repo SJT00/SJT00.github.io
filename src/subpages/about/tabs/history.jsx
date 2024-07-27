@@ -2,7 +2,7 @@ import React from "react";
 
 export default function history() {
   return (
-    <p>
+    <>
       <h4>My Favourite 'Past-time':</h4>
       <span className="quote">
         History doesn't repeat itself, but it does often rhymes
@@ -29,6 +29,6 @@ export default function history() {
       In the next few years, I hope to tackle the Victorian age, a much more
       recognizable world, which's consequences are much more easily translatable
       to current events.
-    </p>
+    </>
   );
 }

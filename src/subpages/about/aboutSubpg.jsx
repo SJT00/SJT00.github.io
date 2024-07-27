@@ -12,7 +12,7 @@ export default function Personal() {
     if (localStorage.getItem("lastTab"))
       lastTab = localStorage.getItem("lastTab");
   } catch (e) {
-    console.log(e);
+    console.error(e);
   }
   return (
     <Row xs={1} id="personal">
@@ -23,7 +23,7 @@ export default function Personal() {
             try {
               localStorage.setItem("lastTab", key);
             } catch (e) {
-              console.log(e);
+              console.error(e);
             }
           }}
         >

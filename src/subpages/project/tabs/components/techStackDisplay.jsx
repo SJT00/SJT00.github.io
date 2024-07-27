@@ -29,8 +29,6 @@ export default function techStackDisplay({ tools }) {
     Pygame: pygameImg,
   };
 
-  console.log(tools, typeof tools);
-
   return (
     <Row
       md={4}
