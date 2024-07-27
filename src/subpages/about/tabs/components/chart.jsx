@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   RadarChart,
   PolarGrid,
@@ -74,9 +74,7 @@ export default function RadChart() {
           fill="#8884d8"
           fillOpacity={0.6}
         />
-        <Legend 
-          wrapperStyle={{ bottom: -5 }}
-        />
+        <Legend wrapperStyle={{ bottom: -5 }} />
       </RadarChart>
     </ResponsiveContainer>
   );
