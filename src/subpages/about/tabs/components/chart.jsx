@@ -74,7 +74,9 @@ export default function RadChart() {
           fill="#8884d8"
           fillOpacity={0.6}
         />
-        <Legend />
+        <Legend 
+          wrapperStyle={{ bottom: -5 }}
+        />
       </RadarChart>
     </ResponsiveContainer>
   );
