@@ -3,8 +3,10 @@ import GitHubCalendar from "react-github-calendar";
 import tippy from "tippy.js";
 import "tippy.js/dist/tippy.css"; // Import tippy.js styles
 
-export default () => {
-  const startDate = new Date("2024-07-29").toISOString().slice(0, 10);
+export default (
+  { startDate } // Add startDate prop
+) => {
+  const formattedStartDate = new Date(startDate).toISOString().slice(0, 10);
   const calendarRef = useRef(null);
   useEffect(() => {
     // Add tooltips to calendar days courtesy of Chat GPT
@@ -22,18 +24,19 @@ export default () => {
 
         if (date === today) {
           day.setAttribute("data-today", "true");
-          day.style.strokeWidth = "1px";
+          day.style.strokeWidth = "2px";
           day.style.stroke = "#ff0000";
           dayLabel = "Today";
-        } else if (date === startDate) {
+        } else if (date === formattedStartDate) {
           dayLabel = "Start Date";
           day.setAttribute("data-start", "true");
-          day.style.strokeWidth = "1px";
-          day.style.stroke = "#7851A9";
+          day.style.strokeWidth = "2px";
+          day.style.stroke = "#FFFF00";
         } else {
           dayLabel = new Date(date).toLocaleDateString("en-US", {
             month: "long",
             day: "numeric",
+            timeZone: "UTC",
           });
         }
 
@@ -72,18 +75,6 @@ export default () => {
       observer.disconnect();
     };
   }, []);
-  setTimeout(() => {
-    const legend = document.querySelector(
-      ".react-activity-calendar__legend-colors"
-    );
-
-    if (legend) {
-      const todayText = document.createElement("span");
-      todayText.innerText = "Today";
-      todayText.style.marginLeft = "0.4em";
-      legend.appendChild(todayText);
-    }
-  }, 3000);
   return (
     <div ref={calendarRef}>
       <GitHubCalendar
@@ -91,6 +82,9 @@ export default () => {
         style={{
           marginRight: "auto",
           marginLeft: "auto",
+          borderRadius: "20px",
+          padding: "20px",
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
       />
     </div>

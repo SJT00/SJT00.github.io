@@ -1,11 +1,13 @@
 In The Works:
 -------------
-Add Currenly Working On Pg
 
 Backlog:
 -------------
+Improve Project Page readability and screen layout
+Add Project Pipeline
+Add GitCalendar Fail Safe
 Add Containerization
-Max Width/Large displays bug
+Max Width/Large displays bug (Check Projects Pg aswell)
 Add Transitions
 BackBurner:
 -------------
