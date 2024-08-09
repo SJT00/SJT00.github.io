@@ -11,19 +11,19 @@ import WorkingOn from "./tabs/workingOn";
 export default function Work() {
   return (
     <Row id="work">
-      <Col>
-        <Row>
+      <Row>
+        <Col style={{ maxWidth: "900px", minHeight: "600px" }}>
           <WorkingOn />
-        </Row>
-        <Row>
-          <CardGroup>
-            <Budgie />
-            <Token />
-            <SpaceInvaders />
-            <FlashFightingGame />
-          </CardGroup>
-        </Row>
-      </Col>
+        </Col>
+      </Row>
+      <Row>
+        <CardGroup>
+          <Budgie />
+          <Token />
+          <SpaceInvaders />
+          <FlashFightingGame />
+        </CardGroup>
+      </Row>
     </Row>
   );
 }

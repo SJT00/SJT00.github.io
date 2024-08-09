@@ -9,40 +9,66 @@ export default () => {
     userSelect: "none",
   };
   const startDate = justStartDate;
+  const lastUpdated = new Date("2024-08-09");
+  const datesInStyle = date => {
+    return (
+      <span
+        style={{
+          fontStyle: "italic",
+        }}
+      >
+        {date.toLocaleDateString("en-US", {
+          year: "2-digit",
+          month: "long",
+          day: "numeric",
+
+          timeZone: "UTC",
+        })}
+      </span>
+    );
+  };
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "80vh",
-        padding: "20px",
-        paddingLeft: "40px",
-        paddingRight: "40px",
-      }}
-    >
-      <h4>Accountability</h4>
+    <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <h4
+        style={{
+          border: "3px solid #d6d4d3",
+          padding: "10px",
+          borderRadius: "10px",
+        }}
+        >Currently working on: </h4>
+        <span
+          style={{
+            fontSize: "75%",
+            fontStyle: "italic",
+          }}
+        >
+          Last updated on {datesInStyle(lastUpdated)}
+        </span>
+      </div>
       <p>
-        I am embarking on a journey to do some challenging projects based of
+        I am embarking on a journey to do some challenging CS projects based of
         this{" "}
         <a href="https://austinhenley.com/blog/challengingprojects.html">
           blog post
         </a>{" "}
-        that can help my lower-level programming understanding and intuition.
-        <br /> To keep myself accountable I will record them here along with any
-        notes or modifications that may arise (hence the "Under Construction")
-        while committing to <b>3-4 Github contributions a week</b>{" "}
-        (Starting&nbsp;
+        to help my lower-level understanding and intuition.
+      </p>
+      <p>
+        I dedicate this segment to keeping myself accountable while committing
+        to <b>3-4 Github contributions a week</b> (Starting&nbsp;
         <span
           style={{
             color: "#FFFF00",
           }}
         >
-          {startDate.toLocaleDateString("en-US", {
-            year: "2-digit",
-            month: "long",
-            day: "numeric",
-
-            timeZone: "UTC",
-          })}
+          {datesInStyle(startDate)}
         </span>
         ), Here is my Git calendar, lets see how I do!
       </p>
@@ -51,7 +77,7 @@ export default () => {
       <div>
         <h5> Projects Pipeline</h5>
         <ol>
-          <li>Making a Vim Style Text Editor with C++</li>
+          <li>Making a Vim Style Text Editor with C</li>
           <li style={blurStyle}>Making a Doom Style 3D Environment</li>
           <li style={blurStyle}>Building own language</li>
           <li style={blurStyle}>Building own OS</li>
@@ -80,6 +106,6 @@ export default () => {
       >
         Under Construction
       </span>
-    </div>
+    </>
   );
 };
