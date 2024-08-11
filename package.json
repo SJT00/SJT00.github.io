@@ -2,7 +2,7 @@
   "name": "sjt00.github.io",
   "private": true,
   "description": "My portfolio website",
-  "version": "0.2.0",
+  "version": "0.2.4",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
