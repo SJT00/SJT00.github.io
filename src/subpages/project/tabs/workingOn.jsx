@@ -9,9 +9,8 @@ export default () => {
     filter: "blur(6px)",
     userSelect: "none",
   };
-  // Add Day for UTC to EST conversion
   const startDate = new Date(justStartDate); // Used for Git Calendar
-  startDate.setDate(startDate.getDate() + 1); // Add days
+  startDate.setDate(startDate.getDate() + 1); // Add day for UTC to EST conversion
   const lastUpdated = toZonedTime(new Date("2024-08-09"), "America/New_York");
   const datesInStyle = date => {
     return (
@@ -82,7 +81,11 @@ export default () => {
       <Row>
         <CustomGitCalendar startDate={startDate} />
       </Row>
-      <Row>
+      <Row 
+        style={{
+          marginTop: "10px",
+        }}
+      >
         <h5> Projects Pipeline</h5>
         <ol>
           <li>Making a Vim Style Text Editor with C++</li>

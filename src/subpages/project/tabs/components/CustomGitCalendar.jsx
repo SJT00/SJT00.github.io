@@ -15,11 +15,19 @@ export default (
     toZonedTime(new Date(), "America/New_York"),
     "yyyy-MM-dd"
   );
-  // const today = utcDate.slice(0, 10);
+  const selectSinceStartDate = contributions => {
+    const daybefore = new Date(startDate);
+    daybefore.setDate(daybefore.getDate() - 1);
+    return contributions.filter(activity => {
+      const date = new Date(activity.date);
+      return date >= daybefore;
+    });
+  };
   return (
     <GitHubCalendar
       username="SJT00"
       blockSize={10}
+      transformData={selectSinceStartDate}
       style={{
         marginRight: "auto",
         marginLeft: "auto",
@@ -30,7 +38,6 @@ export default (
       renderBlock={(b, a) => {
         let dayLabel = "";
         let color = "";
-        // console.log(a.date, today);
         if (a.date === today) {
           dayLabel = "Today";
           color = "#ff0000";
@@ -67,6 +74,13 @@ export default (
           </Tippy>
         );
       }}
+      labels={
+        {
+          totalCount: "{{count}} contributions so far",
+        }
+      }
+      throwOnError={false}
+      errorMessage="Github is experiencing an error at the moment"
     />
   );
 };

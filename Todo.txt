@@ -2,12 +2,10 @@ In The Works:
 -------------
 Backlog:
 -------------
-Add Project Pipeline
-Add GitCalendar Fail Safe
 Add Containerization
 Max Width/Large displays bug
 BackBurner:
 -------------
-Timeline
+Add Project Pipeline/Timeline
 Figure out link-preview
 Google Analytics Event for 404
