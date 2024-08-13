@@ -45,7 +45,7 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^5.0.0",
     "husky": "^6.0.0",
     "prettier": "2.2.1"
   },
