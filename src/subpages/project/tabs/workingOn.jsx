@@ -1,10 +1,10 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import CustomGitCalendar from "./components/CustomGitCalendar";
 import justStartDate from "./components/justStartDate";
 import { toZonedTime } from "date-fns-tz";
 
-export default () => {
+export default function WorkingOn() {
   const blurStyle = {
     filter: "blur(6px)",
     userSelect: "none",
@@ -91,4 +91,4 @@ export default () => {
       <p>Check out some of my past projects below!</p>
     </>
   );
-};
+}
