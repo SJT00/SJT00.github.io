@@ -31,26 +31,20 @@ export default () => {
   };
   return (
     <>
-      <Row>
-        <h4
-          style={{
-            border: "3px solid #d6d4d3",
-            padding: "10px",
-            borderRadius: "10px",
-          }}
-        >
-          Currently working on:{" "}
-        </h4>
-      </Row>
       <Row
-      style={{
-        justifyContent: "flex-end",
-      }}
+        style={{
+          display: "flex",
+          borderBottom: "1px solid #dee2e6",
+          alignItems: "flex-end",
+          marginBottom: "5px",
+        }}
       >
+        <h4>Currently working on:</h4>
         <span
           style={{
             fontSize: "75%",
             fontStyle: "italic",
+            marginLeft: "auto",
           }}
         >
           Last updated on {datesInStyle(lastUpdated)}
@@ -81,7 +75,7 @@ export default () => {
       <Row>
         <CustomGitCalendar startDate={startDate} />
       </Row>
-      <Row 
+      <Row
         style={{
           marginTop: "10px",
         }}
