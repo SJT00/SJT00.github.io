@@ -28,6 +28,7 @@ export default (
       username="SJT00"
       blockSize={10}
       transformData={selectSinceStartDate}
+      weekStart={1}
       style={{
         marginRight: "auto",
         marginLeft: "auto",
