@@ -1,5 +1,6 @@
 In The Works:
 -------------
+On Hover Lower Card Bug
 Backlog:
 -------------
 Add Containerization
