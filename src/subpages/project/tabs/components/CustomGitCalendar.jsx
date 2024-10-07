@@ -15,6 +15,20 @@ export default (
     toZonedTime(new Date(), "America/New_York"),
     "yyyy-MM-dd"
   );
+  const breakDays = [
+    {
+      startDate: toZonedTime(new Date("2024-09-16"), "America/New_York"),
+      endDate: toZonedTime(new Date("2024-10-06"), "America/New_York"),
+    },
+  ];
+
+  const onABreak = date => {
+    const curDate = toZonedTime(new Date(date), "America/New_York");
+    return breakDays.some(
+      val => curDate >= val.startDate && curDate <= val.endDate
+    );
+  };
+
   const selectSinceStartDate = contributions => {
     const daybefore = new Date(startDate);
     daybefore.setDate(daybefore.getDate() - 1);
@@ -39,12 +53,17 @@ export default (
       renderBlock={(b, a) => {
         let dayLabel = "";
         let color = "";
+        let shade = false;
         if (a.date === today) {
           dayLabel = "Today";
           color = "#ff0000";
         } else if (a.date === formattedStartDate) {
           dayLabel = "Start Date";
           color = "#FFFF00";
+        } else if (onABreak(a.date)) {
+          dayLabel = "On A Break!";
+          color = "#500075";
+          shade = true;
         } else {
           dayLabel = toZonedTime(
             new Date(a.date),
@@ -58,7 +77,8 @@ export default (
         const content = dayLabel + `: ${a.count} contributions`;
         const style = {
           stroke: color,
-          strokeWidth: "2px",
+          strokeWidth: shade? "":"2px",
+          fill: shade ? color : "",
         };
         const c = React.cloneElement(b, { style });
         return (
@@ -75,11 +95,9 @@ export default (
           </Tippy>
         );
       }}
-      labels={
-        {
-          totalCount: "{{count}} contributions so far",
-        }
-      }
+      labels={{
+        totalCount: "{{count}} contributions so far",
+      }}
       throwOnError={false}
       errorMessage="Github is experiencing an error at the moment"
     />
