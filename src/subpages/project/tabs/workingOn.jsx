@@ -88,6 +88,15 @@ export default function WorkingOn() {
           <li style={blurStyle}>Building own OS</li>
         </ol>
       </Row>
+      <Row
+      >
+        <h5> Bonus</h5>
+        <ol>
+          <li style={blurStyle}>Classified private project</li>
+          <li style={blurStyle}>Finally finish Shatranj</li>
+          <li style={blurStyle}>Building Ludo game</li>
+        </ol>
+      </Row>
       <p>Check out some of my past projects below!</p>
     </>
   );
