@@ -17,7 +17,7 @@ export default (
   );
   const breakDays = [
     {
-      startDate: toZonedTime(new Date("2024-09-16"), "America/New_York"),
+      startDate: toZonedTime(new Date("2024-09-30"), "America/New_York"),
       endDate: toZonedTime(new Date("2024-10-06"), "America/New_York"),
     },
   ];
@@ -77,7 +77,7 @@ export default (
         const content = dayLabel + `: ${a.count} contributions`;
         const style = {
           stroke: color,
-          strokeWidth: shade? "":"2px",
+          strokeWidth: shade ? "" : "2px",
           fill: shade ? color : "",
         };
         const c = React.cloneElement(b, { style });
