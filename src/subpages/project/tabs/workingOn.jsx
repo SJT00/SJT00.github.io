@@ -11,7 +11,7 @@ export default function WorkingOn() {
   };
   const startDate = new Date(justStartDate); // Used for Git Calendar
   startDate.setDate(startDate.getDate() + 1); // Add day for UTC to EST conversion
-  const lastUpdated = toZonedTime(new Date("2024-08-09"), "America/New_York");
+  const lastUpdated = toZonedTime(new Date("2025-02-15"), "America/New_York");
   const datesInStyle = date => {
     return (
       <span
