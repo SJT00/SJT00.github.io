@@ -10,9 +10,9 @@ export default function reading() {
       <br />
       <br />
       Yet, since my adoption of technology (along with deeper academic
-      commitments) I have found myself reading less and less. However, recently
-      I have been able to reignite this passion through the help of peer study
-      and audiobooks.
+      commitments) I have found myself reading less and less. Recently I have
+      been able to reignite this passion through the help of peer study and
+      audiobooks.
       <br />
       <br />
       <h4>My Reading List: </h4>
