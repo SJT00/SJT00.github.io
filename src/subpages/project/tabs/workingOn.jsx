@@ -61,7 +61,7 @@ export default function WorkingOn() {
         </p>
         <p>
           I dedicate this segment to keeping myself accountable while committing
-          to <b>1-2 Github contributions a week</b> (Starting&nbsp;
+          to <b>2-3 Github contributions a week</b> (Starting&nbsp;
           <span
             style={{
               color: "#FFFF00",
