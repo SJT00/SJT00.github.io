@@ -4,7 +4,7 @@ import GitHubCalendar from "react-github-calendar";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 
-export default (
+const customGitCalendar = (
   { startDate } // Add startDate prop
 ) => {
   const formattedStartDate = format(
@@ -61,7 +61,7 @@ export default (
           dayLabel = "Start Date";
           color = "#FFFF00";
         } else if (onABreak(a.date)) {
-          dayLabel = "On A Break!";
+          dayLabel = "Got Really Sick!";
           color = "#500075";
           shade = true;
         } else {
@@ -103,3 +103,5 @@ export default (
     />
   );
 };
+
+export default customGitCalendar;
