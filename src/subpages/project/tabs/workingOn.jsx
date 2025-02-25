@@ -1,9 +1,8 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import CustomGitCalendar from "./components/CustomGitCalendar";
-import ConstructionToast from "./components/constructionToast";
 import justStartDate from "./components/justStartDate";
-import { toZonedTime } from "date-fns-tz";
+import { datesInStyle } from "../projectsSubpg";
 
 export default function WorkingOn() {
   const blurStyle = {
@@ -12,46 +11,8 @@ export default function WorkingOn() {
   };
   const startDate = new Date(justStartDate); // Used for Git Calendar
   startDate.setDate(startDate.getDate() + 1); // Add day for UTC to EST conversion
-  const lastUpdated = toZonedTime(new Date("2025-02-24"), "America/New_York");
-  const datesInStyle = date => {
-    return (
-      <span
-        style={{
-          fontStyle: "italic",
-        }}
-      >
-        {date.toLocaleDateString("en-US", {
-          year: "2-digit",
-          month: "long",
-          day: "numeric",
-
-          timeZone: "UTC",
-        })}
-      </span>
-    );
-  };
   return (
     <>
-      <ConstructionToast />
-      <Row
-        style={{
-          display: "flex",
-          borderBottom: "1px solid #dee2e6",
-          alignItems: "flex-end",
-          marginBottom: "5px",
-        }}
-      >
-        <h4>Currently working on:</h4>
-        <span
-          style={{
-            fontSize: "75%",
-            fontStyle: "italic",
-            marginLeft: "auto",
-          }}
-        >
-          Last updated on {datesInStyle(lastUpdated)}
-        </span>
-      </Row>
       <Row>
         <p>
           I am embarking on a journey to do some challenging CS projects based

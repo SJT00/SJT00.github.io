@@ -1,17 +1,84 @@
-import React from "react";
-import { Col, Row, CardGroup } from "react-bootstrap";
+import React, { useState } from "react";
+import { Col, Row, Button, ButtonGroup } from "react-bootstrap";
+import ConstructionToast from "./tabs/components/constructionToast";
+import { toZonedTime } from "date-fns-tz";
 import "./projectsSubpg.scss";
 
-import Budgie from "./tabs/budgie";
-import Token from "./tabs/token";
-import SpaceInvaders from "./tabs/spaceInvaders";
-import FlashFightingGame from "./tabs/flashFightingGame";
 import WorkingOn from "./tabs/workingOn";
+import CardContainer from "./tabs/cardContainer";
+
+export const datesInStyle = date => {
+  return (
+    <span
+      style={{
+        fontStyle: "italic",
+      }}
+    >
+      {date.toLocaleDateString("en-US", {
+        year: "2-digit",
+        month: "long",
+        day: "numeric",
+
+        timeZone: "UTC",
+      })}
+    </span>
+  );
+};
 
 export default function Work() {
+  const tabs = ["🌐 Full Stack", "🔬 Learning", "🗂️ All"];
+  const [activeTab, setActiveTab] = useState(0);
+  const lastUpdated = toZonedTime(new Date("2025-02-25"), "America/New_York");
   return (
     <Row xs={1} id="work">
+      <ConstructionToast />
       <Col style={{ maxWidth: "900px", minHeight: "600px" }}>
+        <Row
+          style={{
+            display: "flex",
+            borderBottom: "1px solid #dee2e6",
+            alignItems: "flex-end",
+            marginBottom: "5px",
+            boxSizing: "border-box",
+            width: "100%",
+            justifySelf: "center",
+          }}
+        >
+          <h4>Showcase:</h4>
+          <span
+            style={{
+              fontSize: "75%",
+              fontStyle: "italic",
+              marginLeft: "auto",
+            }}
+          >
+            As of {datesInStyle(lastUpdated)}
+          </span>
+        </Row>
+        <Row style={{ justifySelf: "center" }}>
+          <ButtonGroup aria-label="Project Categories">
+            {tabs.map((tab, idx) => (
+              <Button
+                key={"category button tab " + idx}
+                variant={"outline-light"}
+                active={activeTab === idx}
+                onClick={() => {
+                  setActiveTab(idx);
+                }}
+              >
+                {tab}
+              </Button>
+            ))}
+          </ButtonGroup>
+        </Row>
+        <Row
+          style={{
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <CardContainer curTab={activeTab} />
+        </Row>
         <Row
           style={{
             justifyContent: "center",
@@ -20,22 +87,6 @@ export default function Work() {
         >
           <Col xs={10}>
             <WorkingOn />
-          </Col>
-        </Row>
-        <Row
-          className="previousProjects"
-          style={{
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <Col>
-            <CardGroup>
-              <Budgie />
-              <Token />
-              <SpaceInvaders />
-              <FlashFightingGame />
-            </CardGroup>
           </Col>
         </Row>
       </Col>
