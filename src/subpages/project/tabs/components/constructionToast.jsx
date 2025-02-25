@@ -11,7 +11,7 @@ function ConstructionToast() {
         <img src="holder.js/20x20?text=%20" className="rounded me-2" alt="" />
         <strong className="me-auto">🚧 Active Construction 🚧</strong>
       </Toast.Header>
-      <Toast.Body>Heads up! Things are shifting and lifting.</Toast.Body>
+      <Toast.Body>Heads up! Things are shifting and changing.</Toast.Body>
     </Toast>
   );
 }
