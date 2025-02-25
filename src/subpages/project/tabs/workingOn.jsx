@@ -1,6 +1,7 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import CustomGitCalendar from "./components/CustomGitCalendar";
+import ConstructionToast from "./components/constructionToast";
 import justStartDate from "./components/justStartDate";
 import { toZonedTime } from "date-fns-tz";
 
@@ -11,7 +12,7 @@ export default function WorkingOn() {
   };
   const startDate = new Date(justStartDate); // Used for Git Calendar
   startDate.setDate(startDate.getDate() + 1); // Add day for UTC to EST conversion
-  const lastUpdated = toZonedTime(new Date("2025-02-15"), "America/New_York");
+  const lastUpdated = toZonedTime(new Date("2025-02-24"), "America/New_York");
   const datesInStyle = date => {
     return (
       <span
@@ -31,6 +32,7 @@ export default function WorkingOn() {
   };
   return (
     <>
+      <ConstructionToast />
       <Row
         style={{
           display: "flex",

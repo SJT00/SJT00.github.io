@@ -29,4 +29,30 @@
     transform: scale(1.05);
     opacity: 1;
   }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .custom-toast {
+    background: linear-gradient(
+      to bottom,
+      var(--customblack) 50%,
+      rgba(30, 30, 30, 0.8) 100%
+    );
+    color: var(--customwhite);
+    border: 1px solid var(--customblack);
+    animation: fadeOut 5s forwards;
+  }
+  .custom-toast .toast-header {
+    background: var(--customblack);
+    color: var(--customwhite);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .custom-toast .toast-body {
+    color: var(--customwhite);
+  }
 }
