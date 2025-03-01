@@ -13,6 +13,12 @@ import jscriptImg from "@images/Icons/Languages/Jscript.svg";
 import gitImg from "@images/Icons/Languages/git.svg";
 import pythonImg from "@images/Icons/Languages/python.svg";
 import pygameImg from "@images/Icons/Languages/pygame.gif";
+import aws from "@images/Icons/Languages/aws.png";
+import mui from "@images/Icons/Languages/mui.png";
+import nextjs from "@images/Icons/Languages/nextjs.png";
+import postgres from "@images/Icons/Languages/postgres.png";
+import cpp from "@images/Icons/Languages/cpp.png";
+import opengl from "@images/Icons/Languages/opengl.png";
 
 export default function techStackDisplay({ tools }) {
   const bindings = {
@@ -27,6 +33,12 @@ export default function techStackDisplay({ tools }) {
     Git: gitImg,
     Python: pythonImg,
     Pygame: pygameImg,
+    AWS: aws,
+    MUI: mui,
+    NextJS: nextjs,
+    PostgreSQL: postgres,
+    CPP: cpp,
+    OpenGL: opengl,
   };
 
   return (

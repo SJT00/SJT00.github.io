@@ -3,6 +3,7 @@ import { Col, Row, Button, ButtonGroup } from "react-bootstrap";
 import ConstructionToast from "./tabs/components/constructionToast";
 import { toZonedTime } from "date-fns-tz";
 import "./projectsSubpg.scss";
+import cardData, { cardTags } from "./cards/cardData";
 
 import WorkingOn from "./tabs/workingOn";
 import CardContainer from "./tabs/cardContainer";
@@ -25,10 +26,43 @@ export const datesInStyle = date => {
   );
 };
 
+export const tags = {
+  fullStack: ["WeddingWebsite", "VCS"],
+  learning: ["Minipad", "SpaceInvaders", "FlashFightingGame"],
+  live: ["WeddingWebsite", "VCS"],
+  construction: ["Minipad"],
+};
+
 export default function Work() {
   const tabs = ["🌐 Full Stack", "🔬 Learning", "🗂️ All"];
+
   const [activeTab, setActiveTab] = useState(0);
   const lastUpdated = toZonedTime(new Date("2025-02-25"), "America/New_York");
+
+  let tagMap = new Map();
+
+  cardData.forEach(card => {
+    card.tags.forEach(tag => {
+      if (!tagMap.has(tag)) {
+        tagMap.set(tag, []);
+      }
+      tagMap.get(tag).push(card);
+    });
+  });
+
+  const getRelevantCards = currTab => {
+    if (currTab === 0) {
+      return tagMap.get(cardTags.fullStack);
+    } else if (currTab === 1) {
+      return tagMap.get(cardTags.learning);
+    } else {
+      return [
+        ...tagMap.get(cardTags.fullStack),
+        ...tagMap.get(cardTags.learning),
+      ];
+    }
+  };
+
   return (
     <Row xs={1} id="work">
       <ConstructionToast />
@@ -77,7 +111,7 @@ export default function Work() {
             alignItems: "center",
           }}
         >
-          <CardContainer curTab={activeTab} />
+          <CardContainer currentViewing={getRelevantCards(activeTab)} />
         </Row>
         <Row
           style={{

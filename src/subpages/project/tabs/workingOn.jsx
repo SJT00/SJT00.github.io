@@ -15,6 +15,11 @@ export default function WorkingOn() {
     <>
       <Row>
         <p>
+          These are some of the projects I've worked on—where I got to
+          experiment, build, and refine my skills.
+        </p>
+        <h4>Dev Logs:</h4>
+        <p>
           I am embarking on a journey to do some challenging CS projects based
           of this{" "}
           <a href="https://austinhenley.com/blog/challengingprojects.html">
@@ -43,7 +48,7 @@ export default function WorkingOn() {
           marginTop: "10px",
         }}
       >
-        <h5> Projects Pipeline</h5>
+        <h5>Projects Pipeline</h5>
         <ol>
           <li>Making a Vim Style Text Editor with C++</li>
           <li style={blurStyle}>Making a Doom Style 3D Environment</li>
@@ -52,11 +57,11 @@ export default function WorkingOn() {
         </ol>
       </Row>
       <Row>
-        <h5> Bonus</h5>
+        <h5>Bonus</h5>
         <ol>
-          <li style={blurStyle}>Classified private project</li>
+          <li style={blurStyle}>Wedding Website</li>
           <li style={blurStyle}>Finally finish Shatranj</li>
-          <li style={blurStyle}>Building Ludo game</li>
+          <li style={blurStyle}>Dragoman</li>
         </ol>
       </Row>
       <p>Check out some of my past projects below!</p>
