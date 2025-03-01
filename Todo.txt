@@ -1,12 +1,14 @@
 In The Works:
 -------------
-On Hover Lower Card Bug
+Add Multi Card View
+Add Dev logs
+
 Backlog:
 -------------
-Add Containerization
-Max Width/Large displays bug
+Standardize Code bases case style
+Take a look at pages->subpages layout
+
 BackBurner:
 -------------
-Add Project Pipeline/Timeline
-Figure out link-preview
-Google Analytics Event for 404
+Max Width/Large displays bug
+Figure out link-preview pip
