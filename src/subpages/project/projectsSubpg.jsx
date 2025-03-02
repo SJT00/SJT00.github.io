@@ -4,8 +4,6 @@ import ConstructionToast from "./tabs/components/constructionToast";
 import { toZonedTime } from "date-fns-tz";
 import "./projectsSubpg.scss";
 import cardData, { cardTags } from "./cards/cardData";
-
-import WorkingOn from "./tabs/workingOn";
 import CardContainer from "./tabs/cardContainer";
 
 export const datesInStyle = date => {
@@ -37,7 +35,7 @@ export default function Work() {
   const tabs = ["🌐 Full Stack", "🔬 Learning", "🗂️ All"];
 
   const [activeTab, setActiveTab] = useState(0);
-  const lastUpdated = toZonedTime(new Date("2025-02-25"), "America/New_York");
+  const lastUpdated = toZonedTime(new Date("2025-03-3"), "America/New_York");
 
   let tagMap = new Map();
 
@@ -66,7 +64,12 @@ export default function Work() {
   return (
     <Row xs={1} id="work">
       <ConstructionToast />
-      <Col style={{ maxWidth: "900px", minHeight: "600px" }}>
+      <Col
+        style={{
+          maxWidth: "900px",
+          minHeight: "600px",
+        }}
+      >
         <Row
           style={{
             display: "flex",
@@ -112,6 +115,30 @@ export default function Work() {
           }}
         >
           <CardContainer currentViewing={getRelevantCards(activeTab)} />
+          <Col
+            xs={12}
+            style={{
+              marginTop: "5px",
+            }}
+          >
+            <p>
+              These are some of the projects I've worked on—ranging from
+              personal experiments to enterprise-level products.
+            </p>
+          </Col>
+        </Row>
+        {/* <Row
+          style={{
+            display: "flex",
+            borderBottom: "1px solid #dee2e6",
+            alignItems: "flex-end",
+            marginBottom: "5px",
+            boxSizing: "border-box",
+            width: "100%",
+            justifySelf: "center",
+          }}
+        >
+          <h4>Dev Logs:</h4>
         </Row>
         <Row
           style={{
@@ -119,10 +146,21 @@ export default function Work() {
             alignItems: "center",
           }}
         >
-          <Col xs={10}>
-            <WorkingOn />
+          <Col xs={12}>
+            <p>
+              Below you'll find my software journey, here I log my project
+              updates, document my implementation and{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Rubber_duck_debugging"
+                target="_blank"
+                rel="noreferrer"
+              >
+                rubber ducky
+              </a>{" "}
+              my solutions.
+            </p>
           </Col>
-        </Row>
+        </Row> */}
       </Col>
     </Row>
   );
