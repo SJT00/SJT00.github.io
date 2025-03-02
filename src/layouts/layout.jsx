@@ -18,9 +18,9 @@ const Layout = ({ children }) => {
         <Navigation />
         <Background />
         <main>{children}</main>
-        <footer>
+        {/* <footer>
           <p id="contact">Contact me via: saadtaj96@gmail.com</p>
-        </footer>
+        </footer> */}
       </Container>
     </>
   );
