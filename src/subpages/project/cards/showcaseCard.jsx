@@ -28,9 +28,9 @@ const StatusOverlay = ({ tags }) => {
     aspectRatio: "1/1",
     fontSize: "1.5rem",
     marginBottom: "5px",
-    cursor: "pointer",
+    cursor: "default",
     userSelect: "none",
-    backgroundColor: "white",
+    backgroundColor: "#f8f9fa",
     borderRadius: "100%",
   };
 
@@ -53,7 +53,7 @@ const StatusOverlay = ({ tags }) => {
 const ShowcaseCard = ({ card }) => {
   const { title, imgSrc, text, tools, tags } = card;
   return (
-    <Card>
+    <Card key={title + "-card"}>
       <StatusOverlay tags={tags} />
       <Card.Img variant="top" src={imgSrc} />
       <Card.Body className="blackFont">
