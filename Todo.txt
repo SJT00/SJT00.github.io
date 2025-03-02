@@ -1,10 +1,12 @@
 In The Works:
 -------------
+Add contact bottom right icon instead of middle one
 Add Multi Card View
 Add Dev logs
 
 Backlog:
 -------------
+Switch to MUI Icons
 Standardize Code bases case style
 Take a look at pages->subpages layout
 
