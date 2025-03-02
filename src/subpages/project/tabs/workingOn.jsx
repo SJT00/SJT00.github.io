@@ -4,6 +4,8 @@ import CustomGitCalendar from "./components/CustomGitCalendar";
 import justStartDate from "./components/justStartDate";
 import { datesInStyle } from "../projectsSubpg";
 
+// TODO: Refactor this to be devlogs first entry
+
 export default function WorkingOn() {
   const blurStyle = {
     filter: "blur(6px)",
@@ -14,11 +16,6 @@ export default function WorkingOn() {
   return (
     <>
       <Row>
-        <p>
-          These are some of the projects I've worked on—where I got to
-          experiment, build, and refine my skills.
-        </p>
-        <h4>Dev Logs:</h4>
         <p>
           I am embarking on a journey to do some challenging CS projects based
           of this{" "}
