@@ -18,7 +18,7 @@ const vCS = {
   text: (
     <>
       A virtual event creation platform that enables hosts to design interactive
-      events and attendees to engage seamlessly <br />
+      events and attendees to engage seamlessly. <br />
       <small
         style={{
           fontSize: "10px",
@@ -65,7 +65,9 @@ const WeddingWebsite = {
 const minipad = {
   title: "Minipad",
   imgSrc: minipadImg,
-  text: <>A custom text editor to help me learn C++, OpenGL and piece tables</>,
+  text: (
+    <>A custom text editor to help me learn C++, OpenGL and piece tables.</>
+  ),
   tools: ["CPP", "OpenGL", "Git"],
   tags: [cardTags.learning, cardTags.construction],
 };
