@@ -6,6 +6,7 @@ Add Dev logs
 
 Backlog:
 -------------
+Add hyperlink to subpages like /about#Reading
 Switch to MUI Icons
 Standardize Code bases case style
 Take a look at pages->subpages layout
