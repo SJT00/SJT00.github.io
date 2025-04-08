@@ -81,9 +81,11 @@ export default function Work() {
             justifySelf: "center",
           }}
         >
-          <h4>Showcase:</h4>
+          <h4 style={{ width: "initial", paddingLeft: 0 }}>Showcase:</h4>
           <span
             style={{
+              paddingRight: 0,
+              width: "initial",
               fontSize: "75%",
               fontStyle: "italic",
               marginLeft: "auto",
