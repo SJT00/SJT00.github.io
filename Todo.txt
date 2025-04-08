@@ -1,7 +1,7 @@
 In The Works:
 -------------
 Add contact bottom right icon instead of middle one
-Add Multi Card View
+Add Multi Card and Multi Image in Card View
 Add Dev logs
 
 Backlog:
