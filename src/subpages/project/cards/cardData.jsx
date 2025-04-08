@@ -1,4 +1,5 @@
 import React from "react";
+import yamanBarberImg from "@images/Cards/YamanBarber/YamanBarber.png";
 import wSiteImg from "@images/Cards/WeddingWebsite/WeddingWebsite.png";
 import vCSImg from "@images/Cards/VCS.png";
 import minipadImg from "@images/Cards/Minipad.png";
@@ -10,6 +11,32 @@ export const cardTags = {
   learning: "learning",
   live: "live",
   construction: "construction",
+};
+
+const YamanBarber = {
+  title: "Barber Booking",
+  imgSrc: yamanBarberImg,
+  text: (
+    <>
+      A custom website and booking service for my local barbershop, built
+      full-stack with Next.js, Supabase for storage, and hosted on Cloudflare.
+      <br />
+      <br />
+      <small
+        style={{
+          fontSize: "0.8em",
+          color: "#666",
+          fontStyle: "italic",
+          textAlign: "center",
+        }}
+      >
+        Customers can book available timeslots, select services, while barbers
+        can view
+      </small>
+    </>
+  ),
+  tools: ["NextJS", "MUI", "PostgreSQL"],
+  tags: [cardTags.fullStack, cardTags.live, cardTags.construction],
 };
 
 const vCS = {
@@ -99,6 +126,7 @@ const flashFightingGame = {
 };
 
 const cardsInfo = [
+  YamanBarber,
   WeddingWebsite,
   vCS,
   minipad,
