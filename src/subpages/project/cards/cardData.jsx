@@ -14,7 +14,7 @@ export const cardTags = {
 };
 
 const YamanBarber = {
-  title: "Barber Booking",
+  title: "Yaman Barber",
   imgSrc: yamanBarberImg,
   text: (
     <>
