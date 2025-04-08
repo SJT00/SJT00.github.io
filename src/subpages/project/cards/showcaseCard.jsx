@@ -26,7 +26,7 @@ const StatusOverlay = ({ tags }) => {
   const iconStyle = {
     padding: "2px",
     aspectRatio: "1/1",
-    fontSize: "1.5rem",
+    fontSize: "16px",
     marginBottom: "5px",
     cursor: "default",
     userSelect: "none",
