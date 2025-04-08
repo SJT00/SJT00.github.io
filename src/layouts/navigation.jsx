@@ -45,7 +45,7 @@ export default function Header() {
     <Navbar id="navbar">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
+        <Nav className="nav-links">
           <Nav.Link className={curTab === 0 ? "bordered" : ""} href="/">
             Home
           </Nav.Link>

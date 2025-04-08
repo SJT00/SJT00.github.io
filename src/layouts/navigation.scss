@@ -1,7 +1,15 @@
 .navbar-light {
-  @media screen and (max-width: 600px) {
-    .ml-auto {
-      margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  .nav-links {
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (max-width: 600px) {
+      justify-content: center;
     }
   }
   .navbar-nav .nav-link {
