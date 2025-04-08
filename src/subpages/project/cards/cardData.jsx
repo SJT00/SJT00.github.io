@@ -31,7 +31,7 @@ const YamanBarber = {
         }}
       >
         Customers can book available timeslots, select services, while barbers
-        can view
+        can view and adjust schedule accordingly.
       </small>
     </>
   ),
