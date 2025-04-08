@@ -27,6 +27,7 @@
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     opacity: 1;
+    z-index: 1;
   }
   @keyframes fadeOut {
     0% {
