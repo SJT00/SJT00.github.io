@@ -12,7 +12,6 @@ import headShot from "@images/Headshot.jpg";
 export default function Intro() {
   var iWH = 40; // Icon width and Height
   const [isVisible, setVisible] = useState(true);
-  const popover = txt => <Tooltip>{txt}</Tooltip>; // Hover Tooltip
   return (
     <Row xs={1} id="intro">
       <Row>
@@ -71,7 +70,7 @@ export default function Intro() {
                   <OverlayTrigger
                     trigger={["hover", "focus"]}
                     placement="left"
-                    overlay={popover("My GitHub")}
+                    overlay={<Tooltip>My GitHub</Tooltip>}
                   >
                     <a
                       href="https://github.com/SJT00"
@@ -92,7 +91,7 @@ export default function Intro() {
                   <OverlayTrigger
                     trigger={["hover", "focus"]}
                     placement="bottom"
-                    overlay={popover("My Linkedin")}
+                    overlay={<Tooltip>My Linkedin</Tooltip>}
                   >
                     <a
                       href="https://www.linkedin.com/in/saad-taj-b79024185"
@@ -113,7 +112,7 @@ export default function Intro() {
                   <OverlayTrigger
                     trigger={["hover", "focus"]}
                     placement="bottom"
-                    overlay={popover("My Email")}
+                    overlay={<Tooltip>My Email</Tooltip>}
                   >
                     <a href="mailto:saadtaj96@gmail.com">
                       <img
@@ -130,7 +129,7 @@ export default function Intro() {
                   <OverlayTrigger
                     trigger={["hover", "focus"]}
                     placement="right"
-                    overlay={popover("My Resume")}
+                    overlay={<Tooltip>My Resume</Tooltip>}
                   >
                     <a href={resumeFile} target="_blank" rel="noreferrer">
                       <img
