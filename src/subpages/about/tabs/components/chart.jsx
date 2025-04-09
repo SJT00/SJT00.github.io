@@ -17,13 +17,18 @@ const data = [
     fullMark: 100,
   },
   {
+    subject: "Games",
+    A: 90,
+    fullMark: 100,
+  },
+  {
     subject: "History",
     A: 100,
     fullMark: 100,
   },
   {
     subject: "Music",
-    A: 90,
+    A: 85,
     fullMark: 100,
   },
   {
@@ -32,23 +37,18 @@ const data = [
     fullMark: 100,
   },
   {
-    subject: "Games",
-    A: 90,
-    fullMark: 100,
-  },
-  {
     subject: "Film",
     A: 85,
     fullMark: 100,
   },
   {
-    subject: "Reading",
-    A: 90,
+    subject: "Fitness",
+    A: 85,
     fullMark: 100,
   },
   {
-    subject: "Fitness",
-    A: 85,
+    subject: "Reading",
+    A: 75,
     fullMark: 100,
   },
 ];
