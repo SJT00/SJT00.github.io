@@ -36,7 +36,7 @@ const YamanBarber = {
     </>
   ),
   tools: ["NextJS", "MUI", "PostgreSQL"],
-  tags: [cardTags.fullStack, cardTags.live, cardTags.construction],
+  tags: [cardTags.fullStack, cardTags.construction],
 };
 
 const vCS = {
