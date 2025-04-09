@@ -43,6 +43,7 @@
     "react-github-calendar": "^4.1.6",
     "recharts": "^2.4.3",
     "sass": "^1.59.2",
+    "swiper": "^11.2.6",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
