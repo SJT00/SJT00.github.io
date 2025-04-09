@@ -21,6 +21,7 @@ const StatusOverlay = ({ tags }) => {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    textAlign: "center",
   };
 
   const iconStyle = {
