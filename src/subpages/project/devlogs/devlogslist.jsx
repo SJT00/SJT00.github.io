@@ -84,10 +84,6 @@ const DevLogList = () => {
     console.log("Updated curDoc:", node.element.id);
   };
 
-  const handleExpand = node => {
-    console.log("Expanded branch:", node.element);
-  };
-
   return (
     <Row>
       <Col xs={12} sm={3}>
@@ -95,8 +91,7 @@ const DevLogList = () => {
           <TreeView
             data={flattenTree(treeData)}
             aria-label="directory tree"
-            onSelect={handleSelect}
-            onExpand={handleExpand}
+            onNodeSelect={handleSelect}
             nodeRenderer={({
               element,
               isBranch,
