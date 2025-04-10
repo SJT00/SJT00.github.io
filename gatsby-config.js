@@ -47,5 +47,13 @@ module.exports = {
         extensions: [],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `devlogs`,
+        path: `${__dirname}/devlogs/`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 };

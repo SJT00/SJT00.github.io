@@ -5,6 +5,7 @@ import { toZonedTime } from "date-fns-tz";
 import "./projectsSubpg.scss";
 import cardData, { cardTags } from "./cards/cardData";
 import CardContainer from "./tabs/cardContainer";
+import DevLogList from "./devlogs/devlogslist";
 
 export const datesInStyle = date => {
   return (
@@ -68,6 +69,7 @@ export default function Work() {
         style={{
           maxWidth: "900px",
           minHeight: "600px",
+          paddingBottom: "45px",
         }}
       >
         <Row
@@ -129,7 +131,7 @@ export default function Work() {
             </p>
           </Col>
         </Row>
-        {/* <Row
+        <Row
           style={{
             display: "flex",
             borderBottom: "1px solid #dee2e6",
@@ -140,7 +142,7 @@ export default function Work() {
             justifySelf: "center",
           }}
         >
-          <h4>Dev Logs:</h4>
+          <h4 style={{ width: "initial", paddingLeft: 0 }}>Dev Logs:</h4>
         </Row>
         <Row
           style={{
@@ -162,7 +164,8 @@ export default function Work() {
               my solutions.
             </p>
           </Col>
-        </Row> */}
+        </Row>
+        <DevLogList />
       </Col>
     </Row>
   );
