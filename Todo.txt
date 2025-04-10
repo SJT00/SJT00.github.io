@@ -1,11 +1,10 @@
 In The Works:
 -------------
-Add contact bottom right icon instead of middle one
-Add Multi Card and Multi Image in Card View
-Add Dev logs
-
+Add Multi Image in Card View
+Design buttons on card layout for demo, src code and devlogs
 Backlog:
 -------------
+Update background scss to more performant and abstracted version
 Add hyperlink to subpages like /about#Reading
 Switch to MUI Icons
 Standardize Code bases case style
