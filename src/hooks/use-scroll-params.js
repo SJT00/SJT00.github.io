@@ -13,8 +13,9 @@ export const useScrollParam = (injectParam, dontScroll) => {
 
     const cleanHash = decodeURIComponent(hash).slice(1);
     const [id, param] = cleanHash.split(":");
+    const lowerCasedId = id.toLowerCase();
 
-    const el = document.getElementById(id);
+    const el = document.getElementById(lowerCasedId);
     if (el) {
       !dontScroll &&
         setTimeout(() => {
@@ -24,7 +25,7 @@ export const useScrollParam = (injectParam, dontScroll) => {
             inline: "nearest",
           });
         }, 100);
-      injectParam?.(id, param);
+      injectParam?.(lowerCasedId.toLowerCase(), param);
     }
   }, [injectParam, dontScroll]);
 };
