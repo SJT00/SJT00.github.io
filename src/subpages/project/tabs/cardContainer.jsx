@@ -14,7 +14,7 @@ const CardContainer = ({ currentViewing }) => {
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        className="mySwiper"
+        className="swiper-container"
         cardsEffect={{ slideShadows: false }}
         onSlideChange={swiper => setActiveIndex(swiper.activeIndex)}
         touchRatio={1.5}

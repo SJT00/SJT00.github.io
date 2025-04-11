@@ -28,6 +28,16 @@
     transform: scale(1.05);
     z-index: 1;
   }
+
+  .swiper-container {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .swiper-container.swiper-initialized {
+    opacity: 1;
+  }
+
   .swiper-slide {
     transition: filter 0.6s ease-in-out;
   }
