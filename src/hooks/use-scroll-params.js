@@ -17,12 +17,13 @@ export const useScrollParam = (injectParam, dontScroll) => {
     const el = document.getElementById(id);
     if (el) {
       !dontScroll &&
-        el.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-
+        setTimeout(() => {
+          el.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest",
+          });
+        }, 100);
       injectParam?.(id, param);
     }
   }, [injectParam, dontScroll]);
