@@ -78,7 +78,7 @@ export default function Work() {
             display: "flex",
             borderBottom: "1px solid #dee2e6",
             alignItems: "flex-end",
-            marginBottom: "5px",
+            margin: "0 auto 5px auto",
             boxSizing: "border-box",
             width: "100%",
             justifySelf: "center",
@@ -98,7 +98,13 @@ export default function Work() {
           </span>
         </Row>
         <Row style={{ justifySelf: "center" }}>
-          <ButtonGroup aria-label="Project Categories">
+          <ButtonGroup
+            aria-label="Project Categories"
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+          >
             {tabs.map((tab, idx) => (
               <Button
                 key={"category button tab " + idx}
@@ -137,7 +143,7 @@ export default function Work() {
             display: "flex",
             borderBottom: "1px solid #dee2e6",
             alignItems: "flex-end",
-            marginBottom: "5px",
+            margin: "0 auto 5px auto",
             boxSizing: "border-box",
             width: "100%",
             justifySelf: "center",
