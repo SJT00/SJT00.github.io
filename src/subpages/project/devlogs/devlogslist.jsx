@@ -56,7 +56,7 @@ const DevLogList = ({ id, slugId }) => {
         style={{
           height: "500px",
           overflow: "auto",
-          background: "#282a36",
+          background: "#22242a",
         }}
       >
         <Markdown key={"Markdown Render:" + curDoc}>
