@@ -1,6 +1,5 @@
 In The Works:
 -------------
-Add hyperlink to subpages like /about#Reading including dev logs
 Add Multi Image in Card View
 Design buttons on card layout for demo, src code and devlogs
 
