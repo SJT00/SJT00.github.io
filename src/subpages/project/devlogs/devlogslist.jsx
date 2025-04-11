@@ -65,13 +65,11 @@ const DevLogList = () => {
   }
 
   const { treeData, docs } = buildTree(rawNodes);
-  console.log("TREE: ", treeData);
 
   const [curDoc, setCurDoc] = useState("");
 
   const handleSelect = node => {
     if (!node.isBranch) {
-      console.log("NODE: ", node);
       setCurDoc(node.element.id);
     }
   };
