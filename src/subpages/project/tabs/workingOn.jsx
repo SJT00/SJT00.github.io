@@ -1,17 +1,14 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import CustomGitCalendar from "./components/CustomGitCalendar";
-import justStartDate from "./components/justStartDate";
 import { datesInStyle } from "../projectsSubpg";
-
-// TODO: Refactor this to be devlogs first entry
 
 export default function WorkingOn() {
   const blurStyle = {
     filter: "blur(6px)",
     userSelect: "none",
   };
-  const startDate = new Date(justStartDate); // Used for Git Calendar
+  const startDate = new Date("2024-07-29");
   startDate.setDate(startDate.getDate() + 1); // Add day for UTC to EST conversion
   return (
     <>
