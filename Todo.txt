@@ -1,11 +1,12 @@
 In The Works:
 -------------
+Add hyperlink to subpages like /about#Reading including dev logs
 Add Multi Image in Card View
 Design buttons on card layout for demo, src code and devlogs
+
 Backlog:
 -------------
 Update background scss to more performant and abstracted version
-Add hyperlink to subpages like /about#Reading
 Switch to MUI Icons
 Standardize Code bases case style
 Take a look at pages->subpages layout
