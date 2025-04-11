@@ -3,9 +3,13 @@ title: "Hello World"
 date: "2025-04-10"
 ---
 
-# Whats in a Dev Logger?
+# Hello World?
 
-For my first dev log I'll be covering how I integrating these logs into my website.
+For the first of (hopefully) many entries, I'll be covering how I integrating these logs into my website.
+
+The structure of these reports will remain fluid for a bit as I identify patterns in my chain of thought and can hopefully make it more formulaic.
+
+For now I've settled on starting from requirements, dictating the process and identifying flaws and improvements.
 
 ### Requirements:
 
@@ -19,17 +23,17 @@ For my first dev log I'll be covering how I integrating these logs into my websi
 
 Points `1` and `2` immediately made me think of [**Markdown**](https://en.wikipedia.org/wiki/Markdown), its basically writing a text document with a little bit of needed flourish. Its simple enough for a non dev to write, and practically a given for quickly writing documentation on the web.
 
-Point `3` required that I transform the Markdown **`.md`** format to an HTML friendly one and then apply the same styling that I use for all my components. [React Markdown](https://github.com/remarkjs/react-markdown) already handles conversion to HTML tags, and styling gets applied to those automatically, quite an easy fix :)
+Point `3` required that I transform the Markdown **`.md`** format to an HTML friendly one and then apply the same styling that I use for all my components. [React Markdown](https://github.com/remarkjs/react-markdown) already handles conversion to HTML tags, and styling gets applied to those automatically, this was incredibly plug and play.
 
 Point `4` was in the trickiest and most critical of the bunch, mainly because there are a lot of options to choose from here, do I use an external repo to store dev logs and fetch from there? Perhaps I use a Markdown CMS that is hosted elsewhere allowing me to edit and push in one go. For now I've settled on making a separate dev logs folder, which Gatsby - The React Framework this site is built on - statically queries at build time, allowing for quick retrieval at runtime. I may use this folder to store relevant media files as well, but I hesitate to do this for now, as I can rely on urls to fetch media while not having to host it myself. I decided on not using a separate repo mainly due to not wanting a public repo with just my blog posts (for now), mainly because I like to keep my git projects limited.
 
-Point `5` required some creative thinking, but in a moment of serendipity I recalled a technical assessment I was given. The assessment was to make api calls to read repetitively from a file streams, for the sake of rendering a "file tree" (The file and folder structure you see to the right of a directory, allowing you to view and access multiple files from the left and view the files content on the right) . This was it! A file tree offers both a easily graspable way to select and view different files, while simultaneously displaying its contents. To accomplish this I used a handy and easily stylized [react-accessible-treeview](https://www.npmjs.com/package/react-accessible-treeview) component along with some state management to incorporate this.
+Point `5` required some creative thinking, but in a moment of serendipity I recalled a technical assessment I was given. The assessment was to make api calls to read repetitively from a file streams, for the sake of rendering a "file tree" (The file and folder structure you see to the right of a directory, allowing you to view and access multiple files from the left and view the files content on the right) . This was it! A file tree offers both a easily graspable way to select and view different files, while simultaneously displaying its contents in a code editor like fashion. To accomplish this I used a handy and easily stylized [react-accessible-treeview](https://www.npmjs.com/package/react-accessible-treeview) component along with some state management to incorporate this. Then I use the previously mentioned React Markdown to render the right side of the view and ta-da! we have a vscode clone.
 
 > TODO: Add an image for above, use the explanatory text as alt text
 
-The overall solution required me to learn more about Gatsby, format GraphQL queries, use said queries to abstract and formulate a file tree, and then display said tree and its elements via React state. The abstraction comes from wanting the file tree to be able to read the dev logs folder and copy over its internals in an identical fashion (for markdown files and their parent folders at least).
+The overall solution required me to learn more about Gatsby, format GraphQL queries, use said queries to abstract and formulate a file tree, and then display said tree and its elements via React state. The abstraction comes from wanting the file tree to be able to read the dev logs folder and copy over its internals in an identical fashion (for markdown files and their ancestors at least).
 
-So in theory an external non tech-savy editor could modify the dev logs folders and they should still be correctly ordered and displayed.
+So an external non tech-savy editor could modify the dev logs folders and they should still be correctly ordered and displayed.
 
 ### Major Flaws:
 
@@ -41,7 +45,7 @@ So in theory an external non tech-savy editor could modify the dev logs folders 
 
 - [ ] Find a storage solution for media, maybe Google drive or Cloudinary?
 - [ ] Integrate cards in showcase with this section by adding a button on the relevant card that scrolls the relevant dev logs folder into view.
-- [ ] For above add a way to use url id `#devlog/${name}` to directly go to relevant dev log, allowing quick links for future referral.
+- [x] For the above add a way to use uri ecnoding to directly go to relevant dev log, allowing quick links for future references in a format like `SiteURL/#devlog:{name}`.
 - [ ] Add a contact me button somewhere for any curious bystanders.
 - [ ] Measure and compare performance of this page in general and this section in particular.
 - [ ] Maybe... just maybe setup some kind of CI for online Markdown editor to allow for not even needing to push to git repo
