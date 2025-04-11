@@ -15,7 +15,7 @@ const DevLogList = () => {
         nodes {
           frontmatter {
             title
-            date(formatString: "MMM D, YY")
+            date(formatString: "MMM D,YY")
           }
           fields {
             slug
@@ -26,62 +26,54 @@ const DevLogList = () => {
     }
   `);
 
-  const nodes = rawData.allMarkdownRemark.nodes;
+  const rawNodes = rawData.allMarkdownRemark.nodes;
 
-  // Contains slug:post.rawMarkdownBody map
-  const docs = {};
+  function buildTree(nodes) {
+    const treeData = { name: "/", children: [] };
+    const docs = {};
 
-  const groupedDevLogs = nodes.reduce((groups, devlog) => {
-    const slug = devlog.fields.slug;
+    for (const node of nodes) {
+      const slug = node.fields.slug;
+      const isFolder = slug.endsWith("/");
+      const parts = slug.split("/").filter(Boolean);
+      let current = treeData;
 
-    if (!docs[slug]) {
-      docs[slug] = devlog.rawMarkdownBody;
+      for (let i = 0; i < parts.length; i++) {
+        const part = parts[i];
+        let existing = current.children.find(child => child.name === part);
+
+        if (!existing) {
+          existing = { name: part, children: [] };
+          current.children.push(existing);
+        }
+
+        const isLast = i === parts.length - 1;
+
+        if (isLast) {
+          if (!isFolder) {
+            delete existing.children;
+            existing.id = slug;
+            docs[slug] = node.rawMarkdownBody;
+          }
+        }
+
+        current = existing;
+      }
     }
 
-    const folder = slug.split("/")[1];
+    return { treeData, docs };
+  }
 
-    if (!groups[folder]) {
-      groups[folder] = [];
-    }
-
-    groups[folder].push(devlog);
-
-    return groups;
-  }, {});
-
-  const folderNames = Object.keys(groupedDevLogs);
-
-  const fileNameMapping = {
-    yamans: "Yaman Barber",
-    minipad: "Minipad",
-  };
-
-  const treeData = {
-    name: "root",
-    children: folderNames.map(fname => {
-      return {
-        name: fileNameMapping[fname],
-        children: groupedDevLogs[fname].map(log => {
-          return {
-            name: log.frontmatter.date + " " + log.frontmatter.title,
-            id: log.fields.slug,
-          };
-        }),
-      };
-    }),
-  };
+  const { treeData, docs } = buildTree(rawNodes);
+  console.log("TREE: ", treeData);
 
   const [curDoc, setCurDoc] = useState("");
 
-  const handleSelect = (node, event) => {
-    event?.stopPropagation();
-    console.log("Selected node:", node);
-    if (node.isBranch) {
-      console.log("Branch clicked, no change to curDoc.");
-      return;
+  const handleSelect = node => {
+    if (!node.isBranch) {
+      console.log("NODE: ", node);
+      setCurDoc(node.element.id);
     }
-    setCurDoc(node.element.id);
-    console.log("Updated curDoc:", node.element.id);
   };
 
   return (
@@ -101,6 +93,7 @@ const DevLogList = () => {
             }) => (
               <div
                 {...getNodeProps()}
+                key={"Tree Node: " + element.id}
                 style={{ paddingLeft: 20 * (level - 1) }}
               >
                 {isBranch ? (isExpanded ? "📂" : "📁") : "📝"} {element.name}
