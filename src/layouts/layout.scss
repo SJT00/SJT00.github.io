@@ -76,6 +76,13 @@ body {
 a {
   color: var(--customgrey);
 }
+blockquote {
+  border-left: 4px solid var(--secthover);
+  margin: 1em 0;
+  padding-left: 1em;
+  color: var(--customgrey);
+  font-style: italic;
+}
 img {
   max-width: 100%;
   height: auto;
