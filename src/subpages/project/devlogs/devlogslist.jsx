@@ -12,7 +12,7 @@ const getAllParentIds = (flatData, id, acc = []) => {
   return getAllParentIds(flatData, node.parent, [node.parent, ...acc]);
 };
 
-const DevLogList = ({ id, slugId }) => {
+const DevLogList = ({ injectId, slugId }) => {
   const { treeData, docs } = buildTree(useDevLogs());
   const [curDoc, setCurDoc] = useState();
   const [expandedIds, setExpandedIds] = useState([]);
@@ -25,7 +25,7 @@ const DevLogList = ({ id, slugId }) => {
     const parentIds = getAllParentIds(flatTree, id);
     setExpandedIds(prev => Array.from(new Set([...prev, ...parentIds])));
     if (pushToHistory && typeof window !== "undefined") {
-      window.history.pushState(null, "", `#DevLogs:${id}`);
+      window.history.pushState(null, "", `#${injectId + ":" + id}`);
     }
   };
 
@@ -44,7 +44,7 @@ const DevLogList = ({ id, slugId }) => {
 
   return (
     <Row
-      id={id}
+      id={injectId}
       style={{
         height: "500px",
         overflow: "hidden",

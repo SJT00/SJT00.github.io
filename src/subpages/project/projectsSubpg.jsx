@@ -57,7 +57,7 @@ export default function Work() {
   };
 
   const [injectedParams, setInjectedParams] = useState({});
-  const logCompId = "DevLogs";
+  const logCompId = "devlogs";
 
   useScrollParam((id, param) => {
     setInjectedParams(prev => ({ ...prev, [id]: param }));
@@ -172,7 +172,7 @@ export default function Work() {
             </p>
           </Col>
         </Row>
-        <DevLogList id={logCompId} slugId={injectedParams[logCompId]} />
+        <DevLogList injectId={logCompId} slugId={injectedParams[logCompId]} />
       </Col>
     </Row>
   );
