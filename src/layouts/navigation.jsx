@@ -1,58 +1,56 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { useStaticQuery, graphql } from "gatsby";
 import "./navigation.scss";
 
 export default function Header() {
-  const testing = true;
-  const Tabs = useMemo(() => ["home", "about", "projects"], []); //lowercase because of reading lowercase url
-  const [curTab, setTab] = useState(-1);
-  const data = useStaticQuery(graphql`
-    query HeaderQuery {
-      site {
-        siteMetadata {
-          siteUrl
-        }
-      }
+  const [curPage, setPage] = useState();
+
+  const pages = {
+    home: "home",
+    about: "about",
+    projects: "projects",
+  };
+
+  const handleChange = newPage => {
+    if (Object.values(pages).includes(newPage)) {
+      setPage(newPage);
     }
-  `);
-  React.useEffect(() => {
-    //Used to highlight current pg on navbar
-    if (typeof window !== "undefined") {
-      //Needed for online hosting
-      const url = window.location.href.split("/");
-      const l = url.length;
-      if (
-        //Null Assertions
-        data &&
-        data.site &&
-        data.site.siteMetadata &&
-        data.site.siteMetadata.siteUrl
-      ) {
-        if (
-          url.join("/") === data.site.siteMetadata.siteUrl.concat("/") ||
-          (testing && url.join("/") === "http://localhost:8000/")
-        ) {
-          //Hard coding for Home and other pgs, local testing exception
-          setTab(0);
-        } else {
-          setTab(Tabs.indexOf(url[l - 2]));
-        }
-      }
+  };
+
+  // Highlight relevant page in Navbar
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const currentUrl = new URL(window.location.href);
+    const pathname = currentUrl.pathname;
+    const segmentedPath = pathname.split("/").filter(Boolean);
+    const slug = pathname === "/" ? "home" : segmentedPath.pop();
+    if (segmentedPath.length === 0) {
+      handleChange(slug);
     }
-  }, [data, testing, Tabs]);
+  }, []);
+
   return (
     <Navbar id="navbar">
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="nav-links">
-          <Nav.Link className={curTab === 0 ? "bordered" : ""} href="/">
+          <Nav.Link
+            className={curPage === pages.home ? "bordered" : ""}
+            href="/"
+          >
             Home
           </Nav.Link>
-          <Nav.Link className={curTab === 1 ? "bordered" : ""} href="/about">
+          <Nav.Link
+            className={curPage === pages.about ? "bordered" : ""}
+            href="/about"
+          >
             About
           </Nav.Link>
-          <Nav.Link className={curTab === 2 ? "bordered" : ""} href="/projects">
+          <Nav.Link
+            className={curPage === pages.projects ? "bordered" : ""}
+            href="/projects"
+          >
             Projects
           </Nav.Link>
         </Nav>
