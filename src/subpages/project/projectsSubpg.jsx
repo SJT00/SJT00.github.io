@@ -25,13 +25,6 @@ export const datesInStyle = date => {
   );
 };
 
-export const tags = {
-  fullStack: ["WeddingWebsite", "VCS"],
-  learning: ["Minipad", "SpaceInvaders", "FlashFightingGame"],
-  live: ["WeddingWebsite", "VCS"],
-  construction: ["Minipad"],
-};
-
 export default function Work() {
   const tabs = ["🌐 Full Stack", "🔬 Learning", "🗂️ All"];
 
