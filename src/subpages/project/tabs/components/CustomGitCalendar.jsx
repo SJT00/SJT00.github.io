@@ -5,7 +5,7 @@ import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 
 const customGitCalendar = (
-  { startDate } // Add startDate prop
+  { startDate }
 ) => {
   const formattedStartDate = format(
     toZonedTime(new Date(startDate), "America/New_York"),
