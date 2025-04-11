@@ -3,7 +3,7 @@ export default function buildTree(nodes) {
   const docs = {};
 
   for (const node of nodes) {
-    const slug = node.fields.slug;
+    const slug = node.fields.slug.slice(1);
     const isFolder = slug.endsWith("/");
     const parts = slug.split("/").filter(Boolean);
     let current = treeData;

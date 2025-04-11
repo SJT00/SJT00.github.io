@@ -60,7 +60,7 @@ export default function Work() {
   const logCompId = "DevLogs";
 
   useScrollParam((id, param) => {
-    setInjectedParams(prev => ({ ...prev, [id]: "/" + param }));
+    setInjectedParams(prev => ({ ...prev, [id]: param }));
   });
 
   return (
