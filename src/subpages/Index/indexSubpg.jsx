@@ -53,7 +53,7 @@ export default function Intro() {
             </Col>
           </Row>
           <Row xs={1} sm={2}>
-            <Col>
+            <Col style={{ zIndex: 1 }}>
               <img
                 style={{ marginBottom: "1ex" }}
                 id="headshot"
