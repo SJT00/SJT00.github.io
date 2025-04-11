@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path");
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
@@ -8,7 +8,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const parsed = path.parse(relativePath);
     let slug = path.join("/", parsed.dir, parsed.name);
     slug = slug.replace(/\\/g, "/");
-    
+
     createNodeField({
       node,
       name: "slug",
