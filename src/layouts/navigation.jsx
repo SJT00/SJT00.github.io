@@ -2,32 +2,31 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "./navigation.scss";
 
-export default function Header() {
-  const [curPage, setPage] = useState();
+const PAGES = {
+  home: { path: "/", label: "Home" },
+  about: { path: "/about", label: "About" },
+  projects: { path: "/projects", label: "Projects" },
+};
 
-  const pages = {
-    home: "home",
-    about: "about",
-    projects: "projects",
-  };
+const getPageFromUrl = () => {
+  if (typeof window === "undefined") return "home";
 
-  const handleChange = newPage => {
-    if (Object.values(pages).includes(newPage)) {
-      setPage(newPage);
+  const pathname = window.location.pathname.toLowerCase();
+  for (const [slug, { path }] of Object.entries(PAGES)) {
+    if (pathname === path || pathname.startsWith(path + "/")) {
+      return slug;
     }
-  };
+  }
+
+  return "home";
+};
+
+export default function Header() {
+  const [curPage, setPage] = useState("home");
 
   // Highlight relevant page in Navbar
   useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const currentUrl = new URL(window.location.href);
-    const pathname = currentUrl.pathname;
-    const segmentedPath = pathname.split("/").filter(Boolean);
-    const slug = pathname === "/" ? "home" : segmentedPath.pop();
-    if (segmentedPath.length === 0) {
-      handleChange(slug);
-    }
+    setPage(getPageFromUrl());
   }, []);
 
   return (
@@ -35,24 +34,15 @@ export default function Header() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="nav-links">
-          <Nav.Link
-            className={curPage === pages.home ? "bordered" : ""}
-            href="/"
-          >
-            Home
-          </Nav.Link>
-          <Nav.Link
-            className={curPage === pages.about ? "bordered" : ""}
-            href="/about"
-          >
-            About
-          </Nav.Link>
-          <Nav.Link
-            className={curPage === pages.projects ? "bordered" : ""}
-            href="/projects"
-          >
-            Projects
-          </Nav.Link>
+          {Object.entries(PAGES).map(([slug, { path, label }]) => (
+            <Nav.Link
+              key={slug}
+              href={path}
+              className={curPage === slug ? "bordered" : ""}
+            >
+              {label}
+            </Nav.Link>
+          ))}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
