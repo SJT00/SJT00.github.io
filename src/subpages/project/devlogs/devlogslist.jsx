@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TreeView, { flattenTree } from "react-accessible-treeview";
 import { Col, Row } from "react-bootstrap";
 import { useDevLogs } from "@hooks/use-dev-logs";
@@ -6,10 +6,15 @@ import Markdown from "react-markdown";
 import buildTree from "../tabs/components/fileTree";
 import "./devlogs.scss";
 
-const DevLogList = () => {
+const DevLogList = ({ id, slugId }) => {
   const { treeData, docs } = buildTree(useDevLogs());
+  const [curDoc, setCurDoc] = useState();
 
-  const [curDoc, setCurDoc] = useState("");
+  useEffect(() => {
+    if (Object.keys(docs).includes(slugId)) {
+      setCurDoc(slugId);
+    }
+  }, [slugId, docs]);
 
   const handleSelect = node => {
     if (!node.isBranch) {
@@ -18,7 +23,7 @@ const DevLogList = () => {
   };
 
   return (
-    <Row>
+    <Row id={id}>
       <Col xs={12} sm={3}>
         <div className="directory">
           <TreeView

@@ -6,6 +6,7 @@ import "./projectsSubpg.scss";
 import cardData, { cardTags } from "./cards/cardData";
 import CardContainer from "./tabs/cardContainer";
 import DevLogList from "./devlogs/devlogslist";
+import { useScrollParam } from "@hooks/use-scroll-params";
 
 export const datesInStyle = date => {
   return (
@@ -54,6 +55,13 @@ export default function Work() {
       ];
     }
   };
+
+  const [injectedParams, setInjectedParams] = useState({});
+  const logCompId = "DevLogs";
+
+  useScrollParam((id, param) => {
+    setInjectedParams(prev => ({ ...prev, [id]: "/" + param }));
+  });
 
   return (
     <Row xs={1} id="work">
@@ -158,7 +166,7 @@ export default function Work() {
             </p>
           </Col>
         </Row>
-        <DevLogList />
+        <DevLogList id={logCompId} slugId={injectedParams[logCompId]} />
       </Col>
     </Row>
   );
