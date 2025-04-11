@@ -30,7 +30,7 @@ export default function Work() {
   const tabs = ["🌐 Full Stack", "🔬 Learning", "🗂️ All"];
 
   const [activeTab, setActiveTab] = useState(0);
-  const lastUpdated = toZonedTime(new Date("2025-04-9"), "America/New_York");
+  const lastUpdated = toZonedTime(new Date("2025-04-09"), "America/New_York");
 
   let tagMap = new Map();
 
