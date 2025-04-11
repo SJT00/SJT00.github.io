@@ -25,7 +25,10 @@ const DevLogList = ({ id, slugId }) => {
   return (
     <Row id={id}>
       <Col xs={12} sm={3}>
-        <div className="directory">
+        <div
+          className="directory"
+          style={{ maxHeight: "500px", overflow: "auto" }}
+        >
           <TreeView
             data={flattenTree(treeData)}
             aria-label="directory tree"
