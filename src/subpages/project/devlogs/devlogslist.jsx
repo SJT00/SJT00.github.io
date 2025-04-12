@@ -88,6 +88,8 @@ const DevLogList = ({ injectId, slugId }) => {
         className="mt-2 mx-2 mt-sm-0 mx-sm-0"
         style={{
           height: "500px",
+          paddingTop: "10px",
+          paddingBottom: "10px",
           overflow: "auto",
           background: "#22242a",
         }}
