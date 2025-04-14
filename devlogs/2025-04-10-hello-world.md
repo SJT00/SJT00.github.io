@@ -43,7 +43,7 @@ So an external non tech-savy editor could modify the dev logs folders and they s
 
 ### Future Plans:
 
-- [ ] Find a storage solution for media, maybe Google drive or Cloudinary?
+- [X] Find a storage solution for media, maybe Google drive or Cloudinary?
 - [ ] Integrate cards in showcase with this section by adding a button on the relevant card that scrolls the relevant dev logs folder into view.
 - [x] For the above add a way to use uri ecnoding to directly go to relevant dev log, allowing quick links for future references in a format like `SiteURL/#devlog:{name}`.
 - [ ] Add a contact me button somewhere for any curious bystanders.
