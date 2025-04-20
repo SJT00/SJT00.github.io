@@ -167,8 +167,8 @@ Note: {ids} will be in request headers, added to endpoints below for visualizing
   - [x] Calendar
   - [ ] Admin\*
 - [ ] Write up the SQL Schemas and host it on Supabase:
-  - [ ] Services
-  - [ ] Barbers
+  - [x] Services
+  - [x] Barbers
   - [ ] Time-Slots
 - [ ] Complete the API layer:
   - [ ] Setup Redis Layer
@@ -179,7 +179,7 @@ Note: {ids} will be in request headers, added to endpoints below for visualizing
 - [ ] Transition to Cloudflare hosting with their CDN and Workers
 - [ ] TEST, Test, test....
 - [ ] Present:
-  - [ ] Give a demo to Yaman
+  - [ ] Give a full demo to Yaman
   - [ ] Transition from current website
   - [ ] Get a free haircut for dad and I ☺️
 
