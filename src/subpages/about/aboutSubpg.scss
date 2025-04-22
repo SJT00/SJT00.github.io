@@ -1,12 +1,6 @@
 #personal {
   align-items: center;
   justify-content: center;
-  .tab-content {
-    padding-top: 10px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    max-height: 82vh;
-  }
   .current {
     text-decoration: underline;
   }
@@ -38,7 +32,6 @@
   }
   .aside {
     font-size: 75%;
-    padding-right: 4px; // Account for 7px scrollbar
     font-style: italic;
     text-align: end;
     display: block;

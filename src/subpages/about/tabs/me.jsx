@@ -9,7 +9,7 @@ export default function me() {
         <Chart />
       </Row>
       <Row>
-        <p>
+        <p style={{ marginTop: "5px" }}>
           I am an Honours Mathematics graduate from the University of Waterloo,
           with a passion for (and experience in) Computer Science.
           <br />
