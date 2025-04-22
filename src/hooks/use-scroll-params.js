@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 
+// Scrolls to id in hash, updates injectParam[sameId] with slug after ":"
 export const useScrollParam = (injectParam, dontScroll) => {
   const lastHashRef = useRef(null);
 
