@@ -6,8 +6,6 @@ Add Better Loading for Cards and sections in general
 
 Backlog:
 -------------
-Update background scss to more performant and abstracted version
-Switch to MUI Icons
 Standardize Code bases case style
 Take a look at pages->subpages layout
 
