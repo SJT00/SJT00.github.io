@@ -1,7 +1,8 @@
 In The Works:
 -------------
-Add Multi Image in Card View
 Design buttons on card layout for demo, src code and devlogs
+Add Multi Image in Card View
+Add Better Loading for Cards and sections in general
 
 Backlog:
 -------------
