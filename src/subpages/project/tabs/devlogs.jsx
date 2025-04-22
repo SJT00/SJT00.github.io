@@ -1,6 +1,6 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-import DevLogList from "./components/devlogs/devlogslist";
+import FileViewer from "./components/devlogs/fileViewer";
 
 export default function DevLogs({ logCompId, injectedParams }) {
   return (
@@ -19,7 +19,7 @@ export default function DevLogs({ logCompId, injectedParams }) {
           my solutions.
         </p>
       </Row>
-      <DevLogList myId={logCompId} slugId={injectedParams[logCompId]} />
+      <FileViewer myId={logCompId} slugId={injectedParams[logCompId]} />
     </>
   );
 }

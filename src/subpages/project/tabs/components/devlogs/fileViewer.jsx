@@ -5,7 +5,7 @@ import { useDevLogs } from "@hooks/use-dev-logs";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import buildTree from "./fileTree";
-import "./devlogs.scss";
+import "./fileViewer.scss";
 
 const getAllParentIds = (flatData, id, acc = []) => {
   const node = flatData.find(n => n.id === id);
@@ -13,7 +13,7 @@ const getAllParentIds = (flatData, id, acc = []) => {
   return getAllParentIds(flatData, node.parent, [node.parent, ...acc]);
 };
 
-const DevLogList = ({ myId, slugId }) => {
+const FileViewer = ({ myId, slugId }) => {
   const { treeData, docs } = buildTree(useDevLogs());
   const [curDoc, setCurDoc] = useState();
   const [expandedIds, setExpandedIds] = useState([]);
@@ -97,4 +97,4 @@ const DevLogList = ({ myId, slugId }) => {
   );
 };
 
-export default DevLogList;
+export default FileViewer;
