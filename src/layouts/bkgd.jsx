@@ -35,7 +35,7 @@ const StarBackground = () => {
     // Determine star counts based on screen dimensions
     let smallCount, mediumCount, largeCount;
 
-    if (width == 0) {
+    if (width === 0) {
       smallCount = 0;
       mediumCount = 0;
       largeCount = 0;
