@@ -57,6 +57,12 @@ body {
   .round_icon:hover {
     background: var(--secthover);
   }
+  .nav-item.nav-link {
+    color: var(--customwhite);
+    &.active {
+      color: var(--customblack);
+    }
+  }
   #contact {
     @media screen and (max-width: 600px) {
       font-size: 0.75rem;

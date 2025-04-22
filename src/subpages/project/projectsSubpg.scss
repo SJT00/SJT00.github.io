@@ -1,6 +1,9 @@
 #work {
   align-items: center;
   justify-content: center;
+  .tab-content {
+    padding-top: 5px;
+  }
   .upcomingProjects {
     border: 2px solid var(--customwhite);
     border-radius: 10px;

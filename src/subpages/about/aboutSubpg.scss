@@ -1,12 +1,6 @@
 #personal {
   align-items: center;
   justify-content: center;
-  .nav-item.nav-link {
-    color: var(--customwhite);
-    &.active {
-      color: var(--customblack);
-    }
-  }
   .tab-content {
     padding-top: 5px;
     overflow-x: hidden;
