@@ -23,6 +23,7 @@ module.exports = {
       options: {
         sassOptions: {
           api: "modern",
+          silenceDeprecations: ["legacy-js-api"],
         },
       },
     },
