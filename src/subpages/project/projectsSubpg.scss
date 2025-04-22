@@ -1,6 +1,11 @@
 #work {
   align-items: center;
   justify-content: center;
+  .nav-item.disabled {
+    margin-left: auto;
+    align-content: flex-end;
+    padding: 0;
+  }
   .tab-content {
     padding-top: 10px;
   }
