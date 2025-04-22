@@ -37,7 +37,6 @@
     "gatsby-script": "^2.7.0",
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-transformer-remark": "^6.14.0",
-    "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-accessible-treeview": "^2.11.1",
     "react-bootstrap": "^1.6.6",

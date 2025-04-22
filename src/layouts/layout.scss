@@ -24,12 +24,6 @@ html {
 body {
   font-family: "Poppins", sans-serif !important;
   font-size: 18px;
-  @media screen and (max-width: 600px) {
-    font-size: 1rem !important;
-    #contact {
-      display: none;
-    }
-  }
   color: var(--customwhite);
   .blackFont {
     color: var(--customblack);
@@ -67,12 +61,6 @@ body {
     padding-top: 10px;
   }
   #contact {
-    @media screen and (max-width: 600px) {
-      font-size: 0.75rem;
-    }
-    @media screen and (max-width: 339px) {
-      visibility: hidden;
-    }
     bottom: 0;
     right: 0;
     left: 0;
@@ -80,6 +68,18 @@ body {
     mix-blend-mode: difference;
     text-align: center;
     margin-bottom: 0.5rem;
+    @media screen and (max-width: 600px) {
+      font-size: 0.75rem;
+    }
+    @media screen and (max-width: 339px) {
+      visibility: hidden;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 1rem !important;
+    #contact {
+      display: none;
+    }
   }
 }
 a {

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Saad Taj`,
     siteUrl: "https://sjt00.github.io/",
-    image: `/Logo.png`,
+    image: `static/Logo.png`,
     description: `Software Developer and Honours Mathematics Graduate`,
     author: `SJT00`,
   },
@@ -18,13 +18,20 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-sass",
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          api: "modern",
+        },
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/Logo.png",
+        icon: "static/Logo.png",
         name: `GatsbyJS`,
         short_name: `GatsbyJS`,
         start_url: `/`,
