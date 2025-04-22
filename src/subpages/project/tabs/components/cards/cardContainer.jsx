@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { CardGroup } from "react-bootstrap";
-import ShowcaseCard from "../cards/showcaseCard";
+import ShowcaseCard from "./showcaseCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";

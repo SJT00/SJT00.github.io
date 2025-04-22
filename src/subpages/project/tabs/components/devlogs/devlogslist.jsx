@@ -3,7 +3,8 @@ import TreeView, { flattenTree } from "react-accessible-treeview";
 import { Col, Row } from "react-bootstrap";
 import { useDevLogs } from "@hooks/use-dev-logs";
 import Markdown from "react-markdown";
-import buildTree from "../tabs/components/fileTree";
+import remarkGfm from "remark-gfm";
+import buildTree from "./fileTree";
 import "./devlogs.scss";
 
 const getAllParentIds = (flatData, id, acc = []) => {
@@ -12,7 +13,7 @@ const getAllParentIds = (flatData, id, acc = []) => {
   return getAllParentIds(flatData, node.parent, [node.parent, ...acc]);
 };
 
-const DevLogList = ({ injectId, slugId }) => {
+const DevLogList = ({ myId, slugId }) => {
   const { treeData, docs } = buildTree(useDevLogs());
   const [curDoc, setCurDoc] = useState();
   const [expandedIds, setExpandedIds] = useState([]);
@@ -25,7 +26,7 @@ const DevLogList = ({ injectId, slugId }) => {
     const parentIds = getAllParentIds(flatTree, id);
     setExpandedIds(prev => Array.from(new Set([...prev, ...parentIds])));
     if (pushToHistory && typeof window !== "undefined") {
-      window.history.pushState(null, "", `#${injectId + ":" + id}`);
+      window.history.pushState(null, "", `#${myId + ":" + id}`);
     }
   };
 
@@ -43,13 +44,7 @@ const DevLogList = ({ injectId, slugId }) => {
   };
 
   return (
-    <Row
-      id={injectId}
-      style={{
-        height: "500px",
-        overflow: "hidden",
-      }}
-    >
+    <Row id={myId}>
       <Col xs={12} sm={3}>
         <div
           className="directory"
@@ -87,14 +82,14 @@ const DevLogList = ({ injectId, slugId }) => {
       <Col
         className="mt-2 mx-2 mt-sm-0 mx-sm-0"
         style={{
-          height: "500px",
+          minHeight: "500px",
+          overflow: "auto",
           paddingTop: "10px",
           paddingBottom: "10px",
-          overflow: "auto",
           background: "#22242a",
         }}
       >
-        <Markdown key={"Markdown Render:" + curDoc}>
+        <Markdown key={"Markdown Render:" + curDoc} remarkPlugins={[remarkGfm]}>
           {curDoc ? docs[curDoc] : ""}
         </Markdown>
       </Col>

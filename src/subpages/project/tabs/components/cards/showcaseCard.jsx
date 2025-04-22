@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, OverlayTrigger, Tooltip } from "react-bootstrap";
-import TechStackDisplay from "../tabs/components/techStackDisplay";
+import TechStackDisplay from "./techStackDisplay";
 import { cardTags } from "./cardData";
 
 const StatusOverlay = ({ tags }) => {

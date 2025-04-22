@@ -1,7 +1,7 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import CustomGitCalendar from "./components/CustomGitCalendar";
-import { datesInStyle } from "../projectsSubpg";
+import { datesInStyle } from "./components/datesInStyle";
 
 export default function WorkingOn() {
   const blurStyle = {
