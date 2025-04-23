@@ -6,7 +6,6 @@ Add Better Loading for Cards and sections in general
 
 Backlog:
 -------------
-Update from Node Sass
 Standardize Code bases case style
 Take a look at pages->subpages layout
 
