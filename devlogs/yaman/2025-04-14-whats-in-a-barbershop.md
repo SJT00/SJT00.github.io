@@ -160,28 +160,28 @@ Note: {ids} will be in request headers, added to endpoints below for visualizing
   - [x] Landing Page
   - [x] Booking Page
   - [x] Calendar Page
-  - [ ] Admin\* Page
+  - ~~ [ ] Admin\* Page ~~
 - [ ] Render above designs in React, working with mock API data:
   - [x] Landing
-  - [ ] Booking
+  - [x] Booking
   - [x] Calendar
-  - [ ] Admin\*
+  - ~~ [ ] Admin\* ~~
 - [ ] Write up the SQL Schemas and host it on Supabase:
   - [x] Services
   - [x] Barbers
-  - [ ] Time-Slots
+  - [x] Time-Slots
 - [ ] Complete the API layer:
-  - [ ] Setup Redis Layer
-  - [ ] Services
-  - [ ] Barbers
-  - [ ] Time-Slots
+  - [x] Setup Redis Layer
+  - [x] Services
+  - [x] Barbers
+  - [x] Time-Slots
   - [ ] Test with DB
 - [ ] Transition to Cloudflare hosting with their CDN and Workers
 - [ ] TEST, Test, test....
 - [ ] Present:
   - [ ] Give a full demo to Yaman
   - [ ] Transition from current website
-  - [ ] Get a free haircut for dad and I ☺️
+  - [x] Get a free haircut for dad and I ☺️
 
 \*I'm debating the implementation of an Admin page mainly due to wanting to save on design and development time. The underlying api routes are more important than a frontend, and I could act as the default admin and add/remove barbers and services as need be unless Yaman requests over full-control.
 
